@@ -1,4 +1,4 @@
 # dothome1
 
-#test01
-<a href="https://github.com/heemwon/dothome1/blob/master/test/test01.html">test01</a>
+#웹표준 사이트 만들기
+<a href="https://heemwon.github.io/dothome1/webstandard/index.html">바로가기</a>
