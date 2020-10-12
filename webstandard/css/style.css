@@ -46,7 +46,11 @@
 .header .header_tit a {display: block; background-color: #2698cd; font-size: 18px; padding: 5px 20px 6px 20px; color: #fff; display: inline-block; text-transform: uppercase; margin-top: -5px;}
 
 .header .header_icon {text-align: center; margin-top: 40px;}
-.header .header_icon a {width: 60px; height: 60px; display: inline-block; background-image: url(../img/icon.png);}
+.header .header_icon a {
+    width: 60px; height: 60px; 
+    display: inline-block; 
+    background-image: url(../img/icon.png);
+}
 .header .header_icon a.icon1 {background-position: 0 0;}
 .header .header_icon a.icon2 {background-position: 0 -60px;}
 .header .header_icon a.icon3 {background-position: 0 -120px;}
@@ -206,4 +210,43 @@
     padding-left: 70px;
     border-bottom: 1px solid #d0d0d0;
     padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* 게시판 */
+.notice {position: relative;}
+.notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.notice ul {}
+.notice ul li {
+    padding-left: 8px;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; /* 한줄로 표현 */
+}
+.notice ul li a {font-size: 12px;}
+.notice a.more {
+    position: absolute; right: 0; top: 0;
+    width: 17px; height: 17px; display: block;
+    background: url(../img/icon.png) -150px -90px;
+}
+
+/* 게시판2 */
+.notice2 {position: relative; margin-top: 15px;}
+.notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.notice2 ul {
+}
+.notice2 li {
+    padding-left: 8px;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    overflow: hidden; 
+    font-size: 12px;
+}
+.notice2 ul li a {
+    float: left; width: 66%; 
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; 
+}
+.notice2 ul li span {float: right; width: 30%; text-align: right;}
+.notice2 a.more {
+    position: absolute; right: 0; top: 0;
+    width: 17px; height: 17px; display: block;
+    background: url(../img/icon.png) -150px -90px;
 }
