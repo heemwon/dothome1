@@ -328,3 +328,33 @@
 .notice_hover2 li a strong {
     font-size: 12px; padding-top: 3px; display: inline-block;
 }
+
+/* 탭 메뉴 */
+.tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;}
+.tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px;}
+.tab_menu ul li a {padding: 5px 10px; display: block;}
+.tab_menu ul li ul {position: absolute; left: 0; top: 48px; border: 0;}
+.tab_menu ul li ul li {
+    border: 0; float: none; padding-left: 18px; 
+    background: url(../img/dot.gif) no-repeat 10px 8px;
+}
+.tab_menu ul li ul li a {padding: 0 0 3px 0;}
+.tab_menu ul li.active {background: #2c94c4;}
+.tab_menu ul li.active a {color: #fff;}
+.tab_menu ul li.active ul li a {color: #333;}
+
+/* 최신 공지사항 */
+.notice4 {position: relative; border: 1px solid #ccc; margin-top: 15px;}
+.notice4 h4 {border-bottom: 1px solid #ccc; padding: 8px 10px;}
+.notice4 h4 em {color: red;}
+.notice4 ul {padding: 10px;}
+.notice4 li {overflow: hidden;}
+.notice4 li a {
+    float: left; width: 65%; 
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+    background: url(../img/dot.gif) no-repeat 1px 8px;
+    padding-left: 10px;
+}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 a.more {position: absolute; top: 9px; right: 9px;}
