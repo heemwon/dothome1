@@ -7,5 +7,7 @@
 <a href="https://heemwon.github.io/dothome1/">바로가기</a>
 
 #제이쿼리 예제
+<br>
 find() : <a href="https://heemwon.github.io/dothome1/jquery/jquery04_find2.html">바로가기</a>
+<br>
 addClass() : <a href="https://heemwon.github.io/dothome1/jquery/jquery06_addClass2.html">바로가기</a>
