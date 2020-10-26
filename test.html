@@ -1,20 +1,45 @@
-<!doctype html>
-<html lang="ko">
-	<head>
-		<meta charset="utf-8">
-		<title>JavaScript</title>
-		<style>
-			body {
-				font-family: Consolas, monospace;
-			}
-		</style>
-	</head>
-	<body>
-		<script>
-			document.write( "<p>parseInt( '12.68' ) : " + parseInt( '12.68' ) + "</p>" );
-			document.write( "<p>parseInt( '100', 10 ) : " + parseInt( '100', 10 ) + "</p>" );
-			document.write( "<p>parseInt( '100', 2 ) : " + parseInt( '100', 2 ) + "</p>" );
-			document.write( "<p>parseInt( '0x100' ) : " + parseInt( '0x100' ) + "</p>" );
-		</script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#wrap {}
+		#header {width: 100%; height: 72px; background: #000;}
+		#banner {width: 100%; height: 403px; background: #111;}
+		#contents {width: 100%;}
+		#footer {width: 100%; height: 311px; background: #222;}
+
+		#cont1 {width: 100%; height: 371px; background: #333;}
+		#cont2 {width: 100%; height: 395px; background: #444;}
+		#cont3 {width: 100%; height: 537px; background: #555;}
+
+		.container {width: 1140px; height: inherit; margin: 0 auto; background: rgba(233, 233, 233, 0.3);}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="container"></div>
+		</div>
+		<div id="banner">
+			<div class="container"></div>
+		</div>
+		<div id="contents">
+			<div id="cont1">
+				<div class="container"></div>
+			</div>
+			<div id="cont2">
+				<div class="container"></div>
+			</div>
+			<div id="cont3">
+				<div class="container"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container"></div>
+		</div>
+	</div>
+</body>
 </html>
