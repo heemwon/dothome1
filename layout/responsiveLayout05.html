@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃5</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        .container {width: 1200px; margin: 0 auto;}
+        #header {width: 100%; height: 50px; background: #B1DFFE;}
+        #banner {width: 100%; height: 200px; background: #7CCCFE;}
+        #left {width: 30%; height: 300px; background: #3DB7FC; float: left;}
+        #right1 {width: 70%; height: 150px; background: #00A8FC; float: left;}
+        #right2 {width: 70%; height: 150px; background: #0099FA; float: left;}
+        #cont1 {width: 30%; height: 300px; background: #008BEC; float: left;}
+        #cont2 {width: 35%; height: 300px; background: #007AD9; float: left;}
+        #cont3 {width: 35%; height: 300px; background: #0068C7; float: left;}
+        #footer1 {width: 100%; height: 300px; background: #00A8FC; clear: both;}
+        #footer2 {width: 100%; height: 50px; background: #3DB7FC;}
+
+        #footer1 > .foot {
+            width: 17%; margin: 4%; height: 200px; background: #007AD9;
+            float: left; border-radius: 10px;
+        }
+
+        @media(max-width: 1210px){
+            .container {width: 100%;}
+            #cont1 {display: none;}
+            #cont2 {width: 50%;}
+            #cont3 {width: 50%;}
+            #footer1 > .foot {width: 24%;}
+            #footer1 > .foot:nth-child(4n) {display: none;}
+        }
+
+        @media(max-width: 900px){
+            #cont2 {width: 100%; height: 200px;}
+            #cont3 {width: 100%; height: 200px;}
+            #footer1 > .foot {width: 20%; margin: 5%;}
+        }
+
+        @media(max-width: 480px){
+            #left {width: 100%; height: 100px;}
+            #right1 {width: 100%; height: 100px;}
+            #right2 {width: 100%; height: 100px;}
+            #footer1 {height: 740px;}
+            #footer1 > .foot {width: 90%; margin: 5%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div id="header"></div>
+            <div id="banner"></div>
+            <div id="left"></div>
+            <div id="right1"></div>
+            <div id="right2"></div>
+            <div id="cont1"></div>
+            <div id="cont2"></div>
+            <div id="cont3"></div>
+            <div id="footer1">
+                <div class="foot"></div>
+                <div class="foot"></div>
+                <div class="foot"></div>
+                <div class="foot"></div>
+            </div>
+            <div id="footer2"></div>
+        </div>
+    </div>
+</body>
+</html>
