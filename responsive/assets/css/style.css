@@ -10,8 +10,36 @@
 .header .header_menu a {color: #fff; transition: color 0.3s; padding: 8px 0 6px 10px; display: inline-block; font-family: "Abel";}
 .header .header_menu a:hover {color: #ccc;}
 .header .header_tit {text-align: center; margin-top: 55px; text-transform: uppercase; font-family: "Abel";}
-.header .header_tit h1 {background: #51b0dc; display: inline-block; letter-spacing: 2px; font-weight: 900; color: #fff; font-size: 30px; padding: 5px 30px; }
-.header .header_tit a {background: #4a9abf; display: inline-block; font-size: 16px; padding: 10px 20px; margin-top: -7px; color: #fff;}
+.header .header_tit h1 {background: #51b0dc; display: inline-block; letter-spacing: 2px; font-weight: 900; color: #fff; font-size: 30px; padding: 5px 30px; transition: box-shadow 0.5s ease-in-out;}
+.header .header_tit h1:hover {
+    box-shadow: inset 230px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset 200px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset 170px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset 140px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset 110px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset -230px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset -200px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset -170px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset -140px 0 3px 0 rgba(24, 88, 119, 0.3),
+                inset -110px 0 3px 0 rgba(24, 88, 119, 0.3);
+    }
+.header .header_tit a {background: #4a9abf; display: inline-block; font-size: 16px; padding: 10px 20px; margin-top: -7px; color: #fff;  transition: box-shadow 0.5s ease-in-out;}
+.header .header_tit a:hover {
+    box-shadow: inset 10px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 20px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 30px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 40px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 50px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 60px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset 70px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -10px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -20px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -30px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -40px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -50px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -60px 0 3px 0 rgba(30, 94, 124, 0.3),
+                inset -70px 0 3px 0 rgba(30, 94, 124, 0.3);
+    }
 .header .header_icon {}
 
 /* 미디어쿼리 */
