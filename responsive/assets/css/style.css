@@ -160,7 +160,7 @@
 
 @media (max-width: 960px){
     #cont_center {margin-right: 0;}
-    #cont_right {position: static; width: 100%; height: 400px;
+    #cont_right {position: static; width: 100%; height: 400px;}
 }
 
 @media (max-width: 768px){
