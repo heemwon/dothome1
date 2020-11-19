@@ -1,111 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLOVA 사이트 만들기</title>
-    <style>
-        /* font */
-        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-        .nanumsquare {
-            font-family: 'NanumSquare', sans-serif !important;
-        }
-
-        /* reset */
-        * {margin: 0; padding: 0;}
-        body {font-family: 'NanumSquare', sans-serif !important;}
-        ul, ol {list-style: none;}
-
-        /* layout */
-        #header {width: 100%; height: 100px; background: #111;}
-        #banner {width: 100%; height: 600px; background: #222;}
-        #cont1 {width: 100%; height: 735px; background: #333;}
-        #cont2 {width: 100%; height: 750px; background: #444;}
-        #cont3 {width: 100%; height: 290px; background: #555;}
-        #cont4 {width: 100%; height: 930px; background: #666;}
-        #cont5 {width: 100%; height: 290px; background: #777;}
-        #cont6 {width: 100%; height: 310px; background: #888;}
-        #footer {width: 100%; height: 220px; background: #999;}
-
-        /* container */
-        .container {width: 1200px; height: inherit; margin: 0 auto; background: rgba(233, 233, 233, 0.4);}
-
-        /* header */
-        .header {overflow: hidden;}
-        .header a {width: 20%; float: left;}
-        .header .category {width: 60%; float: left;}
-        .header .category li {float: left;}
-        .header .btn {width: 20%; float: left;}
-        .header .btn li {float: left;}
-
-    </style>
-</head>
+<html>
 <body>
-    <div id="wrap">
-        <header id="header">
-            <div class="container">
-                <div class="header">
-                    <a href="#">로고</a>
-                    <ul class="category">
-                        <li>기술 · 솔루션</li>
-                        <li>제품</li>
-                        <li>플랫폼</li>
-                        <li>파트너</li>
-                        <li>리서치</li>
-                    </ul>
-                    <ul class="btn">
-                        <li>Biz Start</li>
-                        <li>비즈니스 문의</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <!-- //header -->
 
-        <nav id="banner">
-            <div class="container"></div>
-        </nav>
-        <!-- //banner -->
+<p>Example list:</p>
 
-        <section id="contents">
-            <article id="cont1">
-                <div class="container"></div>
-            </article>
-            <!-- //cont1 -->
+<ul>
+  <li id="item1">Coffee (first li)</li>
+  <li id="item2">Tea (second li)</li>
+  <li id="item3">Water!</li>
+</ul>
 
-            <article id="cont2">
-                <div class="container"></div>
-            </article>
-            <!-- //cont2 -->
+<p id="demo1"></p>
+<p id="demo2"></p>
 
-            <article id="cont3">
-                <div class="container"></div>
-            </article>
-            <!-- //cont3 -->
+<script>
+function myFunction() {
+    var x = document.getElementById("item2").nextElementSibling.innerHTML;
+    var y = document.getElementById("item2").previousElementSibling.innerHTML; 
+    document.getElementById("demo1").innerHTML = x;
+    document.getElementById("demo2").innerHTML = y;
+}
 
-            <article id="cont4">
-                <div class="container"></div>
-            </article>
-            <!-- //cont4 -->
-
-            <article id="cont5">
-                <div class="container"></div>
-            </article>
-            <!-- //cont5 -->
-
-            <article id="cont6">
-                <div class="container"></div>
-            </article>
-            <!-- //cont6 -->
-
-        </section>
-        <!-- //contents -->
-
-        <footer id="footer">
-            <div class="container"></div>
-        </footer>
-        <!-- //footer -->
-
-    </div>
+myFunction();
+</script>
 </body>
 </html>
