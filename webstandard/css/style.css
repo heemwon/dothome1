@@ -52,7 +52,7 @@
         .nav > div h3 {font-size: 18px; color: #25a2d0; margin-bottom: 4px;}
         .nav > div ol {overflow: hidden;}
         .nav > div ol li {float: left; width: 50%;}
-        .nav > div.last ol li {width: 100%;}
+        .nav > div.last ol li {width: 100%;}d
         .nav > div ol li a:hover {text-decoration: underline;}
 
         /* 타이틀 */
