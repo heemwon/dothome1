@@ -237,6 +237,24 @@
 .new .new_right .btn a.white {background-color: #fff; margin-right: 2%; color: #3a0e6a; border: 1px solid #3a0e6a;}
 .new .new_right .btn a.purple {background-color: #3a0e6a; color: #fff; border: 1px solid #6e40c4;}
 
+/* help */
+.help {}
+.help article {float: left; width: 32%; height: 350px; margin-right: 2%;}
+.help article > div {border: 1px solid #dbdbdb; height: 350px;}
+.help article.help_box3 {margin-right: 0;}
+.help article h3 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+
+
+/* 공지사항 */
+.notice {}
+.notice ul {}
+.notice ul li {float:left; text-align: center;}
+.notice ul li a {border: 1px solid #dbdbdb; font-size: 15px; color: #666; display: block; width: 80px; p10-20}
+.notice ul li ul {}
+.notice ul li ul li {}
+.notice ul li ul li dt {}
+.notice ul li ul li dd {}
+
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
