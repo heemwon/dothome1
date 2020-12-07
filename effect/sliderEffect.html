@@ -208,6 +208,231 @@ setInterval(function(){
                 </div>
                 <!-- //Intro2 -->
 
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Slider Effect - 03</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 - 가로로 이동하기(연속적) (자바스크립트/제이쿼리)</p>
+                    <iframe width="100%" height="800px" src="sliderEffect03-jquery.html" frameborder="0"></iframe>
+<h3>JavaScript</h3>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+<h3>jQuery</h3>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+
+setInterval(function(){
+    sliderImg.animate({left: "-800px"},400, function(){
+        $(".slider:first-child").appendTo(sliderImg);
+        sliderImg.css("left", "");
+    });
+},3000);
+</code></pre>
+                </div>
+                <!-- //Intro3 -->
+
+                <!-- Intro4 -->
+                 <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Slider Effect - 04</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 - 위로 넘기기 (자바스크립트/제이쿼리)</p>
+                    <iframe width="100%" height="800px" src="sliderEffect04-jquery.html" frameborder="0"></iframe>
+<h3>JavaScript</h3>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+<h3>jQuery</h3>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+
+let currentIndex = 0;
+let sliderCount = slider.length -1;
+let sliderHeight = slider.height();
+let sliderSpeed = 400;
+
+// 한바퀴
+// setInterval(function(){
+//     currentIndex &lt; sliderCount ? currentIndex++ : currentIndex = 0;
+
+//     let sliderPosition = currentIndex * -sliderHeight;
+
+//     sliderImg.animate({top: sliderPosition},sliderSpeed);
+// }, 3000);
+
+// 연속적으로
+setInterval(function(){
+    sliderImg.animate({top: -sliderHeight},sliderSpeed, function(){
+        $(".slider:eq(0)").appendTo(sliderImg);
+        sliderImg.css("top","");
+    });
+},3000);
+</code></pre>
+                </div>
+                <!-- //Intro4 -->
+
+                <!-- Intro5 -->
+                 <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Slider Effect - 05</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 - 버튼 만들기 (자바스크립트/제이쿼리)</p>
+                    <iframe width="100%" height="800px" src="sliderEffect05-jquery.html" frameborder="0"></iframe>
+<h3>JavaScript</h3>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+<h3>jQuery</h3>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+const sliderBtn = $(".slider-btn");
+
+let currentIndex = 0;
+let sliderCount = slider.length;
+let sliderWidth = slider.width();
+let sliderHeight = slider.height();
+let sliderTotalWidth = sliderWidth * sliderCount;
+
+sliderImg.css({width: sliderTotalWidth, height: sliderHeight, marginLeft: -sliderWidth});
+$(".slider:last-child").prependTo(sliderImg);
+
+function moveLeft(){
+    sliderImg.animate({left: + sliderWidth}, 400, function(){
+        $(".slider:last-child").prependTo(sliderImg);
+        sliderImg.css("left", "");
+    });
+}
+function moveRight(){
+    sliderImg.animate({left: + -sliderWidth}, 400, function(){
+        $(".slider:first-child").appendTo(sliderImg);
+        sliderImg.css("left", "");
+    });
+}
+
+sliderBtn.find(".prev").click(function(){
+    moveLeft();
+});
+sliderBtn.find(".next").click(function(){
+    moveRight();
+});
+</code></pre>
+                </div>
+                <!-- //Intro5 -->
+
+                 <!-- Intro6 -->
+                 <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Slider Effect - 06</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 - 3단 슬라이드 만들기 (자바스크립트/제이쿼리)</p>
+                    <iframe width="100%" height="800px" src="sliderEffect06-jquery.html" frameborder="0"></iframe>
+<h3>JavaScript</h3>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+<h3>jQuery</h3>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+const sliderBtn = $(".slider-btn");
+
+let sliderCount = slider.length;
+let sliderWidth = slider.outerWidth();
+let sliderShowNumber = 3;
+let currentIndex = 0;
+
+let sliderCopy = $(".slider:lt("+sliderShowNumber+")").clone();
+sliderImg.append(sliderCopy);
+console.log(sliderCopy)
+
+function moveLeft(){
+    if(currentIndex == 0){ // 처음 이미지
+        currentIndex = sliderCount;
+        sliderImg.css("margin-left", sliderWidth * -currentIndex);
+    }
+    currentIndex--;
+    sliderImg.stop().animate({"margin-left": -sliderWidth * currentIndex}, 400);
+}
+
+function moveRight(){
+    if (currentIndex == sliderCount){ // 마지막 이미지
+        currentIndex = 0;
+        sliderImg.css("margin-left", currentIndex);
+    }
+    currentIndex++;
+    sliderImg.stop().animate({"margin-left": -sliderWidth * currentIndex}, 400);
+}
+
+
+// 버튼을 클릭하기
+sliderBtn.on("click","a",function(){
+    if($(this).hasClass("prev")){
+        moveLeft();
+    } else {
+        moveRight();
+    }
+});
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
+
+                 <!-- Intro7 -->
+                 <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Slider Effect - 07</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 - 버튼, 닷 만들기 (자바스크립트/제이쿼리)</p>
+                    <iframe width="100%" height="800px" src="sliderEffect07-jquery.html" frameborder="0"></iframe>
+<h3>JavaScript</h3>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+<h3>jQuery</h3>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+const sliderBtn = $(".slider-btn");
+const sliderDot = $(".slider-dot");
+
+let sliderCount = slider.length;
+let sliderWidth = slider.outerWidth();
+let sliderHeight = slider.outerHeight();
+let sliderTotalWidth = sliderWidth * sliderCount;
+let currentIndex = 0;
+let dotIndex = "";
+
+sliderImg.css({width: sliderTotalWidth, height: sliderHeight});
+
+// 이미지 움직이기
+function gotoSlider (index){
+    sliderImg.animate({left: -sliderWidth * index}, 400);
+    currentIndex = index;
+    sliderDot.find("a").removeClass("active").eq(currentIndex).addClass("active");
+}
+
+// 이미지 갯수만큼 닷 버튼 만들기
+slider.each(function(){
+    // dotIndex += "&lt;a href='#'&gt;&lt;/a&gt;";
+    let sliderName = $(this).find("img").attr("alt");
+    let sliderSrc = $(this).find("img").attr("src");
+    dotIndex += "&lt;a href='#' style='background-image:url("+sliderSrc+")'>"+sliderName+"&lt;/a&gt;";
+});
+sliderDot.html(dotIndex);
+sliderDot.find("a").eq(0).addClass("active");
+
+// 닷 버튼 클릭하기
+sliderDot.on("click","a", function(e){
+    e.preventDefault();
+    gotoSlider($(this).index());
+});
+
+// 버튼 클릭하기
+sliderBtn.on("click","a", function(e){
+    e.preventDefault();
+    let nextIndex = (currentIndex + 1) % sliderCount;
+    let prevIndex = (currentIndex - 1) % sliderCount;
+    if(currentIndex == 0) prevIndex = sliderCount - 1;
+
+    if($(this).hasClass("prev")){
+        gotoSlider(prevIndex);
+    } else {
+        gotoSlider(nextIndex);
+    }
+});
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+
 
             </div>
             <!-- //col-md-12 -->
