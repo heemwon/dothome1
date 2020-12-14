@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse Effect05 - jQuery</title>
+    <title>Mouse Effect06 - Javascript</title>
     <style>
         @font-face {
             font-family: 'TmoneyRoundWindExtraBold';
@@ -20,7 +20,7 @@
 
         body {
             font-family: 'TmoneyRoundWindExtraBold';
-            background: url(img/images10@2.jpg) no-repeat center center;
+            background: url(img/images18@2.jpg) no-repeat center center;
             background-size: cover;
             background-color:#999;
             background-blend-mode: soft-light;
@@ -35,7 +35,7 @@
             content: '';
             position: absolute; left: 0; top: 0;
             width: 100%; height: 100vh;
-            background: rgba(8, 31, 36, 0.7);
+            background: rgba(45, 43, 51, 0.4);
         }
         /* info */
         .info {
@@ -81,39 +81,35 @@
         /* main */
         .contents {
             display: flex;
-            align-items: center;
+            position: relative;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
             justify-content: center;
-            width: 100%; height: 100vh;
-            overflow: hidden;
+            align-items: center;
         }
-        .move-image {
-            position: relative;
-            cursor: none; 
+        .contents p {
+            max-width: 70vw;
+            font-size: 3vw;
+            text-align: justify;
         }
-        .move-image .mimg {
-            width: 50vw;
-            height: 60vh;
-            position: relative;
-            overflow: hidden;
-            transition: transform 500ms cubic-bezier(0.25, 0.45, 0.45, 0.84);
+        .contents p:first-child {
+            font-size: 2vw;
+            line-height: 2;
         }
-        .move-image:hover .mimg {
-            transform: scale(1.025);
+        .contents p em {
+            color: orange;
+            border-bottom: 2px dashed orange;
+            font-style: normal;
         }
-        .move-image .mimg .img {
-            position: absolute;
-            left: -5%; top: -5%;
-            width: 110%; height: 110%;
-            object-fit: cover;
-            transition: transform 500ms cubic-bezier(0.25, 0.45, 0.45, 0.84);
-        }
-        .move-image .mtxt {
-            position: absolute;
-            left: 50%; top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            font-size: 1.3rem;
-            white-space: nowrap;
+        .contents p .word {
+            color: orange;
+            font-size: 4vw;
+            /* text-shadow: 5px -10px 0px rgba(255, 165, 0, 0.4),
+                        -5px 10px 0px rgba(255, 35, 251, 0.4),
+                        10px -5px 0px rgba(255, 255, 73, 0.4),
+                        -10px 5px 0px rgba(102, 249, 255, 0.4); */
         }
         .cursor {
             position: absolute;
@@ -123,15 +119,16 @@
             z-index: 1000;
             user-select: none;
             pointer-events: none;
-            transition: transform 500ms cubic-bezier(0.25, 0.45, 0.45, 0.84);
+            transform: scale(.5);
+            transition: transform 0.3s ease-in-out;
         }
     </style>
 </head>
 <body>
     <!-- info -->
     <div class="info left">
-        <h1>Mouse Effect05 - jQuery</h1>
-        <p>마우스 방향에 따라 움직이기</p>
+        <h1>Mouse Effect06 - Javascript</h1>
+        <p>마우스 방향에 따라 Shadow 움직이기</p>
     </div>
     <div class="info right">
         <ul>
@@ -139,18 +136,11 @@
             <li><a href="mouseEffect02-jquery.html">2</a><a href="mouseEffect02-javascript.html">2</a></li>
             <li><a href="mouseEffect03-jquery.html">3</a><a href="mouseEffect03-javascript.html">3</a></li>
             <li><a href="mouseEffect04-jquery.html">4</a><a href="mouseEffect04-javascript.html">4</a></li>
-            <li><a href="mouseEffect05-jquery.html" class="active">5</a><a href="mouseEffect05-javascript.html">5</a></li>
-            <li><a href="mouseEffect06-jquery.html">6</a><a href="mouseEffect06-javascript.html">6</a></li>
+            <li><a href="mouseEffect05-jquery.html">5</a><a href="mouseEffect05-javascript.html">5</a></li>
+            <li><a href="mouseEffect06-jquery.html">6</a><a href="mouseEffect06-javascript.html" class="active">6</a></li>
             <li><a href="mouseEffect07-jquery.html">7</a><a href="mouseEffect07-javascript.html">7</a></li>
             <li><a href="mouseEffect08-jquery.html">8</a><a href="mouseEffect08-javascript.html">8</a></li>
             <li><a href="mouseEffect09-jquery.html">9</a><a href="mouseEffect09-javascript.html">9</a></li>
-        </ul>
-    </div>
-
-    <div class="info bottom">
-        <ul>
-            <li>clientX : <span class="clientX">0</span></li>
-            <li>clientY : <span class="clientY">0</span></li>
         </ul>
     </div>
 
@@ -158,35 +148,49 @@
     
     <main>
         <div class="contents">
-            <div class="cursor"></div>
-            <div class="move-image">
-                <div class="mimg"><img class="img" src="img/images10.jpg" alt="이미지"></div>
-                <div class="mtxt">
-                    <p>I never dreamed about success, I worked for it.</p>
-                    <p>나는 결코 성공에 대해 꿈꾸지 않았다. 나는 꿈을 위해 행동했다.</p>
-                </div>
-            </div>
+            <p>The way toget started is to quit talking and <em class="word">begin</em> doing</p>
+            <p>무언가를 시작하려면 말은 멈추고 <em>행동</em>해야 한다.</p>
+            <p>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+            </p>
         </div>
     </main>
 
     <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
+        const word = document.querySelector(".word");
 
-       $(".move-image").mousemove(function(e){
-            gsap.to(".cursor", {duration: 0.2, left: e.clientX - 10, top: e.clientY - 10});
-            let x = e.clientX - ($(".move-image").width()/2 + $(".move-image").position().left);
-            let y = e.clientY - ($(".move-image").height()/2 + $(".move-image").position().top);
+        // const shadow = e => {
+        //     const {x,y} = e;
+        //     const rect = word.getBoundingClientRect();
+        //     const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+        //     const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
 
-            $(".img").attr({"style":"transform: translate("+x/20+"px, "+y/20+"px)"})
-       });
+        //     word.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+        //                             ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+        //                             ${mouseY}px ${-mouseX}px 0px rgba(255, 255, 73, 0.4),
+        //                             ${-mouseY}px ${mouseX}px 0px rgba(102, 249, 255, 0.4)`
+        // };
+        // window.addEventListener("mousemove", shadow);
 
-    // 출력용
-    $(window).mousemove(function(e){
-        $(".clientX").text(e.clientX);
-        $(".clientY").text(e.clientY);
-    });
+        // 다중일 때
+        window.addEventListener("mousemove", e => {
+            document.querySelectorAll(".word").forEach(elem => {
+                const {x,y} = e;
+                const rect = elem.getBoundingClientRect();
+                const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+                const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
+
+                elem.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+                                        ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+                                        ${mouseY}px ${-mouseX}px 0px rgba(255, 255, 73, 0.4),
+                                        ${-mouseY}px ${mouseX}px 0px rgba(102, 249, 255, 0.4)`
+            });
+        });
     </script>
 </body>
 </html>
