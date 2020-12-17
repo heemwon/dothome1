@@ -43,6 +43,7 @@
     font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     letter-spacing: 3px;
+    animation: flash 1.2s 1.5 linear;
 }
 #intro .cloud {
     background: url(../img/cloud.png);
@@ -273,6 +274,7 @@
     left: 0; bottom: 0;
 }
 #skills .door {
+    position: relative;
     width: 710px; height: 1000px;
     background: url(../img/door_blue.png);
     background-size: cover;
@@ -361,8 +363,43 @@
 .site {
     position: relative;
     width: 1920px; height: 1000px;
-    background: url(../img/back01.png) no-repeat;
+    background: url(../img/back01.png);
     background-size: cover;
+}
+.site .cloud {
+    width: 210px; height: 150px;
+    background: url(../img/cloud.png);
+    background-size: cover;
+    position: absolute;
+    right: 30%; top: 10%;
+}
+.site .tree {
+    width: 450px; height: 600px;
+    background: url(../img/tree_left02.png);
+    background-size: cover;
+    position: absolute;
+    right: 10%; bottom: 8%;
+}
+.site .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.site .store {
+    width: 970px; height: 770px;
+    background: url(../img/store.png);
+    background-size: cover;
+    position: absolute;
+    left: 10%; bottom: 13%;
+}
+.site .storeLight {
+    width: 310px; height: 200px;
+    background: url(../img/light.png);
+    background-size: cover;
+    position: absolute;
+    left: 27%; top: 13%;
 }
 .site .siteTitle h2 {
     width: 10%;
@@ -371,13 +408,13 @@
     text-transform: uppercase;
     color: #fff;
     position: absolute;
-    left: 420px; top: 210px;
+    left: 23%; top: 17%;
     letter-spacing: 2px;
     line-height: 1.1;
 }
 .site .siteTalk {
     position: absolute;
-    right: 400px; top: 380px;
+    right: 21%; top: 33%;
     width: 335px; height: 270px;
     background-image: url(../img/talk.png);
     background-size: cover;
@@ -455,20 +492,97 @@
 
 
 .mart {
+    position: relative;
     width: 1920px; height: 1000px;
-    background: url(../img/site_back03.png) no-repeat;
+    background: url(../img/back01.png);
     background-size: cover;
 }
+.mart .tree {
+    background: url(../img/tree_left01.png);
+    background-size: cover;
+    width: 370px; height: 465px;
+    position: absolute;
+    right: 0; bottom: 10%;
+}
+.mart .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.mart .martImg {
+    width: 1325px; height: 840px;
+    background: url(../img/mart.png);
+    background-size: cover;
+    position: absolute;
+    left: 6%; bottom: 13%;
+}
+.mart .martLogo {
+    position: absolute;
+    left: 11%; top: 36%;
+}
+.mart .martLogo h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    width: 10%;
+    color: #D46249;
+    text-align: center;
+    line-height: 1;
+}
+.mart .cloud {
+    width: 210px; height: 150px;
+    background: url(../img/cloud.png);
+    background-size: cover;
+    position: absolute;
+    right: 15%; top: 20%;
+}
 
+/* react */
 .react {
     position: relative;
     width: 1920px; height: 1000px;
-    background: url(../img/site_back04.png) no-repeat;
+    background: url(../img/back01.png);
     background-size: cover;
+}
+.react .tree1 {
+    background: url(../img/tree_left03.png);
+    background-size: cover;
+    width: 260px; height: 350px;
+    position: absolute;
+    left: 10%; bottom: 10%;
+}
+.react .tree2 {
+    background: url(../img/tree_right02.png);
+    background-size: cover;
+    width: 265px; height: 355px;
+    position: absolute;
+    right: 8%; bottom: 10%;
+}
+.react .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.react .cloud {
+    width: 210px; height: 150px;
+    background: url(../img/cloud.png);
+    background-size: cover;
+}
+.react .cloud1 {
+    position: absolute;
+    left: 10%; top: 5%;
+}
+.react .cloud2 {
+    position: absolute;
+    right: 15%; top: 15%;
 }
 .react .reactTalk {
     position: absolute;
-    left: 300px; top: 380px;
+    left: 16%; top: 33%;
     width: 335px; height: 270px;
     background-image: url(../img/talk.png);
     background-size: cover;
@@ -488,6 +602,13 @@
     width: 195px; height: 270px;
     background: url(../img/sub_cha_cow.png);
     background-size: cover;
+}
+.react .reactImg {
+    width: 785px; height: 350px;
+    background: url(../img/nike_shoes.png);
+    background-size: cover;
+    position: absolute;
+    left: 30%; bottom: 10%;
 }
 .react .reactTitle {
 }
