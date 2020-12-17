@@ -1,0 +1,23 @@
+/* layout */
+#vertical1 {position: relative; z-index: 6000;}
+#horizontal1 {position: relative; z-index: 5000; height: 17280px;}
+.vertical1 {position: relative;}
+.horizontal1 {
+    overflow: hidden;
+    width: 17280px;
+    position: fixed;
+    left: 0; top: 0;
+}
+
+#skills {float: left;}
+#site {float: left;}
+#ani {float: left;}
+
+.car {float: left;}
+.site {float: left;}
+.mart {float: left;}
+.react {float: left;}
+.figma {float: left;}
+.siteLast {float: left;}
+
+#horizontal2 {display: none;}

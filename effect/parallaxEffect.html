@@ -103,7 +103,12 @@
                     <h2 id="intro1" class="page-header">Parallax 01</h2>
                     <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
                     <iframe width="100%" height="570px" src="parallax01-jquery.html" frameborder="0"></iframe>
-                    <h3>jQuery</h3>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para1" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para2" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para1">
 <pre class="line-numbers language-js"><code>$(window).scroll(function(){
     const scrollTop = $(window).scrollTop() + $(window).height()/2;
 
@@ -219,7 +224,7 @@ $(window).scroll(function(){
     const scrollTop = $(window).scrollTop() + $(window).height()/2;
     $(".scrollTop").text(parseInt(scrollTop));
     
-    for(let i=1; i<=9; i++){
+    for(let i=1; i&lt;=9; i++){
         $(".s"+i+"OffsetTop").text( parseInt($("#section"+i).offset().top) );
         if( scrollTop > $("#section"+i).offset().top ){
             $(".s"+i+"OffsetTop").css("color","red");
@@ -249,7 +254,8 @@ $(window).scroll(function(){
     });
 });
 </code></pre>
-<h3>JavaScript</h3>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para2">
 <pre class="line-numbers language-js"><code>window.addEventListener("scroll", function(){
     let pageYOffset = window.pageYOffset;
 
@@ -313,6 +319,8 @@ $(window).scroll(function(){
     }
 });
 </code></pre>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro1 -->
 
@@ -321,7 +329,12 @@ $(window).scroll(function(){
                     <h2 id="intro2" class="page-header">Parallax 02</h2>
                     <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
                     <iframe width="100%" height="570px" src="parallax02-jquery.html" frameborder="0"></iframe>
-<h3>jQuery</h3>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para3" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para4" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para3">
 <pre class="line-numbers language-js"><code>$(window).scroll(function(){
     let scrollTop = $(window).scrollTop();
     // let offset1 =  (scrollTop - $("#section1").offset().top);
@@ -359,7 +372,8 @@ $(window).scroll(function(){
     $(".scrollTop").text(scrollTop);
 });
 </code></pre>
-<h3>JavaScript</h3>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para4">
 <pre class="line-numbers language-js"><code>window.addEventListener("scroll", function(){
     let pageYOffset = window.pageYOffset + screen.height/2;
 
@@ -490,6 +504,8 @@ $(window).scroll(function(){
     });
 });
 </code></pre>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro2 -->
 
@@ -498,7 +514,12 @@ $(window).scroll(function(){
                     <h2 id="intro3" class="page-header">Parallax 03</h2>
                     <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
                     <iframe width="100%" height="570px" src="parallax03-jquery.html" frameborder="0"></iframe>
-<h3>jQuery</h3>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para5" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para6" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para5">
 <pre class="line-numbers language-js"><code>let scrollTop = $(window).scrollTop();
 
 function scroll(){
@@ -515,7 +536,8 @@ function scroll(){
 
 scroll();
 </code></pre>
-<h3>JavaScript</h3>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para6">
 <pre class="line-numbers language-js"><code>let pageYOffset = window.pageYOffset;
 
 const scroll = () => {
@@ -544,6 +566,8 @@ const scroll = () => {
 
 scroll();
 </code></pre>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro3 -->
 
@@ -551,8 +575,13 @@ scroll();
                 <div class="bs-docs-section">
                     <h2 id="intro4" class="page-header">Parallax 04</h2>
                     <p class="bs-callout bs-callout-info">글자를 쪼개어 scrollTop과 OffsetTop을 활용한 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
-                    <iframe width="100%" height="570px" src="parallax03-jquery.html" frameborder="0"></iframe>
-<h3>jQuery</h3>
+                    <iframe width="100%" height="570px" src="parallax04-jquery.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para9" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para10" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para9">
 <pre class="line-numbers language-js"><code>// let text = $("#section1 .content-item-desc").text();
 // let split = text.split("").join("</span><span>");
 //     split = "<span>" + split + "</span>";
@@ -594,11 +623,12 @@ $(window).scroll(function(){
     });
 });
 </code></pre>
-<h3>JavaScript</h3>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para10">
 <pre class="line-numbers language-js"><code>// let text = document.querySelector("#section1 .content-item-desc");
 // let splitText = text.innerText;
-// let splitWrap = splitText.split("").join("</span><span aria-hidden:'true'>");
-//     splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>"
+// let splitWrap = splitText.split("").join("&lt;/span&gt;&lt;span aria-hidden:'true'&gt;");
+//     splitWrap = "&lt;span aria-hidden:'true'&gt;" + splitWrap + "</span>"
 
 // text.innerHTML = splitWrap;
 // text.setAttribute("aria-label", splitText);
@@ -606,8 +636,8 @@ $(window).scroll(function(){
 // 글씨 쪼개기(한번에, forEach)
 document.querySelectorAll(".content-item-desc").forEach(elem => {
     let splitText = elem.innerText;
-    let splitWrap = splitText.split("").join("</span><span aria-hidden:'true'>");
-        splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>";
+    let splitWrap = splitText.split("").join("&lt;/span>&lt;span aria-hidden:'true'&gt;");
+        splitWrap = "&lt;span aria-hidden:'true'&gt;" + splitWrap + "&lt;/span&gt;";
     elem.innerHTML = splitWrap;
     elem.setAttribute("aria-label", splitText);
 });
@@ -680,8 +710,45 @@ window.addEventListener("scroll", () => {
     }
 });
 </code></pre>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro4 -->
+
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Parallax 05</h2>
+                    <p class="bs-callout bs-callout-info">스크롤 버튼을 클릭하면 해당 섹션으로 넘어가는 효과를 완성했습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax05-jquery.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para7" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para8" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para7">
+<pre class="line-numbers language-js"><code>$("a[href^='#']").click(function(e){
+    e.preventDefault();
+    let target = $($(this).attr("href") );
+    
+    $("html, body").animate({scrollTop 
+        : target.offset().top }, 800, "easeInOutQuint");
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para8">
+<pre class="line-numbers language-js"><code>document.querySelectorAll("a[href^='#']").forEach(elem => {
+    elem.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        })
+    });
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
 
             </div>
 

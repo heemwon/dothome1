@@ -6,7 +6,10 @@
     font-weight: normal;
     font-style: normal;
 }
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 a {color: #fff; text-decoration: none;}
 a:hover {color: #2D5E85;}
 ul, ol {list-style: none;}
+body {
+    overflow-x: scroll !important;
+}

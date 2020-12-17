@@ -7,7 +7,7 @@
     margin-left: -200px;
     background: url(../img/walk_character.svg);
     background-size: 3740px;
-    z-index: 200;
+    z-index: 7000;
 }
 .heewon.walk {
     animation: walk 0.8s steps(10, start) infinite;
@@ -26,37 +26,111 @@
     0% {background-position: 0px -270px;}
     100% {background-position: -3740px -270px;}
 }
+
 /* main */
-#section1 {
+#intro {
     position: relative;
-    width: 100%; height: 100vh;
-    background: url(../img/main_background.jpg) no-repeat;
+    background: url(../img/back01.png);
+    width: 100%; height: 1000px;
     background-size: cover;
 }
-#section1 h2 {
+#intro .introTitle h2 {
     position: absolute;
-    left: 10%; top: 69%;
+    left: 100px; bottom: 70px;
     width: 20%;
     color: #fff;
     font-size: 60px;
     font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     letter-spacing: 3px;
-    word-break: keep-all;
 }
-#section1 .mainCharacter {
+#intro .cloud {
+    background: url(../img/cloud.png);
+    background-size: cover;
+    width: 210px; height: 150px;
+}
+#intro .cloud.cloud1 {
     position: absolute;
-    left: 50%; top: 63%;
+    left: 10%; top: 15%;
+}
+#intro .cloud.cloud2 {
+    position: absolute;
+    left: 35%; top: 5%;
+}
+#intro .cloud.cloud3 {
+    position: absolute;
+    right: 10%; top: 25%;
+}
+#intro .tree1 {
+    background: url(../img/tree_left04.png);
+    background-size: cover;
+    width: 340px; height: 420px;
+    position: absolute;
+    left: 3%; bottom: 10%;
+}
+#intro .tree2 {
+    background: url(../img/tree_left03.png);
+    background-size: cover;
+    width: 260px; height: 350px;
+    position: absolute;
+    left: 25%; bottom: 10%;
+}
+#intro .tree3 {
+    background: url(../img/tree_left01.png);
+    background-size: cover;
+    width: 370px; height: 465px;
+    position: absolute;
+    left: 13%; bottom: 10%;
+}
+#intro .tree4 {
+    background: url(../img/tree_right01.png);
+    background-size: cover;
+    width: 195px; height: 250px;
+    position: absolute;
+    right: 23%; bottom: 10%;
+}
+#intro .tree5 {
+    background: url(../img/tree_right03.png);
+    background-size: cover;
+    width: 305px; height: 390px;
+    position: absolute;
+    right: 14%; bottom: 10%;
+}
+#intro .tree6 {
+    background: url(../img/tree_right02.png);
+    background-size: cover;
+    width: 265px; height: 355px;
+    position: absolute;
+    right: 4%; bottom: 10%;
+}
+#intro .waveBottom {
+    background: url(../img/main_wave.png);
+    background-size: cover;
+    width: 100%; height: 160px;
+    position: absolute;
+    right: 0; bottom: 0;
+}
+#intro .mainCha {
+    position: absolute;
+    left: 48%; bottom: 10%;
     margin-left: -100px;
-    width: 270px; height: 270px;
-    background: url(../img/main_cha_01.png) no-repeat;
-    background-size: 541px;
+    width: 195px; height: 270px;
+    background: url(../img/cha_hand.png);
+    background-size: cover;
+}
+#intro .mainChaDog {
+    position: absolute;
+    right: 43%; bottom: 10%;
+    margin-left: -100px;
+    width: 105px; height: 120px;
+    background: url(../img/cha_hand_dog.png);
+    background-size: cover;
 }
 
 /* about */
 #about {
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #D4D77D , #A8A7A3);
+    width: 100%; height: 1000px;
+    background-image: linear-gradient(to bottom, #D4D77D , #BEC1B7);
 }
 #about .aboutText {
     padding-top: 370px;
@@ -72,71 +146,222 @@
 
 /* skills */
 #skills {
-    height: 1050px;
-    background: url(../img/skills_background.jpg);
-    color: #fff;
     position: relative;
+    width: 3840px; height: 1000px;
+    background: url(../img/back02.png);
+    background-size: cover;
+    color: #fff;
 }
-#skills .skillsTitle {
-    width: 15%;
+#skills .tree1 {
+    width: 370px; height: 465px;
+    background: url(../img/tree_left01.png);
+    background-size: cover;
+    position: absolute;
+    left: 2%; bottom: 10%;
+}
+#skills .tree2 {
+    width: 260px; height: 350px;
+    background: url(../img/tree_left03.png);
+    background-size: cover;
+    position: absolute;
+    left: 12%; bottom: 10%;
+}
+#skills .tree3 {
+    width: 195px; height: 250px;
+    background: url(../img/tree_right01.png);
+    background-size: cover;
+    position: absolute;
+    left: 30%; bottom: 13%;
+}
+#skills .tree4 {
+    width: 305px; height: 390px;
+    background: url(../img/tree_right03.png);
+    background-size: cover;
+    position: absolute;
+    left: 40%; bottom: 10%;
+}
+#skills .tree5 {
+    width: 340px; height: 420px;
+    background: url(../img/tree_left05.png);
+    background-size: cover;
+    position: absolute;
+    right: 40%; bottom: 10%;
+}
+#skills .tree6 {
+    width: 260px; height: 350px;
+    background: url(../img/tree_left03.png);
+    background-size: cover;
+    position: absolute;
+    right: 36%; bottom: 8%;
+}
+#skills .tree7 {
+    width: 265px; height: 355px;
+    background: url(../img/tree_right02.png);
+    background-size: cover;
+    position: absolute;
+    right: 25%; bottom: 9%;
+}
+#skills .tree8 {
+    width: 310px; height: 390px;
+    background: url(../img/tree_right03.png);
+    background-size: cover;
+    position: absolute;
+    right: 8%; bottom: 8%;
+}
+#skills .waveTop {
+    width: 3840px; height: 635px;
+    background: url(../img/skills_wave_top.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; top: 0;
+}
+#skills .skillsTitle h2{
+    width: 10%;
     word-break:keep-all;
     font-family: 'yg-jalnan';
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1.2;
-    padding: 80px 0 0 50px;
+    position: absolute;
+    left: 2%; top: 5%;
 }
 #skills .skillsItem {
-    display: flex;
     font-family: 'Fredoka One', cursive;
-}
-#skills .skillsItem .itemName {
-    font-size: 25px;
-    text-transform: uppercase;
     text-align: center;
+    color: #fff;
+}
+#skills .skillsItem .itemName h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin-bottom: 10px;
-} 
+}
 #skills .skillsItem .itemPer {
-    font-size: 80px;
-    padding: 35px 20px;
-    border: 20px solid #fff;
+    font-size: 70px;
+    display: inline-block;
+    padding: 20px 10px;
+    border: 15px solid #fff;
     border-radius: 50%;
-} 
+}
 #skills .skillsItem .itemPer span {
-    font-size: 40px;
-} 
+    font-size: 30px;
+}
 #skills .skillsItem .item1 {
     position: absolute;
-    left: 40%; top: 20%;
+    left: 15%; top: 10%;
 }
 #skills .skillsItem .item2 {
     position: absolute;
-    left: 55%; top: 35%;
+    left: 23%; top: 25%;
 }
 #skills .skillsItem .item3 {
     position: absolute;
-    left: 70%; top: 40%;
+    left: 31%; top: 15%;
 }
 #skills .skillsItem .item4 {
     position: absolute;
-    left: 85%; top: 25%;
+    left: 40%; top: 13%;
 }
 #skills .skillsItem .item5 {
-    /* position: absolute;
-    left: 100%; top: 20%; */
+    position: absolute;
+    left: 48%; top: 10%;
+}
+#skills .waveBottom {
+    width: 3840px; height: 160px;
+    background: url(../img/skills_wave_bottom.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+#skills .door {
+    width: 710px; height: 1000px;
+    background: url(../img/door_blue.png);
+    background-size: cover;
+    position: absolute;
+    right: 0; top: 0;
+}
+#skills .skillsLast h2 {
+    width: 15%;
+    font-family: 'yg-jalnan';
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.3;
+    word-break: keep-all;
+    position: absolute;
+    right: 1%; top: 5%;
 }
 
-/* site */
-/* #site {display: flex;} */
+
+#site {}
 .car {
-    width: 1920px; height: 1050px;
-    background: url(../img/site_back01.png) no-repeat;
+    position: relative;
+    width: 1920px; height: 1000px;
+    background: url(../img/back01.png);
     background-size: cover;
+}
+.car .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.car .cloud {
+    background: url(../img/cloud.png);
+    background-size: cover;
+    width: 210px; height: 150px;
+}
+.car .cloud.cloud1 {
+    position: absolute;
+    left: 5%; top: 20%;
+}
+.car .cloud.cloud2 {
+    position: absolute;
+    left: 40%; top: 5%;
+}
+.car .cloud.cloud3 {
+    position: absolute;
+    right: 10%; top: 15%;
+}
+.car .tree1 {
+    width: 260px; height: 350px;
+    background: url(../img/tree_left03.png);
+    background-size: cover;
+    position: absolute;
+    left: 5%; bottom: 10%;
+}
+.car .tree2 {
+    width: 340px; height: 420px;
+    background: url(../img/tree_left04.png);
+    background-size: cover;
+    position: absolute;
+    right: 20%; bottom: 10%;
+}
+.car .tree3 {
+    width: 370px; height: 465px;
+    background: url(../img/tree_left01.png);
+    background-size: cover;
+    position: absolute;
+    right: 5%; bottom: 10%;
+}
+.car .carYellow {
+    width: 740px; height: 445px;
+    background: url(../img/car.png);
+    background-size: cover;
+    position: absolute;
+    left: 20%; bottom: 10%;
+}
+.car .carCloud {
+    width: 220px; height: 120px;
+    background: url(../img/car_cloud.png);
+    background-size: cover;
+    position: absolute;
+    right: 29%; bottom: 22%;
 }
 
 .site {
     position: relative;
-    width: 1920px; height: 1050px;
-    background: url(../img/site_back02.png) no-repeat;
+    width: 1920px; height: 1000px;
+    background: url(../img/back01.png) no-repeat;
     background-size: cover;
 }
 .site .siteTitle h2 {
@@ -174,6 +399,7 @@
     background-size: cover;
 }
 .sitePopup {
+    display: none;
     width: 1440px; height: 880px;
     background-color: rgba(85, 81, 77, 0.9);
     border-radius: 50px;
@@ -229,14 +455,14 @@
 
 
 .mart {
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/site_back03.png) no-repeat;
     background-size: cover;
 }
 
 .react {
     position: relative;
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/site_back04.png) no-repeat;
     background-size: cover;
 }
@@ -276,7 +502,7 @@
 
 .figma {
     position: relative;
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/site_back05.png) no-repeat;
     background-size: cover;
 }
@@ -317,7 +543,7 @@
 
 .siteLast {
     position: relative;
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/site_back06.png) no-repeat;
     background-size: cover;
 }
@@ -436,4 +662,22 @@
     color: #fff;
     line-height: 1.3;
     word-break: keep-all;
+}
+
+/* effect */
+#effect {}
+#effect .effect1 {
+    width: 1920px; height: 1050px;
+    background: url(../img/effect_back01.png);
+    background-size: cover;
+}
+#effect .effect2 {
+    width: 1920px; height: 1050px;
+    background: url(../img/back01.png);
+    background-size: cover;
+}
+#effect .effect3 {
+    width: 1920px; height: 1050px;
+    background: url(../img/back01.png);
+    background-size: cover;
 }
