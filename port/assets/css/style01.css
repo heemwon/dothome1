@@ -624,8 +624,43 @@
 .figma {
     position: relative;
     width: 1920px; height: 1000px;
-    background: url(../img/site_back05.png) no-repeat;
+    background: url(../img/back01.png);
     background-size: cover;
+}
+.figma .tree1 {
+    width: 450px; height: 600px;
+    background: url(../img/tree_left02.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 10%;
+}
+.figma .tree2 {
+    width: 305px; height: 390px;
+    background: url(../img/tree_right03.png);
+    background-size: cover;
+    position: absolute;
+    right: 5%; bottom: 8%;
+}
+.figma .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.figma .cloud {
+    width: 210px; height: 150px;
+    background: url(../img/cloud.png);
+    background-size: cover;
+    position: absolute;
+    right: 35%; top: 12%;
+}
+.figma .figmaImg {
+    width: 860px; height: 650px;
+    background: url(../img/figma.png);
+    background-size: cover;
+    position: absolute;
+    left: 16%; bottom: 13%;
 }
 .figma .figmaTitle h2 {
     font-family: 'Fredoka One', cursive;
@@ -633,14 +668,14 @@
     text-transform: uppercase;
     color: #fff;
     position: absolute;
-    left: 350px; top: 130px;
+    left: 350px; top: 9%;
     letter-spacing: 2px;
     word-break: keep-all;
     line-height: 1.1;
 }
 .figma .figmaTalk {
     position: absolute;
-    right: 370px; top: 380px;
+    right: 370px; bottom: 43%;
     width: 335px; height: 270px;
     background-image: url(../img/talk.png);
     background-size: cover;
@@ -665,12 +700,54 @@
 .siteLast {
     position: relative;
     width: 1920px; height: 1000px;
-    background: url(../img/site_back06.png) no-repeat;
+    background: url(../img/back01.png) no-repeat;
     background-size: cover;
+}
+.siteLast .tree1 {
+    width: 305px; height: 390px;
+    background: url(../img/tree_right03.png);
+    background-size: cover;
+    position: absolute;
+    left: 25%; bottom: 12%;
+}
+.siteLast .tree2 {
+    width: 265px; height: 355px;
+    background: url(../img/tree_right02.png);
+    background-size: cover;
+    position: absolute;
+    right: 40%; bottom: 12%;
+}
+.siteLast .cloud {
+    background: url(../img/cloud.png);
+    background-size: cover;
+    width: 210px; height: 150px;
+}
+.siteLast .cloud1 {
+    position: absolute;
+    left: 5%; top: 30%;
+}
+.siteLast .cloud2 {
+    position: absolute;
+    left: 40%; top: 5%;
+}
+.siteLast .road {
+    width: 1920px; height: 140px;
+    background: url(../img/road.png);
+    background-size: cover;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.siteLast .door {
+    position: relative;
+    width: 710px; height: 1000px;
+    background: url(../img/door_pink.png);
+    background-size: cover;
+    position: absolute;
+    right: 0; top: 0;
 }
 .siteLast .siteLastTitle {
     position: absolute;
-    right: 260px; top: 100px;
+    right: 260px; top: 5%;
     width: 360px;
 }
 .siteLast .siteLastTitle h2 {
@@ -682,7 +759,10 @@
 }
 
 /* ani */
-#ani {position: relative;}
+#ani {
+    position: relative;
+    background: url(../img/ani_back01.png);
+}
 
 #ani .ball1 {
     background: url(../img/ball01.png);

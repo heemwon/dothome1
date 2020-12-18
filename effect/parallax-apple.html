@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'IBMPlexSansKR-Medium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: 'IBMPlexSansKR-Medium';
+            height: 20000px;
+        }
+        .scroll {
+            position: fixed; right: 10px; top: 10px;
+            width: 50px; height: 50px; line-height: 50px;
+            text-align: center; color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 100000000000;
+        }
+        #section01 {}
+        #section02 {}
+        #section03 {}
+        #section04 {}
+        #section05 {}
+        #section06 {}
+
+        /* section01 */
+        .fixed {
+            position: fixed;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        img {
+            width: 100%; vertical-align: top;
+        }
+        .s1Txt01 {
+            font-size: 8vw;
+        }
+        .s1Txt02 {
+            font-size: 8vw;
+            white-space: nowrap;
+        }
+        .s1Txt03 {
+            width: 0%;
+            height: 0%;
+            z-index: 900;
+        }
+        .s1Txt04 {
+            width: 30vw;
+            height: 30vw;
+            background: #000;
+            border-radius: 50%;
+        }
+        .s1Txt05 {
+            font-size: 4vw;
+            color: #fff;
+        }
+
+        /* section02 */
+        .s2Txt01 {
+            width: 100vw; height: 100vh;
+            background: #000;
+        }
+        .s2Txt02 {
+            color: #fff;
+            font-size: 4vw;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .s2Txt02 h2 {
+            background-repeat: no-repeat;
+            background-image: url(./img/apple-txt-bg.jpg);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+        .s2Txt03 {
+            color: #fff;
+            font-size: 3vw;
+        }
+        .s2Txt04 {
+            width: 60vw;
+            height: 60vh;
+            background: url(./img/apple-tag-mokup.png) no-repeat;
+            background-size: cover;
+            background-position: center top;
+            top: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll">0</div>
+
+    <div id="contents">
+        <section id="section01"
+            data-0 = "display:block;"
+            data-6999 = "display:none;"
+        >
+            <div class="s1Txt01 fixed"
+                data-0 = "top: 50%; opacity:1;"
+                data-500 = "top: 30%; opacity:0;"
+            >안녕하세요!
+            </div>
+            <div class="s1Txt02 fixed"
+                data-300 = "top: 70%; opacity:0;"
+                data-800 = "top: 50%; opacity:1; font-size: 8vw;"
+                data-1700 = "top: 50%; opacity:1; font-size: 0vw;"
+            >프론트앤드 개발자입니다.
+            </div>
+            <div class="s1Txt03 fixed"
+                data-1600 = "width: 0%; height: 0%;"
+                data-3000 = "width: 100%; height: 100%;"
+            ><img src="./img/apple-bg.jpg" alt="이미지" class="fixed"
+                data-1600 = "border-radius: 500px;"
+                data-3000 = "border-radius: 0px;"
+            >
+            </div>
+            <div class="s1Txt04 fixed" data-title="검은색 원"
+                data-2300 = "width: 0vw; height: 0vw;"
+                data-3200 = "width: 30vw; height: 30vw;"
+                data-5000 = "width: 30vw; height: 30vw;"
+                data-7000 = "width: 230vw; height: 230vw;"
+            >
+                <span class="s1Txt05 fixed"
+                    data-2800 = "transform: translate(-50%, -50%) scale(0) rotate(-360deg);"
+                    data-4300 = "transform: translate(-50%, -50%) scale(1) rotate(0deg);"
+                    data-5000 = "transform: translate(-50%, -50%) scale(1) rotate(0deg);"
+                    data-7000 = "transform: translate(-50%, -50%) scale(0) rotate(0deg);"
+                >HELLO!</span>
+            </div>
+        </section>
+        <!-- //section01-->
+
+        <section id="section02"
+            data-6999 = "display:none"
+            data-7000 = "display:block"
+            data-17000 = "display:block"
+            data-17001 = "display:none"   
+        >
+            <div class="s2Txt01 fixed" data-title="검은색 배경"></div>
+            <div class="s2Txt02">
+                <h2 class="fixed"
+                    data-7900 = "opacity:0;"
+                    data-8200 = "opacity:1; top: 50%;"
+                    data-8800 = "opacity:1; top: 14%;"
+                >I've been working on Sites.</h2>
+                <div class="s2Txt03">
+                    <p class="fixed">webstandard</p>
+                    <p class="fixed">responsive</p>
+                    <p class="fixed">megabox</p>
+                    <p class="fixed">react</p>
+                </div>
+                <div class="s2Txt04 fixed">
+                    <div class="img">웹표준이미지</div>
+                    <div class="img">반응형이미지</div>
+                    <div class="img">메가박스이미지</div>
+                    <div class="img">리엑트이미지</div>
+                </div>
+            </div>
+        </section>
+        <!-- //section02-->
+
+        <section id="section03">
+
+        </section>
+        <!-- //section03-->
+
+        <section id="section04">
+
+        </section>
+        <!-- //section04-->
+
+        <section id="section05">
+
+        </section>
+        <!-- //section05-->
+
+        <section id="section06">
+
+        </section>
+        <!-- //section06-->
+
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(scrollTop);
+        });
+    </script>
+</body>
+</html>
