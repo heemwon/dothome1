@@ -87,15 +87,43 @@
         }
         .s2Txt03 {
             color: #fff;
-            font-size: 3vw;
+            font-size: 2vw;
         }
+        .s2Txt03 .text1 {
+            width: 15vw;
+            top: 30%;
+        }
+        .s2Txt03 .text1-desc {
+            width: 30vw;
+            word-break: keep-all;
+            text-align: left;
+            font-size: 0.8vw;
+            line-height: 1.5;
+            top: 30%;
+        }
+        .s2Txt03 .text2 {
+            top: 30%; display: none;
+        }
+        .s2Txt03 .text3 {
+            top: 30%; display: none;
+        }
+        .s2Txt03 .text4 {
+            top: 30%; display: none;
+        }
+        
         .s2Txt04 {
             width: 60vw;
             height: 60vh;
             background: url(./img/apple-tag-mokup.png) no-repeat;
             background-size: cover;
             background-position: center top;
-            top: 70%;
+            top: 73%;
+        }
+        .s2Txt04 .img1 {
+            margin: 30px;
+        }
+        .s2Txt04 .img1 img {
+            border-radius: 5% 5% 0 0;
         }
     </style>
 </head>
@@ -156,16 +184,36 @@
                     data-8800 = "opacity:1; top: 14%;"
                 >I've been working on Sites.</h2>
                 <div class="s2Txt03">
-                    <p class="fixed">webstandard</p>
-                    <p class="fixed">responsive</p>
-                    <p class="fixed">megabox</p>
-                    <p class="fixed">react</p>
+                    <p class="fixed text1"
+                        data-7000 = "opacity: 0;"
+                        data-7300 = "left:50%; text-align: center; opacity: 1;"
+                        data-8200 = "left:50%; text-align: left;"
+                        data-8800 = "left:30%; text-align: left;"
+                    >웹 표준을 준수한 웹 표준 사이트</p>
+                    <p class="fixed text1-desc"
+                        data-8500 = "opacity: 0;"
+                        data-8800 = "opacity: 1; left:63%"
+                    >웹 접근성 지침서2.0을 바탕으로 제작한 웹 표준 사이트 입니다. 웹 표준에 필요한 인식의 용이성, 운용의 용이성, 이해의 용이성, 견고성, 적절한 태그의 사용등 다양한 표준 지침들을 참고하여 장애를 가진 사용자도 불편함 없이 사용할 수 있도록 제작하였습니다.</p>
+                    <p class="fixed text2"
+
+                    >반응형 사이트</p>
+                    <p class="fixed text2-desc">모든 디바이스 환경에 따라 사이트를 최적화시켜 사이트를 제작하였습니다.</p>
+                    <p class="fixed text3">기업 사이트</p>
+                    <p class="fixed text3-desc">기업에서 가장 많이 사용하는 스타일의 사이트를 제작하였습니다.</p>
+                    <p class="fixed text4">리액트 사이트</p>
+                    <p class="fixed text4-desc">React를 이용하여 포트폴리오 사이트를 제작하였습니다.</p>
                 </div>
                 <div class="s2Txt04 fixed">
-                    <div class="img">웹표준이미지</div>
-                    <div class="img">반응형이미지</div>
-                    <div class="img">메가박스이미지</div>
-                    <div class="img">리엑트이미지</div>
+                    <div class="img1"
+                        data-7000 = "opacity:0;"
+                        data-7500 = "opacity:1;"
+                        data-7800 = "opacity:0;"
+                    ><img src="./img/apple-site-01.jpg" alt="웹표준 이미지"></div>
+                    <div class="img2"
+                        data-7500 = "opacity:1;"
+                    ><img src="./img/apple-site-02.jpg" alt="반응형 이미지"></div>
+                    <div class="img3">메가박스이미지</div>
+                    <div class="img4">리엑트이미지</div>
                 </div>
             </div>
         </section>

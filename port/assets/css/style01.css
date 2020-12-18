@@ -801,48 +801,41 @@
 }
 
 .ani1 {
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/ani_back01.png);
     background-size: cover;
 }
 .ani2 {
-    width: 1920px; height: 1050px;
+    width: 1920px; height: 1000px;
     background: url(../img/ani_back01.png);
     background-size: cover;
 }
 .ani3 {
     position: relative;
-    width: 1920px; height: 1050px;
-    background: url(../img/ani_back02.png);
+    width: 1920px; height: 1000px;
+    background: url(../img/ani_back01.png);
     background-size: cover;
 }
-.ani3 a {
-    font-family: 'Fredoka One', cursive;
-    font-size: 65px;
-    text-transform: uppercase;
+.ani3 .aniCha {
+    width: 750px; height: 975px;
+    background: url(../img/cha_big.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%; bottom: 0;
 }
-.ani3 a:hover {
+.aniBall h3 {
+    font-family: 'yg-jalnan';
+    font-size: 65px;
+    margin: 0 auto;
+}
+.aniBall1 a:hover {
     color: #E7625E;
 }
-.ani3 .robot {
-    position: absolute;
-    left: 830px; top: 120px;
-}
-.ani3 .tangle {
-    position: absolute;
-    left: 680px; top: 300px;
-}
-.ani3 .heart {
-    position: absolute;
-    right: 680px; top: 330px;
-}
-.ani3 .loading {
-    position: absolute;
-    right: 830px; bottom: 500px;
-}
-.ani3 .gsap {
-    position: absolute;
-    right: 670px; bottom: 420px;
+.ani3 .aniBall1 {
+    width: 340px; height: 340px;
+    background: url(../img/ball01.png);
+    background-size: cover;
+
 }
 
 .aniLast {
