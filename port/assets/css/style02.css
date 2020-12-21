@@ -4,7 +4,7 @@
 .vertical1 {position: relative;}
 .horizontal1 {
     overflow: hidden;
-    width: 17280px;
+    width: 19200px;
     position: fixed;
     left: 0; top: 0;
 }
@@ -12,6 +12,7 @@
 #skills {float: left;}
 #site {float: left;}
 #ani {float: left;}
+#effect {float: left;}
 
 .car {float: left;}
 .site {float: left;}
