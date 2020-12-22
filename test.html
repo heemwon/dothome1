@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        .button {
+            position: fixed;
+            z-index: 99999;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .box1 {height: 50vh; background-color: #111;}
+        .box2 {height: 50vh; background-color: #222;}
+        .box3 {height: 50vh; background-color: #333;}
+        .box4 {height: 50vh; background-color: #444;}
+        .box5 {height: 50vh; background-color: #555;}
+        .box6 {height: 50vh; background-color: #666;}
+        .box7 {height: 50vh; background-color: #777;}
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button id="box1" type="button">box1</button>
+        <button id="box2" type="button">box2</button>
+        <button id="box3" type="button">box3</button>
+        <button id="box4" type="button">box4</button>
+        <button id="box5" type="button">box5</button>
+        <button id="box6" type="button">box6</button>
+        <button id="box7" type="button">box7</button>
+    </div>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+
+    <script>
+        const btn = document.getElementsByTagName('button');
+
+        for(let i = 0; i < btn.length; i++){
+            btn[i].addEventListener("click", function(e){
+                e.preventDefault();
+                document.querySelector(".box"+(i+1)).scrollIntoView({
+                    inline  : "center"
+                });
+            })
+        }
+    </script>
+</body>
+</html>
