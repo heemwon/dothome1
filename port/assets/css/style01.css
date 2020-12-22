@@ -39,7 +39,7 @@
 .heewonBall {
     position: fixed;
     z-index: 7000;
-    left: 43%; bottom: 7%;
+    /* left: 43%; bottom: 7%; */
     width: 235px; height: 430px;
     background: url(../img/cha_ball.png);
     background-size: cover;
@@ -929,16 +929,395 @@
     width: 1920px; height: 1000px;
     background: #3DB8A9;
     background-size: cover;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.contact .left {
+    flex: 1 1 45%;
+    padding-left: 200px;
+}
+.contact .left h2 {
+    font-size: 68px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+.contact .left .title {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .left .title .titleLeft {}
+.contact .left .title .titleLeft h3 {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.contact .left .title .titleLeft h3:nth-child(1) {
+    margin-top: 5px;
+}
+.contact .left .title .titleRight {}
+.contact .left .title .titleRight > div {
+    width: 450px; height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 10px;
+}
+.contact .left .title .titleCenter {}
+.contact .left .title .titleCenter .message {
+    width: 720px; height: 390px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+.contact .left .title .titleCenter .button {
+    margin-top: 10px;
+    width: 720px; height: 80px;
+    background-color: #00977C;
+    border-radius: 15px;
+}
+.contact .left .title .titleCenter .button h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+}
+.contact .right {
+    flex: 1 1 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.contact .right .myface {
+    flex: 1 1 30%;
+}
+.contact .right .myface .img{
+    width: 370px; height: 370px;
+    background: url(../img/img01.jpeg);
+    background-size: cover;
+}
+.contact .right .info {
+    margin-left: 40px;
+    margin-top: -8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 47%;
+}
+.contact .right .info h3 {
+    font-weight: normal;
+    font-size: 30px;
+    
+}
+.contact .right .info h3:nth-child(1) {
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact .right .info .sns {
+    width: 300px; height: 80px;
+    background-color: #00977C;
+    border-radius: 15px;
+    flex: 0 0 20%;
+}
+.contact .right .info .sns h3 {
+    text-align: center;
+    line-height: 80px;   
+}
+.contact .right .info .info1 {
+    flex: 0 0 80%;
+}
+.contact .contactCha {
+    position: relative;
+    width: 720px; height: 450px;
+    
+}
+.contact .contactCha .cha1{
+    width: 195px; height: 270px;
+    background: url(../img/cha_hand.png);
+    background-size: cover;
+    position: absolute;
+    left: 10%; bottom: 0%;
+    z-index: 500;
+    animation: shakeY 5s linear infinite;
+}
+.contact .contactCha .cha2{
+    width: 105px; height: 120px;
+    background: url(../img/cha_hand_dog.png);
+    background-size: cover;
+    position: absolute;
+    left: 35%; bottom: 0%;
+    animation: shakeY 1.5s linear infinite;
+    
+}
+.contact .contactCha .cha3{
+    width: 195px; height: 270px;
+    background: url(../img/sub_cha_fafa.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%; bottom: 0%;
+    z-index: 500;
+    animation: shakeY 4s linear infinite;
+}
+.contact .contactCha .cha4{
+    width: 195px; height: 270px;
+    background: url(../img/sub_cha_cow.png);
+    background-size: cover;
+    position: absolute;
+    left: 0%; bottom: 25%;
+    animation: shakeY 2.5s linear infinite;
+}
+.contact .contactCha .cha5{
+    width: 355px; height: 270px;
+    background: url(../img/sub_cha_ufo.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%; bottom: 25%;
+    animation: shakeY 1s linear infinite;
+}
+.contact .contactCha .cha6{
+    width: 195px; height: 270px;
+    background: url(../img/sub_cha_et.png);
+    background-size: cover;
+    position: absolute;
+    left: 30%; bottom: 25%;
+    animation: shakeY 3s linear infinite;
+}
+
+#effect .effect5 {
+    position: relative;
+    width: 1920px; height: 1000px;
+    background: url(../img/back01.png);
+    background-size: cover;
+}
+.effect5 .effect5Title {
+    position: absolute;
+    left: 23%; top: 50%;
+}
+.effect5 .effect5Title h2{
+    font-family: 'yg-jalnan';
+    width: 500px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+}
+.effect5 .wave {
+    width: 1920px; height: 225px;
+    background: url(../img/wave_last.png);
+    background-size: cover;
 }
 #effect .effect4 {
+    position: relative;
     width: 1920px; height: 1000px;
     background: url(../img/back01.png);
     background-size: cover;
 }
+.effect4 .slider {
+    position: absolute;
+    left: 20%; top: 0;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;   
+    background: #DED545;
+    width: 618px; height: 300px;
+}
+.effect4 .slider::before {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; top: -49px;
+    background: url(../img/script_green_top.png);
+    background-size: cover;
+}
+.effect4 .slider::after {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; bottom: -49px;
+    background: url(../img/script_green_bottom.png);
+    background-size: cover;
+}
+.effect4 .slider h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 10px 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.effect4 .slider p {
+    font-size: 20px;
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    padding: 30px 20px;
+    word-break: keep-all;
+}
+.effect4 .slider .button {
+   margin-left: 20px;
+}
+.effect4 .slider .button h3 {
+    display: inline-block;
+    background: rgba(254, 253, 234, 0.8);
+    font-size: 20px;
+    font-weight: normal;
+    color: #DED545;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.effect4 .quiz {
+    position: absolute;
+    left: 20%; top: 50%;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;   
+    background: #3DB8A9;
+    width: 618px; height: 300px;
+}
+.effect4 .quiz::before {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; top: -49px;
+    background: url(../img/script_mint_top.png);
+    background-size: cover;
+}
+.effect4 .quiz::after {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; bottom: -49px;
+    background: url(../img/script_mint_bottom.png);
+    background-size: cover;
+}
+.effect4 .quiz h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 10px 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.effect4 .quiz p {
+    font-size: 20px;
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    padding: 30px 20px;
+    word-break: keep-all;
+}
+.effect4 .quiz .button {
+   margin-left: 20px;
+}
+.effect4 .quiz .button h3 {
+    display: inline-block;
+    background: rgba(254, 253, 234, 0.8);
+    font-size: 20px;
+    font-weight: normal;
+    color: #3DB8A9;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
 #effect .effect3 {
+    position: relative;
     width: 1920px; height: 1000px;
     background: url(../img/back01.png);
     background-size: cover;
+}
+.effect3 .parallax {
+    position: absolute;
+    left: 20%; top: 0;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;   
+    background: #DED545;
+    width: 618px; height: 300px;
+}
+.effect3 .parallax::before {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; top: -49px;
+    background: url(../img/script_green_top.png);
+    background-size: cover;
+}
+.effect3 .parallax::after {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; bottom: -49px;
+    background: url(../img/script_green_bottom.png);
+    background-size: cover;
+}
+.effect3 .parallax h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 10px 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.effect3 .parallax p {
+    font-size: 20px;
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    padding: 30px 20px;
+    word-break: keep-all;
+}
+.effect3 .parallax .button {
+   margin-left: 20px;
+}
+.effect3 .parallax .button h3 {
+    display: inline-block;
+    background: rgba(254, 253, 234, 0.8);
+    font-size: 20px;
+    font-weight: normal;
+    color: #DED545;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.effect3 .mouse {
+    position: absolute;
+    left: 20%; top: 50%;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;   
+    background: #3DB8A9;
+    width: 618px; height: 300px;
+}
+.effect3 .mouse::before {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; top: -49px;
+    background: url(../img/script_mint_top.png);
+    background-size: cover;
+}
+.effect3 .mouse::after {
+    content: '';
+    width: 680px; height: 49px;
+    position: absolute;
+    left: -31px; bottom: -49px;
+    background: url(../img/script_mint_bottom.png);
+    background-size: cover;
+}
+.effect3 .mouse h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 10px 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.effect3 .mouse p {
+    font-size: 20px;
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    padding: 30px 20px;
+    word-break: keep-all;
+}
+.effect3 .mouse .button {
+   margin-left: 20px;
+}
+.effect3 .mouse .button h3 {
+    display: inline-block;
+    background: rgba(254, 253, 234, 0.8);
+    font-size: 20px;
+    font-weight: normal;
+    color: #3DB8A9;
+    padding: 15px 20px;
+    border-radius: 20px;
 }
 #effect .effect2 {
     width: 1920px; height: 1000px;
