@@ -7,7 +7,7 @@
     <meta name="author" content="heemwon">
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
     <meta name="keywords"
-        content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
+        content="힘원, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, heemwon, publisher, css3, html, markup, design">
     <title>Heemwon | Quiz Effect </title>
 
     <!-- Bootstrap core CSS -->
@@ -99,7 +99,13 @@
                     <h2 id="intro1" class="page-header">Quiz1</h2>
                     <p class="bs-callout bs-callout-info">주관식 1문제 스타일(자바스크립트/제이쿼리)</p>
                     <iframe width="100%" height="570px" src="quizEffect01-jquery.html" frameborder="0"></iframe>
-                    <h3>jQuery</h3>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#quizJquery1" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#quizJava1" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="quizJquery1">
 <pre class="line-numbers language-js"><code>// 선택자
 const question = $(".question");
 const questionNum = $(".num");
@@ -130,7 +136,8 @@ questionBtn.click(function(){
     questionEx.show();
 });
 </code></pre>
-<h3>JavaScript</h3>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="quizJava1">
 <pre class="line-numbers language-js"><code>// 선택자
 const question = document.querySelector(".question");
 const questionNum = document.querySelector(".num");
@@ -161,6 +168,9 @@ questionBtn.addEventListener("click", function(){
     questionEx.style.display = "block";
 });
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro1 -->
 
@@ -169,7 +179,13 @@ questionBtn.addEventListener("click", function(){
                     <h2 id="intro2" class="page-header">Quiz2</h2>
                     <p class="bs-callout bs-callout-info">주관식 3문제 스타일(자바스크립트/제이쿼리)</p>
                     <iframe width="100%" height="1150px" src="quizEffect02-jquery.html" frameborder="0"></iframe>
-                    <h3>jQuery</h3>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#quizJquery2" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#quizJava2" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="quizJquery2">
 <pre class="line-numbers language-js"><code>// 선택자
 const question = $(".question");
 const questionNum = $(".num");
@@ -200,7 +216,8 @@ questionBtn.click(function(){
     questionEx.show();
 });
 </code></pre>
-<h3>JavaScript</h3>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="quizJava2">
 <pre class="line-numbers language-js"><code>// 선택자
 const questionQuiz = document.querySelectorAll(".quiz");
 const questionAsk = document.querySelectorAll(".question");
@@ -256,7 +273,10 @@ questionBtn.forEach(elem => {
         this.nextElementSibling.style.display = "block";
     });
 });
-</code></pre>        
+</code></pre>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
                 <!-- //Intro2 -->
 
@@ -265,7 +285,13 @@ questionBtn.forEach(elem => {
                     <h2 id="intro3" class="page-header">Quiz3</h2>
                     <p class="bs-callout bs-callout-info">객관식 1문제 스타일(자바스크립트/제이쿼리)</p>
                     <iframe width="100%" height="790px" src="quizEffect03-jquery.html" frameborder="0"></iframe>
-                    <h3>jQuery</h3>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#quizJquery3" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#quizJava3" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="quizJquery3">
 <pre class="line-numbers language-js"><code>// 선택자
 const questionAsk = $(".question");
 const questionNum = $(".num");
@@ -330,7 +356,8 @@ function answerQuiz(){
 }
 questionBtn.on("click", answerQuiz);
 </code></pre>
-<h3>JavaScript</h3>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="quizJava3">
 <pre class="line-numbers language-js"><code>// 선택자
 const questionAsk = document.querySelector(".question");
 const questionNum = document.querySelector(".num");
@@ -387,7 +414,10 @@ function answerQuiz(){
     }
 }
 questionBtn.addEventListener("click", answerQuiz);
-</code></pre>        
+</code></pre>
+                            </div>
+                        </div>
+                    </div>     
                 </div>
                 <!-- //Intro3 -->
 
@@ -395,11 +425,18 @@ questionBtn.addEventListener("click", answerQuiz);
                 <div class="bs-docs-section">
                     <h2 id="intro4" class="page-header">Quiz4</h2>
                     <p class="bs-callout bs-callout-info">객관식 3문제 스타일(자바스크립트/제이쿼리)</p>
-                    <iframe width="100%" height="790px" src="quizEffect04-jquery.html" frameborder="0"></iframe>
-<h3>jQuery</h3>
+                    <iframe width="100%" height="790px" src="quizEffect04-javascript.html" frameborder="0"></iframe>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#quizJquery4" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#quizJava4" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="quizJquery4">
 <pre class="line-numbers language-js"><code>
 </code></pre>
-<h3>JavaScript</h3>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="quizJava4">
 <pre class="line-numbers language-js"><code>// 선택자
 const questionQuiz = document.querySelector(".quiz");
 const questionBtn = document.querySelector(".confirm-btn");
@@ -500,7 +537,10 @@ function showResults(){
 }
 
 questionBtn.addEventListener("click", showResults);
-</code></pre>        
+</code></pre>
+                            </div>
+                        </div>
+                    </div>       
                 </div>
                 <!-- //Intro4 -->
 

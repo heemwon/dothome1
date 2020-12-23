@@ -6,7 +6,7 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 
 /* Header Navigation */
 #top-nav{
-	border-bottom: 1px solid #e1e6dd;
+	/* border-bottom: 1px solid #e1e6dd; */
 	background: #FFF;
 	-webkit-transform: translateZ(0)
 
@@ -79,7 +79,8 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 	margin-bottom: 0px;
 	margin-top: 20px;
 	font-weight: 500;
-    font-family: 'Fredoka One', cursive;
+	font-family: 'Fredoka One', cursive;
+	
 }
 #header h3{
 	margin-bottom: 30px;
