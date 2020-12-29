@@ -17,3 +17,4 @@ body {
 a {color: #fff; text-decoration: none;}
 a:hover {color: #2D5E85;}
 ul, ol {list-style: none;}
+button {all: unset;}

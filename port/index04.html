@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #section01 {width: 100%; height: 100vh; background-color: #111;}
+        #section02 {display: flex;}
+        #section02-1 {flex: 0 0 100%; width: 100%; height: 100vh; background-color: #222;}
+        #section02-2 {flex: 0 0 100%; width: 100%; height: 100vh; background-color: #333;}
+        #section02-3 {flex: 0 0 100%; width: 100%; height: 100vh; background-color: #444;}
+        #section02-3 #content1 {width: 100%; height: 100vh; background-color: #555;}
+        #section02-3 #content2 {width: 100%; height: 100vh; background-color: #666;}
+        #section02-3 #content3 {width: 100%; height: 100vh; background-color: #777;}
+    </style>
+</head>
+<body>
+    <section id="section01"></section>
+    <section id="section02">
+        <section id="section02-1"></section>
+        <section id="section02-2"></section>
+        <section id="section02-3">
+            <section id="content1"></section>
+            <section id="content2"></section>
+            <section id="content3">
+                
+            </section>
+        </section>
+    </section>
+</body>
+</html>

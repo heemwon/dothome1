@@ -1,0 +1,11 @@
+/* layout */
+#horizontal {display: flex; position: relative;}
+#horizontal #skills1 {flex: 0 0 100%}
+#horizontal #skills2 {flex: 0 0 100%}
+#horizontal #car {flex: 0 0 100%}
+#horizontal #site {flex: 0 0 100%}
+#horizontal #mart {flex: 0 0 100%}
+#horizontal #react {flex: 0 0 100%}
+#horizontal #figma {flex: 0 0 100%}
+#horizontal #siteDoorAnimation {flex: 0 0 100%}
+#horizontal #scriptContact {flex: 0 0 100%}
