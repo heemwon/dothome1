@@ -1194,17 +1194,28 @@
     transition:  all 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
 }
 .balloon3 .aniFrame .ani1 {
-    display: none;
+    /* display: none; */
+    width: 70vw; height: 50vw;
+    position: absolute;
+    left: -70%; top: 0%;
+}
+.balloon3 .aniFrame .ani1.move {
+    animation: aniMove5 6s 1 ease;
+}
+@keyframes aniMove5 {
+    0% {left: -70%;}
+    25% {left: 15%;}
+    75% {left: 15%;}
+    100% {left: 100%;}
 }
 .balloon3 .aniFrame .ani2 {
-    display: none;
-    width: 100vw; height: 100vh;
+    /* display: none; */
+    width: 70vw; height: 50vw;
     position: absolute;
-    left: 0%; top: 0%;
-    transform: translateX(-100%);
+    left: -70%; top: 0%;
 }
 .balloon3 .aniFrame .ani2.move {
-    animation: aniMove4 8s 1 ease-in-out;
+    animation: aniMove5 8s 1 ease-in-out;
 }
 @keyframes aniMove4 {
     0% {transform: translateX(-100%);}
@@ -1223,16 +1234,7 @@
     0% {transform: translate(-200%,180%);}
     100% {transform: translate(200%,-180%)}
 }
-.balloon3 .aniFrame .ani4 {
-    display: none;
-    width: 100vw; height: 100vh;
-    position: absolute;
-    left: 0%; top: 0%;
-    transform: translateX(-100%);
-}
-.balloon3 .aniFrame .ani4.move {
-    animation: aniMove4 8s 1 ease-in-out;
-}
+
 .balloon3 .aniFrame .ani5 {
     display: none;
     position: absolute;

@@ -750,7 +750,7 @@
                 
                 <div class="aniFrame">
                     <div class="ani ani1">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation13.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani1.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani2">
                         <iframe src="https://heemwon.github.io/dothome1/animation/port/ani2.html" frameborder="0"></iframe>
@@ -1377,6 +1377,14 @@
         });
 
         // 애니메이션 클릭 효과
+        $(".aniBall1 .aniBtn").click(function(){
+            $(".ani1").show();
+            $(".ani1").addClass("move");
+            setTimeout(function(){
+                $(".ani1").removeClass("move");
+                $(".ani1").hide();
+            },8000)
+        });
         $(".aniBall2 .aniBtn").click(function(){
             $(".ani2").show();
             $(".ani2").addClass("move");
@@ -1393,14 +1401,7 @@
                 $(".ani3").hide();
             },4000)
         });
-        $(".aniBall4 .aniBtn").click(function(){
-            $(".ani4").show();
-            $(".ani4").addClass("move");
-            setTimeout(function(){
-                $(".ani4").removeClass("move");
-                $(".ani4").hide();
-            },8000)
-        });
+        
         $(".aniBall5 .aniBtn").click(function(){
             $(".ani5").show();
             $(".ani5").addClass("move");
