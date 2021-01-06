@@ -1198,15 +1198,26 @@
 }
 .balloon3 .aniFrame .ani2 {
     display: none;
+    width: 100vw; height: 100vh;
     position: absolute;
-    left: 50.2%; top: 43%;
+    left: 0%; top: 0%;
+    transform: translateX(-100%);
+}
+.balloon3 .aniFrame .ani2.move {
+    animation: aniMove4 8s 1 ease-in-out;
+}
+@keyframes aniMove4 {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
 }
 .balloon3 .aniFrame .ani3 {
     display: none;
     position: absolute;
     left: 50%; top: 30%;
     transform: translate(-200%,180%);
-    animation: aniMove1 4s infinite ease-in-out;
+}
+.balloon3 .aniFrame .ani3.move {
+    animation: aniMove1 4s 1 ease-in-out;
 }
 @keyframes aniMove1 {
     0% {transform: translate(-200%,180%);}

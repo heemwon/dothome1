@@ -1377,6 +1377,14 @@
         });
 
         // 애니메이션 클릭 효과
+        $(".aniBall2 .aniBtn").click(function(){
+            $(".ani2").show();
+            $(".ani2").addClass("move");
+            setTimeout(function(){
+                $(".ani2").removeClass("move");
+                $(".ani2").hide();
+            },8000)
+        });
         $(".aniBall3 .aniBtn").click(function(){
             $(".ani3").show();
             $(".ani3").addClass("move");
