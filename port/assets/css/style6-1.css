@@ -1122,7 +1122,6 @@
     position: fixed;
     width: 100vw; height: 100vh;
     background: #E48289;
-    overflow: hidden;
 }
 .balloon3 .ballBackTxt {
     position: absolute;
@@ -1225,11 +1224,11 @@
     0% {transform: translateX(250%);}
     100% {transform: translateX(-400%);}
 }
-
 .balloon3 .aniFrame .ani6 {
-    display: none;
     position: absolute;
-    left: 53%; top: 15%;
+    left: 50%; top: 30%;
+    transform: translateX(250%);
+    animation: aniMove2 6s 1 linear;
 }
 
 
