@@ -1202,14 +1202,14 @@
     left: 50.2%; top: 43%;
 }
 .balloon3 .aniFrame .ani3 {
-    display: none;
     position: absolute;
-    left: 50.2%; top: 43%;
+    left: 50%; top: 30%;
+    transform: translate(-200%,180%);
+    animation: aniMove1 4s infinite ease;
 }
-.balloon3 .aniFrame .ani4 {
-    display: none;
-    position: absolute;
-    left: 50.2%; top: 43%;
+@keyframes aniMove1 {
+    0% {transform: translate(-200%,180%);}
+    100% {transform: translate(200%,-180%)}
 }
 .balloon3 .aniFrame .ani5 {
     display: none;
@@ -1218,18 +1218,21 @@
     transform: translateX(250%);
 }
 .balloon3 .aniFrame .ani5.move {
-    animation: aniMove2 6s 1 linear;
+    animation: aniMove2 5s 1 linear;
 }
 @keyframes aniMove2 {
     0% {transform: translateX(250%);}
     100% {transform: translateX(-400%);}
 }
 .balloon3 .aniFrame .ani6 {
+    display: none;
     width: 100vw; height: 100vh;
     position: absolute;
     left: 0%; top: 0%;
     transform: translateX(100%);
-    animation: aniMove3 6s 1 linear;
+}
+.balloon3 .aniFrame .ani6.move {
+    animation: aniMove3 10s 1 linear;
 }
 @keyframes aniMove3 {
     0% {transform: translateX(100%);}

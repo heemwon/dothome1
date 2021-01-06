@@ -9,6 +9,7 @@
         body {
             overflow: hidden;
             height: 100vh;
+            background-color: #ccc;
         }
         .roket-container {
             width: 220px; height: 380px;
@@ -31,15 +32,15 @@
         .capsule .top {
             position: absolute;
             left: 0; width: 0; height: 0; padding: 0;
-            border-bottom: 62px solid #f3f3f3;
+            border-bottom: 50px solid #f3f3f3;
             border-left: 56px solid transparent;
-            border-right: 56px solid transparent;
+            border-right: 58px solid transparent;
         }
         .capsule .top:after {
             content: '';
             position: absolute; left: 25px; top: -14px;
             width: 0; height: 0;
-            border-bottom: 84px solid #fff;
+            /* border-bottom: 84px solid #fff; */
             border-left: 0px solid transparent;
             border-right: 156px solid transparent;
             transform: skew(42deg);
@@ -53,9 +54,9 @@
             transform: skew(25deg);
         }
         .capsule .base {
-            position: absolute; left: 0; top: 62px;
+            position: absolute; left: 0; top: 50px;
             width: 112px; height: 99px;
-            background: linear-gradient(to right, #f3f3f3 63%, #e0e0e0 63%);
+            background: linear-gradient(to right, #f3f3f3 60%, #e0e0e0 60%);
         }
         .window-big {
             width: 70px; height: 70px;
@@ -76,27 +77,23 @@
         .wing-left {
             position: absolute;
             left: 16px; top: 82px;
-            height: 103px; width: 0; padding: 0;
+            height: 80px; width: 0; padding: 0;
             border-right: 38px solid #743388;
-            border-bottom: 19px solid transparent;
-            border-top: 21px solid transparent;
+            transform: skewY(-30deg);
         }
         .wing-left:after {
             content: '';
             position: absolute; bottom: -50px;
             width: 0; height: 0;
             border-top: 20px solid transparent;
-            border-right: 50px solid #fff;
             border-bottom: 50px solid transparent;
         }
         .wing-right {
             position: absolute; height: 97px;
             width: 0; padding: 0;
             top: 67px; right: 30px;
-            border-right: 40px solid #7c3388;
-            border-bottom: 15px solid transparent;
-            border-top: 0px solid transparent;
-            transform: rotate(-10deg) skew(-5deg);
+            border-right: 38px solid #7c3388;
+            transform: skewY(30deg);
         }
         .wing-right:after {
             content: '';
@@ -104,7 +101,6 @@
             top: -33px; left: -58px;
             width: 101px; height: 0;
             border-top: 23px solid transparent;
-            border-right: 68px solid #fff;
             border-bottom: 45px solid transparent;
         }
         .tail {

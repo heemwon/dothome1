@@ -1392,31 +1392,14 @@
                 $(".ani5").hide();
             },6000)
         });
-
-        // $(".aniBall3 .aniBtn").click(function(){
-        //     $(".ani3").css("transform","scale(1)");
-        //     setTimeout(function(){
-        //         $(".ani3").css("transform","scale(0)");
-        //     },2500);
-        // });
-        // $(".aniBall4 .aniBtn").click(function(){
-        //     $(".ani4").css("transform","scale(1)");
-        //     setTimeout(function(){
-        //         $(".ani4").css("transform","scale(0)");
-        //     },2500);
-        // });
-        // $(".aniBall5 .aniBtn").click(function(){
-        //     $(".ani5").css("transform","scale(1)");
-        //     setTimeout(function(){
-        //         $(".ani5").css("transform","scale(0)");
-        //     },2500);
-        // });
-        // $(".aniBall6 .aniBtn").click(function(){
-        //     $(".ani6").css("transform","scale(1)");
-        //     setTimeout(function(){
-        //         $(".ani6").css("transform","scale(0)");
-        //     },2500);
-        // });
+        $(".aniBall6 .aniBtn").click(function(){
+            $(".ani6").show();
+            $(".ani6").addClass("move");
+            setTimeout(function(){
+                $(".ani6").removeClass("move");
+                $(".ani6").hide();
+            },10000)
+        });
     </script>
 </body>
 </html>
