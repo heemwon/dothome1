@@ -1225,12 +1225,16 @@
     100% {transform: translateX(-400%);}
 }
 .balloon3 .aniFrame .ani6 {
+    width: 100vw; height: 100vh;
     position: absolute;
-    left: 50%; top: 30%;
-    transform: translateX(250%);
-    animation: aniMove2 6s 1 linear;
+    left: 0%; top: 0%;
+    transform: translateX(100%);
+    animation: aniMove3 6s 1 linear;
 }
-
+@keyframes aniMove3 {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
 
 .aniLast {
     position: fixed;
