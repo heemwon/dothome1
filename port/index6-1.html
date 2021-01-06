@@ -753,16 +753,16 @@
                         <iframe src="https://heemwon.github.io/dothome1/animation/port/animation13.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani2">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation16.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani2.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani3">
                         <iframe src="https://heemwon.github.io/dothome1/animation/port/animation05.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani4">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation02.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani2.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani5">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation04.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani2.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani6">
                         <iframe src="https://heemwon.github.io/dothome1/animation/port/animation11.html" frameborder="0"></iframe>
@@ -1377,42 +1377,46 @@
         });
 
         // 애니메이션 클릭 효과
-        $(".aniBall1 .aniBtn").click(function(){
-            $(".ani1").css("transform","scale(1)");
-            setTimeout(function(){
-                $(".ani1").css("transform","scale(0)");
-            },2500);
-        });
-        $(".aniBall2 .aniBtn").click(function(){
-            $(".ani2").css("transform","scale(1)");
-            setTimeout(function(){
-                $(".ani2").css("transform","scale(0)");
-            },2500);
-        });
-        $(".aniBall3 .aniBtn").click(function(){
-            $(".ani3").css("transform","scale(1)");
-            setTimeout(function(){
-                $(".ani3").css("transform","scale(0)");
-            },2500);
-        });
-        $(".aniBall4 .aniBtn").click(function(){
-            $(".ani4").css("transform","scale(1)");
-            setTimeout(function(){
-                $(".ani4").css("transform","scale(0)");
-            },2500);
-        });
+        // $(".aniBall1 .aniBtn").click(function(){
+        //     $(".ani1").css("transform","scale(1)");
+        //     setTimeout(function(){
+        //         $(".ani1").css("transform","scale(0)");
+        //     },2500);
+        // });
+
         $(".aniBall5 .aniBtn").click(function(){
-            $(".ani5").css("transform","scale(1)");
+            $(".ani5").show();
+            $(".ani5").addClass("move");
             setTimeout(function(){
-                $(".ani5").css("transform","scale(0)");
-            },2500);
+                $(".ani5").removeClass("move");
+                $(".ani5").hide();
+            },6000)
         });
-        $(".aniBall6 .aniBtn").click(function(){
-            $(".ani6").css("transform","scale(1)");
-            setTimeout(function(){
-                $(".ani6").css("transform","scale(0)");
-            },2500);
-        });
+
+        // $(".aniBall3 .aniBtn").click(function(){
+        //     $(".ani3").css("transform","scale(1)");
+        //     setTimeout(function(){
+        //         $(".ani3").css("transform","scale(0)");
+        //     },2500);
+        // });
+        // $(".aniBall4 .aniBtn").click(function(){
+        //     $(".ani4").css("transform","scale(1)");
+        //     setTimeout(function(){
+        //         $(".ani4").css("transform","scale(0)");
+        //     },2500);
+        // });
+        // $(".aniBall5 .aniBtn").click(function(){
+        //     $(".ani5").css("transform","scale(1)");
+        //     setTimeout(function(){
+        //         $(".ani5").css("transform","scale(0)");
+        //     },2500);
+        // });
+        // $(".aniBall6 .aniBtn").click(function(){
+        //     $(".ani6").css("transform","scale(1)");
+        //     setTimeout(function(){
+        //         $(".ani6").css("transform","scale(0)");
+        //     },2500);
+        // });
     </script>
 </body>
 </html>
