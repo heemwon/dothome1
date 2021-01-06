@@ -1223,6 +1223,16 @@
     0% {transform: translate(-200%,180%);}
     100% {transform: translate(200%,-180%)}
 }
+.balloon3 .aniFrame .ani4 {
+    display: none;
+    width: 100vw; height: 100vh;
+    position: absolute;
+    left: 0%; top: 0%;
+    transform: translateX(-100%);
+}
+.balloon3 .aniFrame .ani4.move {
+    animation: aniMove4 8s 1 ease-in-out;
+}
 .balloon3 .aniFrame .ani5 {
     display: none;
     position: absolute;
