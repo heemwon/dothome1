@@ -425,7 +425,7 @@
 
 }
 .skills2 .door {
-    width: 37vw;
+    width: 37vw; height: 100vh;
     position: absolute;
     right: 0; bottom: 0;
 }
@@ -436,7 +436,7 @@
     color: #fff;
     line-height: 1.3;
     position: absolute;
-    left: 13%; top: 118px;
+    left: 13%; top: 10%;
 }
 .skills2 .door h2 span {
     display: inline-block;
@@ -616,19 +616,19 @@
 }
 .site .light.siteLight1 {
     position: absolute;
-    left: 17.7%; top: 14%;
+    left: 17.7%; top: 11%;
 }
 .site .light.siteLight2 {
     position: absolute;
-    left: 27.2%; top: 14%;
+    left: 27.2%; top: 11%;
 }
 .site .light.siteLight3 {
     position: absolute;
-    left: 36.8%; top: 14%;
+    left: 36.8%; top: 11%;
 }
 .site .light.siteLight4 {
     position: absolute;
-    left: 46.4%; top: 14%;
+    left: 46.4%; top: 11%;
 }
 .site .subCha {
     width: 10vw;
@@ -704,6 +704,9 @@
     text-transform: uppercase;
     color: #2e2e2e;
     font-weight: bold;
+    cursor: pointer;
+}
+.site .sitePopup li .siteBtn:hover {
     cursor: pointer;
 }
 .site .sitePopup li .siteBtn::before {
@@ -1014,7 +1017,7 @@
     left: 0; bottom: 0;
 }
 .siteLast .door {
-    width: 37vw;
+    width: 37vw; height: 100vh;
     position: absolute;
     right: 0; bottom: 0;
 }
@@ -1024,7 +1027,7 @@
     color: #fff;
     line-height: 1.3;
     position: absolute;
-    left: 13%; top: 118px;
+    left: 13%; top: 10%;
 }
 .siteLast .door h2 span {
     display: inline-block;
@@ -1191,7 +1194,6 @@
 }
 .balloon3 .aniFrame .ani {
     width: 20vw; height: 20vw;
-    transition:  all 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
 }
 .balloon3 .aniFrame .ani1 {
     /* display: none; */
@@ -1209,7 +1211,7 @@
     100% {left: 100%;}
 }
 .balloon3 .aniFrame .ani2 {
-    /* display: none; */
+    display: none;
     width: 70vw; height: 50vw;
     position: absolute;
     left: -70%; top: 0%;
@@ -1234,7 +1236,18 @@
     0% {transform: translate(-200%,180%);}
     100% {transform: translate(200%,-180%)}
 }
-
+.balloon3 .aniFrame .ani4 {
+    display: none;
+    position: absolute;
+    left: 5%; top: -40%;
+    animation: aniMove6 4s 1 ease;
+}
+@keyframes aniMove6 {
+    0% {top: -40%;}
+    25% {top: 30%;}
+    75% {top: 30%;}
+    100% {top: 100%;}
+}
 .balloon3 .aniFrame .ani5 {
     display: none;
     position: absolute;
@@ -1256,7 +1269,7 @@
     transform: translateX(100%);
 }
 .balloon3 .aniFrame .ani6.move {
-    animation: aniMove3 10s 1 linear;
+    animation: aniMove3 10s 1 ease-in-out;
 }
 @keyframes aniMove3 {
     0% {transform: translateX(100%);}
@@ -1605,19 +1618,6 @@
 
 
 /* siteSection */
-#siteSection .videoWrap {
-    width: 44vw; height: 24vw;
-    background-color: #ccc;
-    border-radius: 2vw;
-    overflow: hidden;
-    position: relative;
-}
-#siteSection .siteVideo {
-    position: absolute;
-    left: 50%; top: 50%; transform: translate(-50%, -50%);
-    width: 47vw;
-}
-
 #site1 {
     overflow: hidden;
     width: 100vw; height: 100vh;
@@ -1625,6 +1625,18 @@
     background: #283542;
     top: -100%;
     transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site1 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site1 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 47vw;
 }
 #site1 .siteWave {
     width: 6400px; height: 400px;
@@ -1674,17 +1686,638 @@
     display: block;
     text-align: right;
 }
-#site1 .siteText .right a:nth-child(1) {
-    margin-bottom: 5%;
+#site1 .siteText .right a:nth-child(1){
+    margin-bottom: 0.5vw;
+}
+#site1 .siteText .right a:nth-child(2){
+    margin-bottom: 0.5vw;
 }
 #site1 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 4% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site1 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site2 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site2 video {
+    border: none;
+}
+#site2 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site2 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site2 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site2 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site2 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site2 .siteText .left {
+    flex: 0 0 70%;
+}
+#site2 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site2 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site2 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site2 .siteText .right {
+    flex: 0 0 30%;
+}
+#site2 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site2 .siteText .right a:nth-child(1){
+    margin-bottom: 0.5vw;
+}
+#site2 .siteText .right a:nth-child(2){
+    margin-bottom: 0.5vw;
+}
+#site2 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 4% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site2 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site3 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site3 video {
+    border: none;
+}
+#site3 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site3 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site3 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site3 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site3 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site3 .siteText .left {
+    flex: 0 0 70%;
+}
+#site3 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site3 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site3 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site3 .siteText .right {
+    flex: 0 0 30%;
+}
+#site3 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site3 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site3 .siteText .right h2 {
     font-size: 1.3vw;
     padding: 5% 8%;
     border-radius: 1vw;
     display: inline-block;
     background: #2D5E85;
 }
-#site1 .siteText .right h2:hover {
+#site3 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site4 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site4 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site4 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site4 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site4 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site4 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site4 .siteText .left {
+    flex: 0 0 70%;
+}
+#site4 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site4 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site4 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site4 .siteText .right {
+    flex: 0 0 30%;
+}
+#site4 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site4 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site4 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site4 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site5 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site5 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site5 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site5 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site5 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site5 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site5 .siteText .left {
+    flex: 0 0 70%;
+}
+#site5 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site5 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site5 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site5 .siteText .right {
+    flex: 0 0 30%;
+}
+#site5 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site5 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site5 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site5 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+
+#site6 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site6 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site6 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site6 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site6 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site6 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site6 .siteText .left {
+    flex: 0 0 70%;
+}
+#site6 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site6 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site6 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site6 .siteText .right {
+    flex: 0 0 30%;
+}
+#site6 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site6 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site6 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site6 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site7 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site7 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site7 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site7 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site7 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site7 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site7 .siteText .left {
+    flex: 0 0 70%;
+}
+#site7 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site7 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site7 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site7 .siteText .right {
+    flex: 0 0 30%;
+}
+#site7 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site7 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site7 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site7 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site8 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site8 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site8 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site8 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site8 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site8 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site8 .siteText .left {
+    flex: 0 0 70%;
+}
+#site8 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site8 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site8 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site8 .siteText .right {
+    flex: 0 0 30%;
+}
+#site8 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site8 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site8 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site8 .siteText .right h2:hover {
+    background-color: #ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
+#site9 {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    background: #283542;
+    top: -100%;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+}
+#site9 .videoWrap {
+    width: 44vw; height: 24vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+#site9 .siteVideo {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 48vw;
+}
+#site9 .siteWave {
+    width: 6400px; height: 400px;
+    background: url(../img/waveBlue.svg) repeat-x;
+    position: absolute;
+    top: 0; left: 0;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+#site9 .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#site9 .siteText {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    margin-top: 3vw;
+}
+#site9 .siteText .left {
+    flex: 0 0 70%;
+}
+#site9 .siteText .left h2 {
+    font-size: 2.5vw;
+}
+#site9 .siteText .left ul {
+    margin-top: 1vw;
+}
+#site9 .siteText .left li {
+    font-size: 1.3vw;
+    line-height: 1.3;
+}
+#site9 .siteText .right {
+    flex: 0 0 30%;
+}
+#site9 .siteText .right a {
+    display: block;
+    text-align: right;
+}
+#site9 .siteText .right a:nth-child(1) {
+    margin-bottom: 5%;
+}
+#site9 .siteText .right h2 {
+    font-size: 1.3vw;
+    padding: 5% 8%;
+    border-radius: 1vw;
+    display: inline-block;
+    background: #2D5E85;
+}
+#site9 .siteText .right h2:hover {
     background-color: #ffffff33;
     color: rgba(255,255,255,0.8);
     transition: background-color 1000ms ease, background 500ms ease ;
