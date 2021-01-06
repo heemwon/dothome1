@@ -1377,13 +1377,14 @@
         });
 
         // 애니메이션 클릭 효과
-        // $(".aniBall1 .aniBtn").click(function(){
-        //     $(".ani1").css("transform","scale(1)");
-        //     setTimeout(function(){
-        //         $(".ani1").css("transform","scale(0)");
-        //     },2500);
-        // });
-
+        $(".aniBall3 .aniBtn").click(function(){
+            $(".ani3").show();
+            $(".ani3").addClass("move");
+            setTimeout(function(){
+                $(".ani3").removeClass("move");
+                $(".ani3").hide();
+            },4000)
+        });
         $(".aniBall5 .aniBtn").click(function(){
             $(".ani5").show();
             $(".ani5").addClass("move");

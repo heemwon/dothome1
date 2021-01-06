@@ -1202,10 +1202,11 @@
     left: 50.2%; top: 43%;
 }
 .balloon3 .aniFrame .ani3 {
+    display: none;
     position: absolute;
     left: 50%; top: 30%;
     transform: translate(-200%,180%);
-    animation: aniMove1 4s infinite ease;
+    animation: aniMove1 4s infinite ease-in-out;
 }
 @keyframes aniMove1 {
     0% {transform: translate(-200%,180%);}
