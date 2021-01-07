@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="heemwon">
+    <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+    <meta name="keywords"
+        content="힘원, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, heemwon, publisher, css3, html, markup, design, HEEMWON">
+    <title>Heemwon | Parallax Effect</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
+    <link rel="icon" href="../assets/ico/icon.png">
+    <link rel="icon" href="../assets/ico/favicon_57.png" sizes="16x16">
+    <link rel="icon" href="../assets/ico/favicon_72.png" sizes="32x32">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="128x128">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="힘원" />
+    <meta property="og:url" content="https://heemwon.github.io/dothome1/" />
+    <meta property="og:image" content="http://heemwon.dothome.co.kr/assets/ico/icon.jpg" />
+    <meta property="og:site_name" content="힘원" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .iframe {position: relative; width: 100%; padding-bottom: 56%;}
+        .iframe iframe {position:absolute; left: 0; top: 0; width: 100%; height: 100%;}
+    </style>
+</head>
+
+<body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">heemwon &lt;/doc&gt;</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://heemwon.tistory.com/">Tistory</a></li>
+                    <li><a href="https://codepen.io/heemwon/">Codepen</a></li>
+                    <li><a href="https://github.com/heemwon/dothome1">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bs-header bgs5" id="content">
+        <div class="container">
+            <h1>Parallax Effect Reference v1.0 &lt;/doc&gt;</h1>
+            <p><a href="https://heemwon.github.io/dothome1/" target="_blank">heemwon.co.kr</a></p>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-12" role="main">
+                <!-- 배너광고 1140-->
+                <div class="ad">
+                    <script src="https://ads-partners.coupang.com/g.js"></script>
+                    <script>
+                        new PartnersCoupang.G({ id:348406 });
+                    </script>
+                </div>
+                <!-- //배너 광고 1140-->
+
+                <!-- Intro1 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro1" class="page-header">Parallax 01</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax01-javascript.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para1" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para2" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para1">
+<pre class="line-numbers language-js"><code>$(window).scroll(function(){
+    const scrollTop = $(window).scrollTop() + $(window).height()/2;
+
+    //출력용
+    $(".scrollTop").text(parseInt(scrollTop));
+    $(".s1OffsetTop").text( parseInt($("#section1").offset().top) );
+    $(".s2OffsetTop").text( parseInt($("#section2").offset().top) );
+    $(".s3OffsetTop").text( parseInt($("#section3").offset().top) );
+    $(".s4OffsetTop").text( parseInt($("#section4").offset().top) );
+    $(".s5OffsetTop").text( parseInt($("#section5").offset().top) );
+    $(".s6OffsetTop").text( parseInt($("#section6").offset().top) );
+    $(".s7OffsetTop").text( parseInt($("#section7").offset().top) );
+    $(".s8OffsetTop").text( parseInt($("#section8").offset().top) );
+    $(".s9OffsetTop").text( parseInt($("#section9").offset().top) );
+
+    //출력용 글씨 색
+    if( scrollTop > $("#section1").offset().top ){
+        $(".s1OffsetTop").css("color","red");
+    } else {
+        $(".s1OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section2").offset().top ){
+        $(".s2OffsetTop").css("color","red");
+    } else {
+        $(".s2OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section3").offset().top ){
+        $(".s3OffsetTop").css("color","red");
+    } else {
+        $(".s3OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section4").offset().top ){
+        $(".s4OffsetTop").css("color","red");
+    } else {
+        $(".s4OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section5").offset().top ){
+        $(".s5OffsetTop").css("color","red");
+    } else {
+        $(".s5OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section6").offset().top ){
+        $(".s6OffsetTop").css("color","red");
+    } else {
+        $(".s6OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section7").offset().top ){
+        $(".s7OffsetTop").css("color","red");
+    } else {
+        $(".s7OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section8").offset().top ){
+        $(".s8OffsetTop").css("color","red");
+    } else {
+        $(".s8OffsetTop").css("color","white");
+    }
+    if( scrollTop > $("#section9").offset().top ){
+        $(".s9OffsetTop").css("color","red");
+    } else {
+        $(".s9OffsetTop").css("color","white");
+    }
+
+    //나타나기
+    if( scrollTop > $("#section1").offset().top ){
+        $("#section1").addClass("show");
+    } else {
+        $("#section1").removeClass("show");
+    }
+    if( scrollTop > $("#section2").offset().top ){
+        $("#section2").addClass("show");
+    } else {
+        $("#section2").removeClass("show");
+    }
+    if( scrollTop > $("#section3").offset().top ){
+        $("#section3").addClass("show");
+    } else {
+        $("#section3").removeClass("show");
+    }
+    if( scrollTop > $("#section4").offset().top ){
+        $("#section4").addClass("show");
+    } else {
+        $("#section4").removeClass("show");
+    }
+    if( scrollTop > $("#section5").offset().top ){
+        $("#section5").addClass("show");
+    } else {
+        $("#section5").removeClass("show");
+    }
+    if( scrollTop > $("#section6").offset().top ){
+        $("#section6").addClass("show");
+    } else {
+        $("#section6").removeClass("show");
+    }
+    if( scrollTop > $("#section7").offset().top ){
+        $("#section7").addClass("show");
+    } else {
+        $("#section7").removeClass("show");
+    }
+    if( scrollTop > $("#section8").offset().top ){
+        $("#section8").addClass("show");
+    } else {
+        $("#section8").removeClass("show");
+    }
+    if( scrollTop > $("#section9").offset().top ){
+        $("#section9").addClass("show");
+    } else {
+        $("#section9").removeClass("show");
+    }
+});
+
+//for문
+$(window).scroll(function(){
+    const scrollTop = $(window).scrollTop() + $(window).height()/2;
+    $(".scrollTop").text(parseInt(scrollTop));
+    
+    for(let i=1; i&lt;=9; i++){
+        $(".s"+i+"OffsetTop").text( parseInt($("#section"+i).offset().top) );
+        if( scrollTop > $("#section"+i).offset().top ){
+            $(".s"+i+"OffsetTop").css("color","red");
+            $("#section"+i).addClass("show");
+        } else {
+            $(".s"+i+"OffsetTop").css("color","white");
+            $("#section"+i).removeClass("show");
+        }
+    }
+});
+
+//each()
+$(window).scroll(function(){
+    const scrollTop = $(window).scrollTop() + $(window).height()/2;
+    $(".scrollTop").text(parseInt(scrollTop));
+    
+    $(".content-item").each(function(num){
+        $(".s"+(num+1)+"OffsetTop").text( parseInt($("#section"+(num+1)).offset().top) );
+        
+        if( scrollTop > $(this).offset().top ){
+            $(".s"+(num+1)+"OffsetTop").css("color","red");
+            $(this).addClass("show");
+        } else {
+            $(".s"+(num+1)+"OffsetTop").css("color","white");
+            $(this).removeClass("show");
+        }
+    });
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para2">
+<pre class="line-numbers language-js"><code>window.addEventListener("scroll", function(){
+    let pageYOffset = window.pageYOffset;
+
+    // 출력용
+    document.querySelector(".pageYOffset").innerText = pageYOffset;
+    document.querySelector(".s1OffsetTop").innerText = document.getElementById("section1").offsetTop;
+    document.querySelector(".s2OffsetTop").innerText = document.getElementById("section2").offsetTop;
+    document.querySelector(".s3OffsetTop").innerText = document.getElementById("section3").offsetTop;
+    document.querySelector(".s4OffsetTop").innerText = document.getElementById("section4").offsetTop;
+    document.querySelector(".s5OffsetTop").innerText = document.getElementById("section5").offsetTop;
+    document.querySelector(".s6OffsetTop").innerText = document.getElementById("section6").offsetTop;
+    document.querySelector(".s7OffsetTop").innerText = document.getElementById("section7").offsetTop;
+    document.querySelector(".s8OffsetTop").innerText = document.getElementById("section8").offsetTop;
+    document.querySelector(".s9OffsetTop").innerText = document.getElementById("section9").offsetTop;
+
+    // 출력용 글씨 색
+    if(pageYOffset > document.getElementById("section1").offsetTop){
+        document.querySelector(".s1OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s1OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section2").offsetTop){
+        document.querySelector(".s2OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s2OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section3").offsetTop){
+        document.querySelector(".s3OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s3OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section4").offsetTop){
+        document.querySelector(".s4OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s4OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section5").offsetTop){
+        document.querySelector(".s5OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s5OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section6").offsetTop){
+        document.querySelector(".s6OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s6OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section7").offsetTop){
+        document.querySelector(".s7OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s7OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section8").offsetTop){
+        document.querySelector(".s8OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s8OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section9").offsetTop){
+        document.querySelector(".s9OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s9OffsetTop").style.color = "white";
+    }
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">Parallax 02</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax02-jquery.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para3" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para4" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para3">
+<pre class="line-numbers language-js"><code>$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+    // let offset1 =  (scrollTop - $("#section1").offset().top);
+    // let offset2 =  (scrollTop - $("#section2").offset().top);
+    // let offset3 =  (scrollTop - $("#section3").offset().top);
+    // let offset4 =  (scrollTop - $("#section4").offset().top);
+    // let offset5 =  (scrollTop - $("#section5").offset().top);
+    // let offset6 =  (scrollTop - $("#section6").offset().top);
+    // let offset7 =  (scrollTop - $("#section7").offset().top);
+    // let offset8 =  (scrollTop - $("#section8").offset().top);
+    // let offset9 =  (scrollTop - $("#section9").offset().top);
+    // $("#section1 .content-item-desc").css({transform: "translateX("+offset1+"px)"});
+    // $("#section2 .content-item-desc").css({transform: "translateX("+offset2+"px)"});
+    // $("#section3 .content-item-desc").css({transform: "translateX("+offset3+"px)"});
+    // $("#section4 .content-item-desc").css({transform: "translateX("+offset4+"px)"});
+    // $("#section5 .content-item-desc").css({transform: "translateX("+offset5+"px)"});
+    // $("#section6 .content-item-desc").css({transform: "translateX("+offset6+"px)"});
+    // $("#section7 .content-item-desc").css({transform: "translateX("+offset7+"px)"});
+    // $("#section8 .content-item-desc").css({transform: "translateX("+offset8+"px)"});
+    // $("#section9 .content-item-desc").css({transform: "translateX("+offset9+"px)"});
+    //한번에(for문)
+    // for(let i=1; i&gt;=9; i++){
+    //     let offset =  (scrollTop - $("#section"+i).offset().top);
+    //     $("#section"+i+" .content-item-desc").css({transform: "translateX("+offset+"px)"});
+    // }
+    //한번에(each)
+    $(".content-item").each(function(){
+        let offset1 = (scrollTop - $(this).offset().top) * 0.1;
+        let offset2 = (scrollTop - $(this).offset().top) * 0.2;
+        $(this).find(".content-item-desc").css({transform: "translateY("+ -offset2 +"px)"});
+        $(this).find(".content-item-num").css({transform: "translateY("+ offset1 +"px)"});
+        $(this).find(".content-item-img").css({transform: "translateY("+ offset2 +"px)"});
+    });
+    //출력용
+    $(".scrollTop").text(scrollTop);
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para4">
+<pre class="line-numbers language-js"><code>window.addEventListener("scroll", function(){
+    let pageYOffset = window.pageYOffset + screen.height/2;
+
+    // 출력용
+    document.querySelector(".pageYOffset").innerText = pageYOffset;
+    // document.querySelector(".s1OffsetTop").innerText = document.getElementById("section1").offsetTop;
+    // document.querySelector(".s2OffsetTop").innerText = document.getElementById("section2").offsetTop;
+    // document.querySelector(".s3OffsetTop").innerText = document.getElementById("section3").offsetTop;
+    // document.querySelector(".s4OffsetTop").innerText = document.getElementById("section4").offsetTop;
+    // document.querySelector(".s5OffsetTop").innerText = document.getElementById("section5").offsetTop;
+    // document.querySelector(".s6OffsetTop").innerText = document.getElementById("section6").offsetTop;
+    // document.querySelector(".s7OffsetTop").innerText = document.getElementById("section7").offsetTop;
+    // document.querySelector(".s8OffsetTop").innerText = document.getElementById("section8").offsetTop;
+    // document.querySelector(".s9OffsetTop").innerText = document.getElementById("section9").offsetTop;
+
+    // 출력용 글씨 색
+    // if(pageYOffset > document.getElementById("section1").offsetTop){
+    //     document.querySelector(".s1OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s1OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section2").offsetTop){
+    //     document.querySelector(".s2OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s2OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section3").offsetTop){
+    //     document.querySelector(".s3OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s3OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section4").offsetTop){
+    //     document.querySelector(".s4OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s4OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section5").offsetTop){
+    //     document.querySelector(".s5OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s5OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section6").offsetTop){
+    //     document.querySelector(".s6OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s6OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section7").offsetTop){
+    //     document.querySelector(".s7OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s7OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section8").offsetTop){
+    //     document.querySelector(".s8OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s8OffsetTop").style.color = "white";
+    // }
+    // if(pageYOffset > document.getElementById("section9").offsetTop){
+    //     document.querySelector(".s9OffsetTop").style.color = "red";
+    // } else {
+    //     document.querySelector(".s9OffsetTop").style.color = "white";
+    // }
+
+    // 한번에(for)
+    for(let i=1; i&gt;=9; i++){
+        document.querySelector(".s"+i+"OffsetTop").innerText = document.getElementById("section"+i).offsetTop;
+
+        if(pageYOffset > document.getElementById("section"+i).offsetTop){
+        document.querySelector(".s"+i+"OffsetTop").style.color = "red";
+        } else {
+            document.querySelector(".s"+i+"OffsetTop").style.color = "white";
+        }
+    }
+
+    // 나타나기
+    // if(pageYOffset > document.getElementById("section1").offsetTop){
+    //     document.getElementById("section1").classList.add("show");
+    // }else {
+    //     document.getElementById("section1").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section2").offsetTop){
+    //     document.getElementById("section2").classList.add("show");
+    // }else {
+    //     document.getElementById("section2").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section3").offsetTop){
+    //     document.getElementById("section3").classList.add("show");
+    // }else {
+    //     document.getElementById("section3").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section4").offsetTop){
+    //     document.getElementById("section4").classList.add("show");
+    // }else {
+    //     document.getElementById("section4").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section5").offsetTop){
+    //     document.getElementById("section5").classList.add("show");
+    // }else {
+    //     document.getElementById("section5").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section6").offsetTop){
+    //     document.getElementById("section6").classList.add("show");
+    // }else {
+    //     document.getElementById("section6").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section7").offsetTop){
+    //     document.getElementById("section7").classList.add("show");
+    // }else {
+    //     document.getElementById("section7").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section8").offsetTop){
+    //     document.getElementById("section8").classList.add("show");
+    // }else {
+    //     document.getElementById("section8").classList.remove("show");
+    // }
+    // if(pageYOffset > document.getElementById("section9").offsetTop){
+    //     document.getElementById("section9").classList.add("show");
+    // }else {
+    //     document.getElementById("section9").classList.remove("show");
+    // }
+
+    // 나타나기 한번에
+    document.querySelectorAll(".content-item").forEach((elem)=>{
+        if(pageYOffset > elem.offsetTop){
+            elem.classList.add("show");
+        } else {
+            elem.classList.remove("show");
+        }
+    });
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro2 -->
+
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Parallax 03</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop을 이용하여 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax03-javascript.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para5" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para6" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para5">
+<pre class="line-numbers language-js"><code>let scrollTop = $(window).scrollTop();
+
+function scroll(){
+    const newScrollTop = $(window).scrollTop(); // 위와 오차 발생
+    const different = newScrollTop - scrollTop;
+
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY: different * 0.2, ease: Power1.ease});
+    // $(".content-item-imgWrap").css({"transform":"rotate("+ different +"deg)"})
+    gsap.to(".content-item-num", {duration: .6, x: different * 3, ease: Power1.ease});
+    gsap.to(".content-item-desc", {duration: .6, skewX: different * 0.2, ease: Power4.ease});
+    scrollTop = newScrollTop; // 초기화 시킨다. 스크롤 탑값이 늘어나면 효과가 너무 크게 생길 수 있음.
+    requestAnimationFrame(scroll);
+}
+
+scroll();
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para6">
+<pre class="line-numbers language-js"><code>let pageYOffset = window.pageYOffset;
+
+const scroll = () => {
+    const newPageYOffset = window.pageYOffset;
+    const different = newPageYOffset - pageYOffset;
+
+    console.log("pageYOffset :" + pageYOffset);
+    console.log("newPageYOffset :" + newPageYOffset);
+    console.log("different :" + different);
+
+    let target = document.querySelectorAll(".content-item-img");
+
+    // target.style.transform = "rotate("+different+"deg)";
+    // forEach
+    // target.forEach(box => {
+    //     box.style.transform = "rotate("+different+"deg)";
+    // })
+
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY: different * 0.2, ease: Power1.ease});
+    gsap.to(".content-item-num", {duration: .6, x: different * 3, ease: Power1.ease});
+    gsap.to(".content-item-desc", {duration: .6, skewX: different * 0.2, ease: Power4.ease});
+
+    pageYOffset = newPageYOffset;
+    requestAnimationFrame(scroll);
+}
+
+scroll();
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro3 -->
+
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Parallax 04</h2>
+                    <p class="bs-callout bs-callout-info">글자를 쪼개어 scrollTop과 OffsetTop을 활용한 패랠랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax04-jquery.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para9" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para10" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para9">
+<pre class="line-numbers language-js"><code>// let text = $("#section1 .content-item-desc").text();
+// let split = text.split("").join("</span><span>");
+//     split = "<span>" + split + "</span>";
+
+// 글씨 쪼개기
+$(".content-item-desc").each(function(){
+    let text = $(this).text();
+    let split = text.split("").join("</span><span aria-hidden='true'>")
+        split = "<span aria-hidden='true'>" + split + "</span>";
+    $(this).html(split).attr("aria-label", text);
+});
+
+// 나타나기
+$(window).scroll(function(){
+    // 한번에 나오게 하기
+    // $(".content-item").each(function(){
+    //     if($(window).scrollTop() > $(this).offset().top){
+    //         $(this).find(".content-item-desc").addClass("show");
+    //     } else {
+    //         $(this).find(".content-item-desc").removeClass("show");
+    //     }
+    // });
+
+    // 한글자씩 나오게 하기
+    // if($(window).scrollTop() > $("#section1").offset().top){
+    //     $("#section1 .content-item-desc span").each(function(i){
+    //         setTimeout(()=> {
+    //             $("#section1 .content-item-desc span").eq(i).addClass("show");
+    //         }, 50 * (i+1));
+    //     });
+    // }
+
+    // 한글자씩 나오게 하기(한번에)
+    $(".content-item").each(function(){
+        if($(window).scrollTop() > $(this).offset().top){
+
+            gsap.to($(this).find(".content-item-desc span"), {duration: .3, opacity:1, y:0, stagger: 0.05, ease:Power1.ease});
+        }
+    });
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para10">
+<pre class="line-numbers language-js"><code>// let text = document.querySelector("#section1 .content-item-desc");
+// let splitText = text.innerText;
+// let splitWrap = splitText.split("").join("&lt;/span&gt;&lt;span aria-hidden:'true'&gt;");
+//     splitWrap = "&lt;span aria-hidden:'true'&gt;" + splitWrap + "</span>"
+
+// text.innerHTML = splitWrap;
+// text.setAttribute("aria-label", splitText);
+
+// 글씨 쪼개기(한번에, forEach)
+document.querySelectorAll(".content-item-desc").forEach(elem => {
+    let splitText = elem.innerText;
+    let splitWrap = splitText.split("").join("&lt;/span>&lt;span aria-hidden:'true'&gt;");
+        splitWrap = "&lt;span aria-hidden:'true'&gt;" + splitWrap + "&lt;/span&gt;";
+    elem.innerHTML = splitWrap;
+    elem.setAttribute("aria-label", splitText);
+});
+
+window.addEventListener("scroll", () => {
+    let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+
+    if( pageYOffset > document.getElementById("section1").offsetTop ){
+        document.querySelectorAll("#section1 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section2").offsetTop ){
+        document.querySelectorAll("#section2 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section3").offsetTop ){
+        document.querySelectorAll("#section3 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section4").offsetTop ){
+        document.querySelectorAll("#section4 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section5").offsetTop ){
+        document.querySelectorAll("#section5 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section6").offsetTop ){
+        document.querySelectorAll("#section6 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section7").offsetTop ){
+        document.querySelectorAll("#section7 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section8").offsetTop ){
+        document.querySelectorAll("#section8 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+    if( pageYOffset > document.getElementById("section9").offsetTop ){
+        document.querySelectorAll("#section9 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1));
+        });
+    }
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro4 -->
+
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Parallax 05</h2>
+                    <p class="bs-callout bs-callout-info">스크롤 버튼을 클릭하면 해당 섹션으로 넘어가는 효과를 완성했습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax05-javascript.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para7" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para8" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para7">
+<pre class="line-numbers language-js"><code>$("a[href^='#']").click(function(e){
+    e.preventDefault();
+    let target = $($(this).attr("href") );
+    
+    $("html, body").animate({scrollTop 
+        : target.offset().top }, 800, "easeInOutQuint");
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para8">
+<pre class="line-numbers language-js"><code>document.querySelectorAll("a[href^='#']").forEach(elem => {
+    elem.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        })
+    });
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
+
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Parallax 06</h2>
+                    <p class="bs-callout bs-callout-info">스크로링 리빌효과를 완성했습니다.</p>
+                    <iframe width="100%" height="570px" src="parallax06-jquery.html" frameborder="0"></iframe>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#para11" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                        <li role="presentation"><a href="#para12" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="para11">
+<pre class="line-numbers language-js"><code>$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+
+    // if(scrollTop > $("#section2").offset().top){
+    //     $("#section2").addClass("show");
+    // }
+
+    $(".reveal").each(function(){
+        if(scrollTop + $(window).height() > $(this).offset().top){
+            $(this).addClass("show");
+        }
+    });
+});
+</code></pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="para12">
+<pre class="line-numbers language-js"><code>function scrollReveal(){
+    const reveal = document.querySelectorAll(".reveal");
+    reveal.forEach(elem => {
+        let scrollTop = document.documentElement.scrollTop + window.innerHeight/2;
+        let offsetTop = elem.offsetTop + elem.parentElement.offsetTop;
+        console.log(offsetTop)
+
+        if(scrollTop>offsetTop){
+            elem.classList.add("show");
+        }
+    })
+}
+
+window.addEventListener("scroll", scrollReveal)
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro6 -->
+
+            </div>
+
+            <!-- //col-md-12 -->
+        
+        </div>
+        <!-- //row -->
+    </div>
+    <!-- //container -->
+    <!-- Footer -->
+    <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+            <ul class="footer-links muted">
+                <li>Currently v2.0</li>
+                <li>&middot;</li>
+                <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/js/prism.js"></script>
+</body>
+
+</html>

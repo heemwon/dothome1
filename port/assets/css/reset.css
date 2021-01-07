@@ -1,0 +1,22 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-style: normal;
+}
+
+* {
+    margin: 0; padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+a {color: #fff; text-decoration: none;}
+a:hover {color: #2D5E85;}
+ul, ol {list-style: none;}
+button {all: unset;}
+
+img {width: 100%; vertical-align: top;}
