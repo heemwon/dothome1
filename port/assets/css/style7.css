@@ -1333,13 +1333,6 @@
     left: 45%; bottom: 8%;
 }
 
-.effect button:hover {
-    cursor: pointer;
-    background-color: #000;
-    border-radius: 20px;
-    transition: background-color 1000ms ease, background 500ms ease ;
-}
-
 .scriptIntro {
     position: fixed;
     width: 100vw; height: 100vh;
@@ -1390,6 +1383,13 @@
     background: rgba(254, 253, 234, 0.8);
     border-radius: 20px;
 }
+.script1 .effect .effectTxt .button h3:hover {
+    cursor: pointer;
+    background-color:#ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+
 .script1 .effect2 {
     width: 35vw;
     position: absolute;
@@ -1425,6 +1425,12 @@
     color: #fff;
     padding-bottom: 4%;
     border-bottom: 1px solid #fff;
+}
+.script2 .effect .effectTxt .button h3:hover {
+    cursor: pointer;
+    background-color:#ffffff33;
+    color: rgba(255,255,255,0.8);
+    transition: background-color 1000ms ease, background 500ms ease ;
 }
 .script2 .effect .effectTxt p {
     font-size: 1vw;
