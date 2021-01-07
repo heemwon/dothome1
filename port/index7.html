@@ -952,7 +952,7 @@
                 <div class="effectPopup">
                     <div class="effectPopup1">
                         <div class="effectIframe">
-                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/parallaxEffect1.html" frameborder="0"></iframe>
                         </div>
                         <button class="effectCloseBtn1">X</button>
                     </div>
@@ -961,6 +961,18 @@
                         <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
                         </div>
                         <button class="effectCloseBtn2">X</button>
+                    </div>
+                    <div class="effectPopup3">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/sliderEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <button class="effectCloseBtn3">X</button>
+                    </div>
+                    <div class="effectPopup4">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/quizEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <button class="effectCloseBtn4">X</button>
                     </div>
                 </div>
             </div>
@@ -1688,12 +1700,36 @@
 
 
         // 스크립트 클릭 애니메이션
+        $(".effectBtn1").click(function(){
+            $(".effectPopup1").css("transform","scale(1)");
+            $(".scriptCha").hide();
+        });
+        $(".effectCloseBtn1").click(function(){
+            $(".effectPopup1").css("transform","scale(0)");
+            $(".scriptCha").show();
+        });
         $(".effectBtn2").click(function(){
             $(".effectPopup2").css("transform","scale(1)");
             $(".scriptCha").hide();
         });
         $(".effectCloseBtn2").click(function(){
             $(".effectPopup2").css("transform","scale(0)");
+            $(".scriptCha").show();
+        });
+        $(".effectBtn3").click(function(){
+            $(".effectPopup3").css("transform","scale(1)");
+            $(".scriptCha").hide();
+        });
+        $(".effectCloseBtn3").click(function(){
+            $(".effectPopup3").css("transform","scale(0)");
+            $(".scriptCha").show();
+        });
+        $(".effectBtn4").click(function(){
+            $(".effectPopup4").css("transform","scale(1)");
+            $(".scriptCha").hide();
+        });
+        $(".effectCloseBtn4").click(function(){
+            $(".effectPopup4").css("transform","scale(0)");
             $(".scriptCha").show();
         });
     </script>
