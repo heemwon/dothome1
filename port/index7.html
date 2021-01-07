@@ -881,7 +881,7 @@
                         <h2>PARALLAX EFFECT</h2>
                         <p>스크롤값에 따라 이질감을 주는 효과를 스크립트를 활용하여 구현했습니다.</p>
                         <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
+                            <button class="effectBtn1"><h3>SCRIPT VIEW ▶</h3></button>
                         </div>
                     </div>
                 </div>
@@ -891,13 +891,8 @@
                         <h2>MOUSE EFFECT</h2>
                         <p>마우스 커서의 움직임에 따라 글자 및 이미지에 다양한 효과를 스크립트를 활용하여 구현했습니다.</p>
                         <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
+                            <button class="effectBtn2"><h3>SCRIPT VIEW ▶</h3></button>
                         </div>
-                    </div>
-                </div>
-                <div class="effectPopup">
-                    <div class="effectPopup1">
-                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -952,6 +947,24 @@
                 <div class="wave"><img src="assets/img/wave_last.png" alt="웨이브"></div>
             </div>
             <!-- //scriptLast -->
+
+            <div class="scriptPopup">
+                <div class="effectPopup">
+                    <div class="effectPopup1">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <button class="effectCloseBtn1">X</button>
+                    </div>
+                    <div class="effectPopup2">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <button class="effectCloseBtn2">X</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //scriptPopup -->
 
         </section>
         <!-- //script -->
@@ -1671,6 +1684,17 @@
                 $(".ani5").removeClass("move");
                 $(".ani5").hide();
             },10000)
+        });
+
+
+        // 스크립트 클릭 애니메이션
+        $(".effectBtn2").click(function(){
+            $(".effectPopup2").css("transform","scale(1)");
+            $(".scriptCha").hide();
+        });
+        $(".effectCloseBtn2").click(function(){
+            $(".effectPopup2").css("transform","scale(0)");
+            $(".scriptCha").show();
         });
     </script>
 </body>
