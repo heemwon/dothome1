@@ -1141,6 +1141,17 @@
     position: absolute;
     left: 30%; bottom: 0;
 }
+.balloon3 .aniCha .aniTitle {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    line-height: 1;
+    font-size: 2vw;
+    position: absolute;
+    left: 50%; top: 75%; 
+    transform: translate(-50%, -50%);
+    color: #E48289;
+    animation: flash 2.5s ease infinite;
+}
 .balloon3 .aniBall .aniBtn {
     font-family: 'Fredoka One', cursive;
     font-size: 4vw;
@@ -1150,131 +1161,101 @@
     color: rgba(85, 81, 77, 0.8);
     cursor: pointer;
 }
-.balloon3 .aniBall1 .aniBtn {
-    position: absolute;
-    left: 31%; top: 49%;
-}
-.balloon3 .aniBall2 .aniBtn {
-    position: absolute;
-    left: 44%; top: 42%;
-}
-.balloon3 .aniBall3 .aniBtn {
-    position: absolute;
-    left: 53%; top: 50%;
-}
-.balloon3 .aniBall4 {
+.balloon3 .aniBall1 {
     width: 18vw;
     position: absolute;
     left: 28%; top: 13%;
 }
-.balloon3 .aniBall4 .aniBtn {
-    position: absolute;
-    left: 18%; top: 37%;
+.balloon3 .aniBall1 .aniBtn {
+    position: absolute; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
 }
-.balloon3 .aniBall5 {
+.balloon3 .aniBall2 {
     width: 18vw;
     position: absolute;
     left: 40%; top: 2%;
 }
-.balloon3 .aniBall5 .aniBtn {
-    position: absolute;
-    left: 20%; top: 35%;
+.balloon3 .aniBall2 .aniBtn {
+    position: absolute; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
 }
-.balloon3 .aniBall6 {
+.balloon3 .aniBall3 {
     width: 18vw;
     position: absolute;
     left: 53%; top: 15%;
 }
-.balloon3 .aniBall6 .aniBtn {
-    position: absolute;
-    left: 5%; top: 35%;
+.balloon3 .aniBall3 .aniBtn {
+    position: absolute; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
 }
+.balloon3 .aniBall4 .aniBtn {
+    position: absolute;
+    left: 34%; top: 49%;
+}
+.balloon3 .aniBall5 .aniBtn {
+    position: absolute;
+    left: 50%; top: 49%;
+}
+
 .balloon3 .aniFrame iframe {
     width: 100%; height: 100%;
 }
 .balloon3 .aniFrame .ani {
-    width: 20vw; height: 20vw;
+    width: 18vw; height: 18vw;
+    border-radius: 50vw;
+    overflow: hidden;
+    transition:  all 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
 }
 .balloon3 .aniFrame .ani1 {
-    /* display: none; */
-    width: 70vw; height: 50vw;
     position: absolute;
-    left: -70%; top: 0%;
-}
-.balloon3 .aniFrame .ani1.move {
-    animation: aniMove5 6s 1 ease;
-}
-@keyframes aniMove5 {
-    0% {left: -70%;}
-    25% {left: 15%;}
-    75% {left: 15%;}
-    100% {left: 100%;}
+    left: 28%; top: 13%;
+    transform: scale(0);
+    opacity: 0.8;
 }
 .balloon3 .aniFrame .ani2 {
-    display: none;
-    width: 70vw; height: 50vw;
     position: absolute;
-    left: -70%; top: 0%;
-}
-.balloon3 .aniFrame .ani2.move {
-    animation: aniMove5 8s 1 ease-in-out;
-}
-@keyframes aniMove4 {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(100%);}
+    left: 40%; top: 2%;
+    transform: scale(0);
+    opacity: 0.8;
 }
 .balloon3 .aniFrame .ani3 {
+    position: absolute;
+    left: 53%; top: 15%;
+    transform: scale(0);
+    opacity: 0.8;
+}
+.balloon3 .aniFrame .ani4 {
     display: none;
+    overflow: visible;
     position: absolute;
     left: 50%; top: 30%;
     transform: translate(-200%,180%);
 }
-.balloon3 .aniFrame .ani3.move {
+.balloon3 .aniFrame .ani4.move {
     animation: aniMove1 4s 1 ease-in-out;
 }
 @keyframes aniMove1 {
     0% {transform: translate(-200%,180%);}
     100% {transform: translate(200%,-180%)}
 }
-.balloon3 .aniFrame .ani4 {
-    display: none;
-    position: absolute;
-    left: 5%; top: -40%;
-    animation: aniMove6 4s 1 ease;
-}
-@keyframes aniMove6 {
-    0% {top: -40%;}
-    25% {top: 30%;}
-    75% {top: 30%;}
-    100% {top: 100%;}
-}
 .balloon3 .aniFrame .ani5 {
-    display: none;
-    position: absolute;
-    left: 50%; top: 30%;
-    transform: translateX(250%);
-}
-.balloon3 .aniFrame .ani5.move {
-    animation: aniMove2 5s 1 linear;
-}
-@keyframes aniMove2 {
-    0% {transform: translateX(250%);}
-    100% {transform: translateX(-400%);}
-}
-.balloon3 .aniFrame .ani6 {
     display: none;
     width: 100vw; height: 100vh;
     position: absolute;
     left: 0%; top: 0%;
     transform: translateX(100%);
 }
-.balloon3 .aniFrame .ani6.move {
-    animation: aniMove3 10s 1 ease-in-out;
+.balloon3 .aniFrame .ani5.move {
+    animation: aniMove2 10s 1 ease-in-out;
 }
-@keyframes aniMove3 {
+@keyframes aniMove2 {
     0% {transform: translateX(100%);}
     100% {transform: translateX(-100%);}
 }
+
 
 .aniLast {
     position: fixed;
