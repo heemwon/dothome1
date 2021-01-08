@@ -329,15 +329,31 @@
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
 }
+.listTable .table tr {
+    transition: all 0.2s;
+}
+.listTable .table tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.listTable .table td a {
+    display: block;
+    padding: 17px 0;
+}
 .listTable .table td,
 .listTable .table th {
     border-top: 1px solid #000;
-    padding: 17px 0;
     text-align: center;
     font-size: 16px;
 }
+.listTable .table td.left {
+    text-align: left;
+}
 .listTable .table th {
     background: rgba(0, 0, 0, 0.04);
+    padding: 17px 0;
+}
+.listTable .table th.height {
+    height: 300px;
 }
 .listPage {
 

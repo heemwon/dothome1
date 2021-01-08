@@ -98,17 +98,22 @@
                                     if($result){
                                         $dataCount = $result -> num_rows;
 
-                                        for($i=0; $i<=$dataCount; $i++){
-                                            $memberInfo = $result -> fetch_array(MYSQLI_ASSOC);
-                                            echo "<tr>";
-                                            echo "<td>".$memberInfo['boardID']."</td>";
-                                            echo "<td>".$memberInfo['boardTitle']."</td>";
-                                            echo "<td>".$memberInfo['youNickName']."</td>";
-                                            echo "<td>".date('Y-m-d H:i', $memberInfo['regTime'])."</td>";
-                                            echo "</tr>";
+                                        if($dataCount > 0){
+                                            for($i=1; $i<=$dataCount; $i++){
+                                                $memberInfo = $result -> fetch_array(MYSQLI_ASSOC);
+                                                echo "<tr>";
+                                                echo "<td>".$memberInfo['boardID']."</td>";
+                                                echo "<td class='left'><a href='viewBoard.php?boardID={$memberInfo['boardID']}'>".$memberInfo['boardTitle']."</a></td>";
+                                                echo "<td>".$memberInfo['youNickName']."</td>";
+                                                echo "<td>".date('Y-m-d H:i', $memberInfo['regTime'])."</td>";
+                                                echo "</tr>";
+                                            }
+                                        } else {
+                                            echo "<tr><td colspan='4'>게시글이 없습니다.</td></tr>";
                                         }
                                     } else {
-                                        echo "<tr><td colspan='4'>게시글이 없습니다.</td></tr>";
+                                        echo "에러 발생 : 관리자에게 문의하세요.";
+                                        exit;
                                     }
                                 ?>
 
