@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEEMWON | PORTFOLIO</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style6-1.css">
+    <link rel="stylesheet" href="assets/css/style8.css">
+
+    <!-- animation.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor"
-    data-22200="opacity:0;"
-    data-22201="opacity:1;"
-    data-26999="opacity:1;"
-    data-27000="opacity:0;"
-    ><a href="#"></a></div>
-    <!-- cursor(리엑트) -->
+    <div class="scroll">0</div><!-- //scroll-->
 
-    <button class="close">X</button>
-    <!-- cursor(섹션 닫는용) -->
-    
-
-    <div class="scroll">0</div><!-- //scroll -->
-    <div class="cha"
+    <div class="walkCha"
     data-6499="opacity:0;"
     data-6500="opacity:1;"
     data-9499="opacity:1;"
@@ -31,38 +27,49 @@
     data-13000="opacity:1;"
     data-17899="opacity:1;"
     data-17900="opacity:0;" 
-    data-18499="opacity:0;"
-    data-18500="opacity:1;"
+    data-18699="opacity:0;"
+    data-18700="opacity:1;"
     data-29599="opacity:1;"
     data-29600="opacity:0;"
     data-30199="opacity:0;"
     data-30200="opacity:1;"
     data-32399="opacity:1;"
     data-32400="opacity:0;"
-    ></div><!-- //cha-->
+    ></div><!-- //walkCha -->
+
     <div class="scriptCha"
     data-46199="left:45%; bottom:8%; opacity:0;"
     data-46200="left:45%; bottom:8%; opacity:1;"
     data-48200="left:65%; bottom:30%;"
     data-52499="opacity:1;"
     data-52500="opacity:0;"
-    ><img src="assets/img/cha_ball.png" alt="캐릭터"></div>
+    ><img src="assets/img/cha_ball.png" alt="캐릭터"></div><!-- //scriptCha -->
+
+    <div class="reactCursor"
+    data-23200="opacity:0;"
+    data-23201="opacity:1;"
+    data-26999="opacity:1;"
+    data-27000="opacity:0;"
+    ></div><!-- //reactCursor -->
+
+    <div class="pageClose">X</div><!-- //pageClose -->
 
 
-    <section id="sectionWrap">
+    <div id="sectionWrap">
         <section id="main">
-            <div class="main"
+            <div class="main fixed"
             data-0="top:0%;"
-            data-2500="top:-100%;"
+            data-2500="top:-100%; display:block;"
+            data-2501="top:-100%; display:none;"
             >
                 <div class="waveBack"><img src="assets/img/waveBack1.png" alt="웨이브뒤"></div>
                 <div class="waveFront"><img src="assets/img/waveFront1.png" alt="웨이브앞"></div>
-                <div class="tree1"><img src="assets/img/tree_left03.png" alt="나무1"></div>
-                <div class="tree2"><img src="assets/img/tree_left03.png" alt="나무2"></div>
-                <div class="tree3"><img src="assets/img/tree_left01.png" alt="나무3"></div>
-                <div class="tree4"><img src="assets/img/tree_right01.png" alt="나무4"></div>
-                <div class="tree5"><img src="assets/img/tree_right03.png" alt="나무5"></div>
-                <div class="tree6"><img src="assets/img/tree_right02.png" alt="나무6"></div>
+                <div class="tree1"><img src="assets/img/tree_left03.png" alt="나무"></div>
+                <div class="tree2"><img src="assets/img/tree_left03.png" alt="나무"></div>
+                <div class="tree3"><img src="assets/img/tree_left01.png" alt="나무"></div>
+                <div class="tree4"><img src="assets/img/tree_right01.png" alt="나무"></div>
+                <div class="tree5"><img src="assets/img/tree_right03.png" alt="나무"></div>
+                <div class="tree6"><img src="assets/img/tree_right02.png" alt="나무"></div>
                 <div class="cloud cloud1"><img src="assets/img/cloud.png" alt="구름"></div>
                 <div class="cloud cloud2"><img src="assets/img/cloud.png" alt="구름"></div>
                 <div class="cloud cloud3"><img src="assets/img/cloud.png" alt="구름"></div>
@@ -80,10 +87,11 @@
         <!-- //main -->
 
         <section id="about">
-            <div class="about1"
+            <div class="about1 fixed"
             data-0="top:100%;"
             data-2500="top:0%;"
-            data-4500="top:-100%;"
+            data-4500="top:-100%; display:block;"
+            data-4501="top:-100%; display:none;"
             >
                 <div class="aboutText">
                     <h2>만나서 반가워요<span class="textEffect1">👋</span></h2>
@@ -91,70 +99,73 @@
                     <h2>저를 소개할게요.</h2>
                 </div>
             </div>
-            <div class="about2"
-            data-2500="top:100%;"
+            <div class="about2 fixed"
+            data-2499="top:100%; display:none;"
+            data-2500="top:100%; display:block;"
             data-4500="top:0%;"
-            data-6500="top:-100%;"
+            data-6500="top:-100%; display:block;"
+            data-6501="top:-100%; display:none;"
             >
             </div>
         </section>
         <!-- //about -->
 
         <section id="skills">
-            <div class="skills1"
-            data-4499="top:100%; opacity:0;"
-            data-4500="top:100%; opacity:1;"
+            <div class="skills1 fixed"
+            data-4499="top:100%; display:none;"
+            data-4500="top:100%; display:block;"
             data-6500="top:0%; left:0%;"
-            data-10340="top:0%; left:-100%;"
-            data-10341="opacity:0;"
+            data-10340="top:0%; left:-100%; display:block;"
+            data-10341="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="tree1"
                 data-6500="transform:translateX(0%);"
                 data-7300="transform:translateX(-10%);"
-                ><img src="assets/img/tree_left01.png" alt="나무1"></div>
+                ><img src="assets/img/tree_left01.png" alt="나무"></div>
                 <div class="tree3"
                 data-6700="transform:translateX(0%);"
                 data-8700="transform:translateX(-50%);"
-                ><img src="assets/img/tree_right01.png" alt="나무3"></div>
-                <div class="waveBack"><img src="assets/img/waveBack1.png" alt="웨이브뒤"></div>
+                ><img src="assets/img/tree_right01.png" alt="나무"></div>
+                <div class="waveBack roadFix"><img src="assets/img/waveBack1.png" alt="웨이브뒤"></div>
                 <div class="tree2"
                 data-6500="transform:translateX(0%);"
                 data-7300="transform:translateX(50%);"
-                ><img src="assets/img/tree_left03.png" alt="나무2"></div>
+                ><img src="assets/img/tree_left03.png" alt="나무"></div>
                 <div class="tree4"
                 data-6700="transform:translateX(0%);"
                 data-8700="transform:translateX(-50%);"
-                ><img src="assets/img/tree_right03.png" alt="나무4"></div>
-                <div class="waveFront"><img src="assets/img/waveFront1.png" alt="웨이브앞"></div>
+                ><img src="assets/img/tree_right03.png" alt="나무"></div>
+                <div class="waveFront roadFix"><img src="assets/img/waveFront1.png" alt="웨이브앞"></div>
                 <div class="waveTop"><img src="assets/img/waveGray1.png" alt="웨이브상단"></div>
             </div>
             <!-- //skills1 -->
 
-            <div class="skills2"
-            data-6499="top:0%; left:100%; opacity:0;"
-            data-6500="top:0%; left:100%; opacity:1;"
+            <div class="skills2 fixed"
+            data-6499="top:0%; left:100%; display:none;"
+            data-6500="top:0%; left:100%; display:block;"
             data-10340="top:0%; left:0%;"
-            data-14180="top:0%; left:-100%;"
-            data-14181="top:0%; left:-100%; opacity:0;"
+            data-14180="top:0%; left:-100%; display:block;"
+            data-14181="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
-                <div class="waveBack"><img src="assets/img/waveBack2.png" alt="웨이브뒤"></div>
-                <div class="tree1"><img src="assets/img/tree_left03.png" alt="나무1"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
+                <div class="waveBack roadFix"><img src="assets/img/waveBack2.png" alt="웨이브뒤"></div>
+                <div class="tree1"><img src="assets/img/tree_left03.png" alt="나무"></div>
                 <div class="tree2"
                 data-9600="transform:translateX(0%);"
                 data-12000="transform:translateX(-50%);"
-                ><img src="assets/img/tree_left05.png" alt="나무2"></div>
+                ><img src="assets/img/tree_left05.png" alt="나무"></div>
                 <div class="tree3"
                 data-11700="transform:translateX(0%);"
                 data-13600="transform:translateX(-80%);"
-                ><img src="assets/img/tree_right03.png" alt="나무3"></div>
+                ><img src="assets/img/tree_right03.png" alt="나무"></div>
                 <div class="waveTop"><img src="assets/img/waveGray2.png" alt="웨이브상단"></div>
                 <div class="door">
                     <img src="assets/img/door_blue.png" alt="문">
                     <h2><span>사이트, 리액트, 피그마, 뷰</span> 보러 가봅시다!</h2>
                 </div>
-                <div class="waveFront"><img src="assets/img/waveFront2.png" alt="웨이브앞"></div>
+                <div class="waveFront roadFix"><img src="assets/img/waveFront2.png" alt="웨이브앞"></div>
+                
                 <div class="skillsCha"
                 data-0="opacity:0;"
                 data-9490="opacity:0;"
@@ -166,10 +177,10 @@
             <!-- //skills2 -->
 
             <div class="skillsWrap"
-            data-5499="opacity:0;"
-            data-5500="opacity:1;"
-            data-11550="opacity:1;"
-            data-11551="opacity:0;"
+            data-5499="display:none;"
+            data-5500="display:block;"
+            data-11550="display:block;"
+            data-11551="display:none;"
             > 
                 <div class="skillsTitle"
                 data-5500="left:100%; top:50%;"
@@ -258,14 +269,14 @@
         <!-- //skills -->
 
         <section id="site">
-            <div class="intro"
-            data-10339="top:0%; left:100%; opacity:0;"
-            data-10340="top:0%; left:100%; opacity:1;"
+            <div class="intro fixed"
+            data-10339="top:0%; left:100%; display:none;"
+            data-10340="top:0%; left:100%; display:block;"
             data-14180="top:0%; left:0%;"
-            data-18020="top:0%; left:-100%;"
-            data-18021="top:0%; left:-100%; opacity:0;"
+            data-18020="top:0%; left:-100%; display:block;"
+            data-18021="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="cloud cloud1"
                 data-11300="transform:translateX(0%);"
                 data-13300="transform:translateX(-30%);"
@@ -281,13 +292,13 @@
                 <div class="tree1"
                 data-13300="transform:translateX(0%);"
                 data-14500="transform:translateX(-50%);"
-                ><img src="assets/img/tree_left03.png" alt="나무1"></div>
+                ><img src="assets/img/tree_left03.png" alt="나무"></div>
                 <div class="tree2"
                 data-15000="transform:translateX(0%);"
                 data-18000="transform:translateX(-50%);"
-                ><img src="assets/img/tree_left04.png" alt="나무2"></div>
-                <div class="tree3"><img src="assets/img/tree_left01.png" alt="나무3"></div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                ><img src="assets/img/tree_left04.png" alt="나무"></div>
+                <div class="tree3"><img src="assets/img/tree_left01.png" alt="나무"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="car"
                 data-11600="transform:translateX(0%);"
                 data-14200="transform:translateX(-100%);"
@@ -297,17 +308,16 @@
                 ><img src="assets/img/car_cloud.png" alt="자동차연기"></div>
                 </div>
             </div>
-
             <!-- //intro -->
 
-            <div class="site"
-            data-14179="top:0%; left:100%; opacity:0;"
-            data-14180="top:0%; left:100%; opacity:1;"
+            <div class="site fixed"
+            data-14179="top:0%; left:100%; display:none;"
+            data-14180="top:0%; left:100%; display:block;"
             data-18020="top:0%; left:0%;"
-            data-21860="top:0%; left:-100%;"
-            data-21861="top:0%; left:-100%; opacity:0;"
+            data-21860="top:0%; left:-100%; display:block;"
+            data-21861="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="cloud1"
                 data-17300="transform:translateX(0%);"
                 data-20500="transform:translateX(-100%);"
@@ -316,7 +326,7 @@
                 data-18300="transform:translateX(0%);"
                 data-22000="transform:translateX(-50%);"
                 ><img src="assets/img/tree_right01.png" alt="나무1"></div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="siteStore">
                     <img src="assets/img/siteStore.png" alt="사이트가게">
                     <div class="siteTitle">
@@ -364,88 +374,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="sitePopup"
-                data-17899="display:none;"
-                data-17900="display:block;"
-                data-18499="display:block;"
-                data-18500="transform:translateY(0%);"
-                data-18700="transform:translateY(-150%);"
-                data-18701="display:none;"
-                >
-                    <ul>
-                        <li class="sitePopup1">
-                            <h2 class="num">01</h2>
-                            <span class="sub">webstandard</span>
-                            <span class="ex">웹 표준을 준수한 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup2">
-                            <h2 class="num">02</h2>
-                            <span class="sub">responsive</span>
-                            <span class="ex">웹 표준 기반의 반응형 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup3">
-                            <h2 class="num">03</h2>
-                            <span class="sub">megabox</span>
-                            <span class="ex">스크립트를 활용한 메가박스 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup4">
-                            <h2 class="num">04</h2>
-                            <span class="sub">clova - 01</span>
-                            <span class="ex">네이버 클로바 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup5">
-                            <h2 class="num">05</h2>
-                            <span class="sub">clova - 02</span>
-                            <span class="ex">네이버 클로바 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup6">
-                            <h2 class="num">06</h2>
-                            <span class="sub">clova - 03</span>
-                            <span class="ex">네이버 클로바 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup7">
-                            <h2 class="num">07</h2>
-                            <span class="sub">clova - 04</span>
-                            <span class="ex">네이버 클로바 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup8">
-                            <h2 class="num">08</h2>
-                            <span class="sub">clova - 05</span>
-                            <span class="ex">네이버 클로바 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                        <li class="sitePopup9">
-                            <h2 class="num">09</h2>
-                            <span class="sub">dothome</span>
-                            <span class="ex">스터디 내용이 정리 된 사이트</span>
-                            <div class="siteBtn">view more</div>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <!-- //site -->
 
-            <div class="mart"
-            data-18019="top:0%; left:100%; opacity:0;"
-            data-18020="top:0%; left:100%; opacity:1;"
+            <div class="mart fixed"
+            data-18019="top:0%; left:100%; display:none;"
+            data-18020="top:0%; left:100%; display:block;"
             data-21860="top:0%; left:0%;"
-            data-25700="top:0%; left:-100%;"
-            data-25701="top:0%; left:-100%; opacity:0;"
+            data-25700="top:0%; left:-100%; display:block;"
+            data-25701="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="cloud1"
                 data-21000="transform:translateX(0%);"
                 data-25200="transform:translateX(-100%);"
                 ><img src="assets/img/cloud.png" alt="구름"></div>
-                <div class="tree1"><img src="assets/img/tree_left01.png" alt="나무1"></div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                <div class="tree1"><img src="assets/img/tree_left01.png" alt="나무"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="heemMart">
                     <img src="assets/img/mart.png" alt="마트">
                     <h2>HEEM MART</h2>
@@ -466,26 +411,92 @@
                 ><img src="assets/img/sub_cha_et.png" alt=""></div>
             </div>
             <!-- //mart -->
-    
-            <div class="react"
-            data-21859="top:0%; left:100%; opacity:0;"
-            data-21860="top:0%; left:100%; opacity:1;"
-            data-25700="top:0%; left:0%;"
-            data-29540="top:0%; left:-100%;"
-            data-29541="top:0%; left:-100%; opacity:0;"
+
+            <div class="sitePopup"
+            data-17899="display:none;"
+            data-17900="display:block;"
+            data-18699="display:block;"
+            data-18700="transform:translateY(0%);"
+            data-18900="transform:translateY(-150%);"
+            data-18901="display:none;"
             >
-               
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <ul>
+                    <li class="sitePopup1">
+                        <h2 class="num">01</h2>
+                        <span class="sub">WEBSTANDARD</span>
+                        <span class="ex">웹 표준을 준수한 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup2">
+                        <h2 class="num">02</h2>
+                        <span class="sub">RESPONSIVE</span>
+                        <span class="ex">웹 표준 기반의 반응형 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup3">
+                        <h2 class="num">03</h2>
+                        <span class="sub">MEGABOX</span>
+                        <span class="ex">스크립트를 활용한 메가박스 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup4">
+                        <h2 class="num">04</h2>
+                        <span class="sub">CLOVA - 01</span>
+                        <span class="ex">네이버 클로바 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup5">
+                        <h2 class="num">05</h2>
+                        <span class="sub">CLOVA - 02</span>
+                        <span class="ex">네이버 클로바 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup6">
+                        <h2 class="num">06</h2>
+                        <span class="sub">CLOVA - 03</span>
+                        <span class="ex">네이버 클로바 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup7">
+                        <h2 class="num">07</h2>
+                        <span class="sub">CLOVA - 04</span>
+                        <span class="ex">네이버 클로바 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup8">
+                        <h2 class="num">08</h2>
+                        <span class="sub">CLOVA - 05</span>
+                        <span class="ex">네이버 클로바 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                    <li class="sitePopup9">
+                        <h2 class="num">09</h2>
+                        <span class="sub">DOTHOME</span>
+                        <span class="ex">스터디 내용이 정리 된 사이트</span>
+                        <div class="siteBtn"><span>VIEW MORE</span></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- sitePopup -->
+
+            <div class="react fixed"
+            data-21859="top:0%; left:100%; display:none;"
+            data-21860="top:0%; left:100%; display:block;"
+            data-25700="top:0%; left:0%;"
+            data-29540="top:0%; left:-100%; display:block;"
+            data-29541="top:0%; left:-100%; display:none;"
+            >
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="tree1"
                 data-23300="transform:translateX(0%);"
                 data-23600="transform:translateX(20%);"
                 data-26000="transform:translateX(-50%);"
-                ><img src="assets/img/tree_left03.png" alt="나무1"></div>
+                ><img src="assets/img/tree_left03.png" alt="나무"></div>
                 <div class="tree2"
                 data-27500="transform:translateX(0%);"
                 data-28500="transform:translateX(-30%);"
-                ><img src="assets/img/tree_right02.png" alt="나무1"></div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                ><img src="assets/img/tree_right02.png" alt="나무"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="cloud cloud1"
                 data-25000="transform:translateX(0%);"
                 data-28200="transform:translateX(-100%);"
@@ -573,15 +584,15 @@
                 </div>
             </div>
             <!-- //react -->
-    
-            <div class="figma"
-            data-25699="top:0%; left:100%; opacity:0;"
-            data-25700="top:0%; left:100%; opacity:1;"
+
+            <div class="figma fixed"
+            data-25699="top:0%; left:100%; display:none;"
+            data-25700="top:0%; left:100%; display:block;"
             data-29540="top:0%; left:0%;"
-            data-33380="top:0%; left:-100%;"
-            data-33381="top:0%; left:-100%; opacity:0;"
+            data-33380="top:0%; left:-100%; display:block;"
+            data-33381="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="cloud1"
                 data-29600="transform: translateX(0%);"
                 data-30500="transform: translateX(-20%);"
@@ -589,12 +600,12 @@
                 <div class="tree1"
                 data-27000="transform: translateX(0%);"
                 data-30000="transform: translateX(-30%);"
-                ><img src="assets/img/tree_left02.png" alt="나무1"></div>
+                ><img src="assets/img/tree_left02.png" alt="나무"></div>
                 <div class="tree2"
                 data-30500="transform: translateX(0%);"
                 data-31000="transform: translateX(-20%);"
-                ><img src="assets/img/tree_right03.png" alt="나무2"></div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                ><img src="assets/img/tree_right03.png" alt="나무"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="figmaStore">
                     <img src="assets/img/figmaStore.png" alt="피그마스토어">
                     <h2 class="figmaTitle">
@@ -633,39 +644,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="figmaPopup"
-                    data-29599="display:none;"
-                    data-29600="display:block;"
-                    data-30199="display:block;"
-                    data-30200="transform:translateY(0%);"
-                    data-30400="transform:translateY(-150%);"
-                    data-30401="display:none;"
-                >
-                    <img src="assets/img/figmaBook.png" alt="피그마팝업">
-                    <ul>
-                        <li class="book1"><a href="https://www.figma.com/proto/WpV0FiGXXztZiNjvN1JzCc/%EC%88%98%EC%97%85-HTML?node-id=1%3A2&scaling=contain" target="_blank">HTML</a></li>
-                        <li class="book2"><a href="https://www.figma.com/proto/g4rNhZkT8JgPYm9rTxFbQP/%EC%88%98%EC%97%85-CSS?node-id=1%3A2&scaling=contain" target="_blank">CSS</a></li>
-                        <li class="book3"><a href="https://www.figma.com/proto/wRxyza3YaQNiz8cUrLFMP3/Javascript?node-id=5%3A5&viewport=92%2C163%2C0.1195518970489502&scaling=contain" target="_blank">Javascript</a></li>
-                        <li class="book4"><a href="https://www.figma.com/proto/gkPhxSAjAGd0cOYlnTz5B4/%EC%88%98%EC%97%85-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC?node-id=1%3A2&scaling=contain" target="_blank">JQuery</a></li>
-                        <li class="book5"><a href="https://www.figma.com/proto/DLnZkKjjieLMhr0zNIzAnE/REACT?node-id=1%3A2&scaling=contain" target="_blank">React</a></li>
-                        <li class="book6"><a href="https://www.figma.com/proto/WflbbQIeNT5Rwna6GjfAJW/Vue?node-id=1%3A2&scaling=contain" target="_blank">Vue</a></li>
-                        <li class="book7"><a href="https://www.figma.com/proto/NKKlaTQwJm8aIUYrVnwYab/SCRIPT?node-id=1%3A2&scaling=contain" target="_blank">Script</a></li>
-                        <li class="book8"><a href="https://www.figma.com/proto/uZ4tVHVWvoXh1ctMWHCXMA/PHP?node-id=1%3A2&scaling=contain" target="_blank">PHP</a></li>
-                        <li class="book9"><a href="https://www.figma.com/proto/BrgF6QmcXt98NcX2AAPLrz/MysQL?node-id=5%3A5&scaling=contain" target="_blank">My SQL</a></li>
-                        <li class="book10"><a href="https://www.figma.com/proto/okr7pdMxG4WjMTaHoJLo01/sass?node-id=2%3A4&scaling=contain" target="_blank">SASS</a></li>
-                    </ul>
-                </div>
             </div>
             <!-- //figma -->
 
-            <div class="siteLast"
-            data-29539="top:0%; left:100%; opacity:0;"
-            data-29540="top:0%; left:100%; opacity:1;"
-            data-33380="top:0%; left:0%;"
-            data-37220="top:0%; left:-100%;"
-            data-37221="top:0%; left:-100%; opacity:0;"
+            <div class="figmaPopup"
+            data-29499="display:none;"
+            data-29500="display:block;"
+            data-30299="display:block;"
+            data-30300="transform:translateY(0%);"
+            data-30500="transform:translateY(-150%);"
+            data-30501="display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <img src="assets/img/figmaBook.png" alt="피그마팝업">
+                <ul>
+                    <li class="book1"><a href="https://www.figma.com/proto/WpV0FiGXXztZiNjvN1JzCc/%EC%88%98%EC%97%85-HTML?node-id=1%3A2&scaling=contain" target="_blank">HTML</a></li>
+                    <li class="book2"><a href="https://www.figma.com/proto/g4rNhZkT8JgPYm9rTxFbQP/%EC%88%98%EC%97%85-CSS?node-id=1%3A2&scaling=contain" target="_blank">CSS</a></li>
+                    <li class="book3"><a href="https://www.figma.com/proto/wRxyza3YaQNiz8cUrLFMP3/Javascript?node-id=5%3A5&viewport=92%2C163%2C0.1195518970489502&scaling=contain" target="_blank">Javascript</a></li>
+                    <li class="book4"><a href="https://www.figma.com/proto/gkPhxSAjAGd0cOYlnTz5B4/%EC%88%98%EC%97%85-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC?node-id=1%3A2&scaling=contain" target="_blank">JQuery</a></li>
+                    <li class="book5"><a href="https://www.figma.com/proto/DLnZkKjjieLMhr0zNIzAnE/REACT?node-id=1%3A2&scaling=contain" target="_blank">React</a></li>
+                    <li class="book6"><a href="https://www.figma.com/proto/WflbbQIeNT5Rwna6GjfAJW/Vue?node-id=1%3A2&scaling=contain" target="_blank">Vue</a></li>
+                    <li class="book7"><a href="https://www.figma.com/proto/NKKlaTQwJm8aIUYrVnwYab/SCRIPT?node-id=1%3A2&scaling=contain" target="_blank">Script</a></li>
+                    <li class="book8"><a href="https://www.figma.com/proto/uZ4tVHVWvoXh1ctMWHCXMA/PHP?node-id=1%3A2&scaling=contain" target="_blank">PHP</a></li>
+                    <li class="book9"><a href="https://www.figma.com/proto/BrgF6QmcXt98NcX2AAPLrz/MysQL?node-id=5%3A5&scaling=contain" target="_blank">My SQL</a></li>
+                    <li class="book10"><a href="https://www.figma.com/proto/okr7pdMxG4WjMTaHoJLo01/sass?node-id=2%3A4&scaling=contain" target="_blank">SASS</a></li>
+                </ul>
+            </div>
+            <!-- //figmaPopup -->
+
+            <div class="siteLast fixed"
+            data-29539="top:0%; left:100%; display:none;"
+            data-29540="top:0%; left:100%; display:block;"
+            data-33380="top:0%; left:0%;"
+            data-37220="top:0%; left:-100%; display:block;"
+            data-37221="top:0%; left:-100%; display:none;"
+            >
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="cloud cloud1"
                 data-31700="transform:translateX(0%);"
                 data-32500="transform:translateX(-50%);"
@@ -679,7 +692,7 @@
                     <img src="assets/img/door_pink.png" alt="문">
                     <h2><span>애니메이션</span><br />도 만들 줄<br />압니다.</h2>
                 </div>
-                <div class="road"><img src="assets/img/road.png" alt="길"></div>
+                <div class="road roadFix"><img src="assets/img/road.png" alt="길"></div>
                 <div class="siteLastCha"
                 data-26999="opacity:0;"
                 data-27000="opacity:1;"
@@ -697,74 +710,73 @@
         <!-- //site -->
 
         <section id="animation">
-            <div class="balloon1"
-            data-33379="top:0%; left:100%; opacity:0;"
-            data-33380="top:0%; left:100%; opacity:1;"
+            <div class="balloon1 fixed"
+            data-33379="top:0%; left:100%; display:none;"
+            data-33380="top:0%; left:100%; display:block;"
             data-37220="top:0%; left:0%;"
-            data-39720="top:-100%; left:0%;"
-            data-39721="top:-100%; left:0%; opacity:0;"
+            data-39720="top:-100%; left:0%; display:block;"
+            data-39721="top:-100%; left:0%; display:none;"
             >
                 <div class="star"><img src="assets/img/star.png" alt="별"></div>
             </div>
             <!-- //balloon1 -->
 
-            <div class="balloon2"
-            data-37219="top:100%; left:0%; opacity:0;"
-            data-37220="top:100%; left:0%; opacity:1;"
+            <div class="balloon2 fixed"
+            data-37219="top:100%; left:0%; display:none;"
+            data-37220="top:100%; left:0%; display:block;"
             data-39720="top:0%; left:0%;"
-            data-41720="top:-100%; left:0%;"
-            data-41721="top:-100%; left:0%; opacity:0;"
+            data-41720="top:-100%; left:0%; display:block;"
+            data-41721="top:-100%; left:0%; display:none;"
             >
                 <div class="star"><img src="assets/img/star.png" alt="별"></div>
             </div>
             <!-- //balloon2 -->
 
-            <div class="balloon3"
-            data-39719="top:100%; left:0%; opacity:0;"
-            data-39720="top:100%; left:0%; opacity:1;"
+            <div class="balloon3 fixed"
+            data-39719="top:100%; left:0%; display:none;"
+            data-39720="top:100%; left:0%; display:block;"
             data-41720="top:0%; left:0%;"
             data-41920="top:0%; left:0%;"
-            data-43920="top:-100%; left:0%;"
-            data-43921="top:-100%; left:0%; opacity:0;"
+            data-43920="top:-100%; left:0%; display:block;"
+            data-43921="top:-100%; left:0%; display:none;"
             >
                 <div class="star"><img src="assets/img/star.png" alt="별"></div>
                 <div class="ballBackTxt">
                     <h2>Animation</h2>
                 </div>
-                <div class="aniCha"><img src="assets/img/cha_big.png" alt="캐릭터"></div>
-                <div class="aniBall aniBall1"><div class="aniBtn">GSAP</div></div>
-                <div class="aniBall aniBall2"><div class="aniBtn">Text</div></div>
-                <div class="aniBall aniBall3"><div class="aniBtn">Rocket</div></div>
-                <div class="aniBall aniBall4"
+                <div class="aniCha">
+                    <img src="assets/img/cha_big.png" alt="캐릭터">
+                    <div class="aniTitle"><h2>Ball Click!</h2></div>
+                </div>
+                <div class="aniBall aniBall1"
                 data-41200="transform:translateY(-200%); opacity:0;"
                 data-41520="transform:translateY(0%); opacity:1;"
                 ><img src="assets/img/ball05.png" alt="공"><div class="aniBtn">Wave</div></div>
-                <div class="aniBall aniBall5"
+                <div class="aniBall aniBall2"
                 data-41400="transform:translateY(-100%); opacity:0;"
                 data-41450="transform:translateY(0%); opacity:1;"
                 ><img src="assets/img/ball01.png" alt="공"><div class="aniBtn">Cube</div></div>
-                <div class="aniBall aniBall6"
+                <div class="aniBall aniBall3"
                 data-41000="transform:translateY(-200%); opacity:0;"
                 data-41400="transform:translateY(0%); opacity:1;"
-                ><img src="assets/img/ball03.png" alt="공"><div class="aniBtn">Octopus</div></div>
+                ><img src="assets/img/ball02.png" alt="공"><div class="aniBtn">Text</div></div>
+                <div class="aniBall aniBall4"><div class="aniBtn">Rocket</div></div>
+                <div class="aniBall aniBall5"><div class="aniBtn">Octopus</div></div>
                 
                 <div class="aniFrame">
                     <div class="ani ani1">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani1.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation02.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani2">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani2.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation04.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani3">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani3.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/animation16.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani4">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani4.html" frameborder="0"></iframe>
+                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani3.html" frameborder="0"></iframe>
                     </div>
                     <div class="ani ani5">
-                        <iframe src="https://heemwon.github.io/dothome1/animation/port/ani5.html" frameborder="0"></iframe>
-                    </div>
-                    <div class="ani ani6">
                         <iframe src="https://heemwon.github.io/dothome1/animation/port/ani6.html" frameborder="0"></iframe>
                     </div>
                 </div>
@@ -821,17 +833,15 @@
             </div>
             <!-- ball -->
 
-            
-
-            <div class="aniLast"
-            data-41919="top:100%; left:0%; opacity:0;"
-            data-41920="top:100%; left:0%; opacity:1;"
+            <div class="aniLast fixed"
+            data-41919="top:100%; left:0%; display:none;"
+            data-41920="top:100%; left:0%; display:block;"
             data-43920="top:0%; left:0%;"
             data-44020="top:0%; left:0%;"
-            data-47860="top:0%; left:-100%;"
-            data-47861="top:0%; left:-100%; opacity:0;"
+            data-47860="top:0%; left:-100%; display:block;"
+            data-47861="top:0%; left:-100%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
                 <div class="door">
                     <img src="assets/img/door_dark.png" alt="문">
                     <h2><span>스크립트</span>로<br />만든 여러가지<br />효과들</h2>
@@ -840,7 +850,7 @@
                 <div class="balloon2"><img src="assets/img/balloon02.png" alt="풍선"></div>
                 <div class="balloon3"><img src="assets/img/balloon03.png" alt="풍선"></div>
                 <div class="balloon4"><img src="assets/img/balloon04.png" alt="풍선"></div>
-                <div class="road"><img src="assets/img/road_green.png" alt="잔디"></div>
+                <div class="road roadFix"><img src="assets/img/road_green.png" alt="잔디"></div>
                 <div class="ballCha"
                 data-42899="opacity:0;"
                 data-42900="opacity:1;"
@@ -854,178 +864,63 @@
         <!-- //animation -->
 
         <section id="script">
-            <div class="scriptIntro"
-            data-44019="top:0%; left:100%; opacity:0;"
-            data-44020="top:0%; left:100%; opacity:1;"
+            <div class="scriptIntro fixed"
+            data-44019="top:0%; left:100%; display:none;"
+            data-44020="top:0%; left:100%; display:block;"
             data-47860="top:0%; left:0%;"
             data-47960="top:0%; left:0%;"
-            data-49960="top:100%; left:0%;"
-            data-49961="top:100%; left:0%; opacity:0;"
-            
+            data-49960="top:100%; left:0%; display:block;"
+            data-49961="top:100%; left:0%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
-                <div class="road"><img src="assets/img/road_green.png" alt="잔디"></div>
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
+                <div class="road roadFix"><img src="assets/img/road_green.png" alt="잔디"></div>
             </div>
             <!-- //scriptIntro -->
-            
-            <div class="script1"
-            data-47959="top:-100%; left:0%; opacity:0;"
-            data-47960="top:-100%; left:0%; opacity:1;"
+
+            <div class="scriptWrap script1 fixed"
+            data-47959="top:-100%; left:0%; display:none;"
+            data-47960="top:-100%; left:0%; display:block;"
             data-49960="top:0%; left:0%;"
-            data-51960="top:100%; left:0%;"
-            data-51961="top:100%; left:0%; opacity:0;"
+            data-51960="top:100%; left:0%; display:block;"
+            data-51961="top:100%; left:0%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
-                <div class="effect effect1">
+                <div class="star flash"><img src="assets/img/star.png" alt="별"></div>
+                <div class="effect effect1 lime">
                     <img src="assets/img/script_green.png" alt="스크립트배경">
                     <div class="effectTxt">
                         <h2>PARALLAX EFFECT</h2>
                         <p>스크롤값에 따라 이질감을 주는 효과를 스크립트를 활용하여 구현했습니다.</p>
                         <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
+                            <div class="effectBtn1"><h3>SCRIPT VIEW ▶</h3></div>
                         </div>
                     </div>
                 </div>
-                <div class="effect effect2">
+                <div class="effect effect2 mint">
                     <img src="assets/img/script_mint.png" alt="스크립트배경">
                     <div class="effectTxt">
                         <h2>MOUSE EFFECT</h2>
                         <p>마우스 커서의 움직임에 따라 글자 및 이미지에 다양한 효과를 스크립트를 활용하여 구현했습니다.</p>
                         <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="effectPopup">
-                    <div class="popup popup1">
-                        <div class="left">
-                            <div class="effectPopupTitle"><h2>MOUSE EFFECT</h2></div>
-                            <iframe src="https://heemwon.github.io/dothome1/effect/port/mouseEffect01.html" frameborder="0"></iframe>
-                        </div>
-                        <div class="right">
-                            <div class="effectBtnWrap">
-                                <div class="effectBtn effectBtn1">1</div>
-                                <div class="effectBtn effectBtn2">2</div>
-                                <div class="effectBtn effectBtn3">3</div>
-                                <div class="effectBtn effectBtn4">4</div>
-                                <div class="effectBtn effectBtn5">5</div>
-                                <div class="effectBtn effectBtn6">6</div>
-                                <div class="effectBtn effectBtn7">7</div>
-                                <div class="effectBtn effectBtn8">8</div>
-                            </div>
+                            <div class="effectBtn2"><h3>SCRIPT VIEW ▶</h3></div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- //script1 -->
 
-            <div class="script2"
-            data-49959="top:-100%; left:0%; opacity:0;"
-            data-49960="top:-100%; left:0%; opacity:1;"
-            data-51960="top:0%; left:0%;"
-            data-53960="top:100%; left:0%;"
-            data-53961="top:100%; left:0%; opacity:0;"
-            >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
-                <div class="effect effect3">
-                    <img src="assets/img/script_green.png" alt="스크립트배경">
-                    <div class="effectTxt">
-                        <h2>SLIDER EFFECT</h2>
-                        <p>스크립트를 활용하여, 다양한 슬라이드 효과를 구현했습니다. 가로 슬라이드, 연속적 슬라이드</p>
-                        <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="effect effect4">
-                    <img src="assets/img/script_mint.png" alt="스크립트배경">
-                    <div class="effectTxt">
-                        <h2>QUIZ EFFECT</h2>
-                        <p>객관식, 주관식의 문제를 정답을 누르면 해설을 볼 수 있게끔 스크립트를 활용하여 구현했습니다.</p>
-                        <div class="button">
-                            <a href="#"><h3>SCRIPT VIEW ▶</h3></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- //script2 -->
-
-            <div class="scriptLast"
-            data-51959="top:-100%; left:0%; opacity:0;"
-            data-51960="top:-100%; left:0%; opacity:1;"
-            data-53960="top:0%; left:0%;"
-            data-55960="top:100%; left:0%;"
-            data-55961="top:100%; left:0%; opacity:0;"
-            >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
-                <div class="scriptLastTitle">
-                    <h2>이제 정말 마지막<br /> 거의 다 왔어요!</h2>
-                </div>
-                <div class="scriptLastCha"
-                data-51199="opacity:0;"
-                data-51200="opacity:1;"
-                ><img src="assets/img/cha_ball.png" alt="캐릭터"></div>
-                <div class="wave"><img src="assets/img/wave_last.png" alt="웨이브"></div>
-            </div>
-            <!-- //scriptLast -->
-
         </section>
         <!-- //script -->
 
-        <section id="contact">
-            <div class="contact"
-            data-53959="top:-100%; left:0%; opacity:0;"
-            data-53960="top:-100%; left:0%; opacity:1;"
-            data-55960="top:0%; left:0%;"
-            >
-                <div class="left">
-                    <h2>CONTACT ME!</h2>
-                    <div class="txtBox">
-                        <div class="txtLeft">
-                            <ul>
-                                <li>YOUR EMAIL</li>
-                                <li>SUBJECT</li>
-                                <li>MESSAGE</li>
-                            </ul>
-                        </div>
-                        <div class="txtRight">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="message"></div>
-                    <div class="send">
-                        <h3>SEND MESSAGE</h3>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="rightTop">
-                        <div class="imgBox"><img src="assets/img/img01.jpg" alt="이미지"></div>
-                        <div class="myInfo">
-                            <h2>LEE HEEWON</h2>
-                            <ul>
-                                <li>+82 10 9918 6603</li>
-                                <li>ehw603@naver.com</li>
-                            </ul>
-                            <div class="sns">INSTAGRAM</div>
-                        </div>
-                    </div>
-                    <div class="rightBottom"><img src="assets/img/last_cha.png" alt="캐릭터"></div>
-                </div>
-            </div>
-        </section>
-        <!-- //contact -->
-
-    </section>
+    </div>
     <!-- //sectionWrap -->
 
-    <section id="siteSection">
-        <div id="site1">
+
+    <div id="sitePageWrap">
+        <div class="sitePage sitePage1 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_webstandard.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video1">
+                    <iframe src="https://player.vimeo.com/video/498233203?background=1" width="640" height="352" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1046,11 +941,11 @@
         </div>
         <!-- site1 -->
 
-        <div id="site2">
+        <div class="sitePage sitePage2 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_reponsive.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video2">
+                    <iframe src="https://player.vimeo.com/video/498235642?background=1" width="640" height="323" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1071,11 +966,11 @@
         </div>
         <!-- site2 -->
 
-        <div id="site3">
+        <div class="sitePage sitePage3 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_megabox.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video3">
+                    <iframe src="https://player.vimeo.com/video/498236199?background=1" width="640" height="326" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1095,11 +990,11 @@
         </div>
         <!-- site3 -->
 
-        <div id="site4">
+        <div class="sitePage sitePage4 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_clova1.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video4">
+                    <iframe src="https://player.vimeo.com/video/498236388?background=1" width="640" height="326" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1119,11 +1014,11 @@
         </div>
         <!-- site4 -->
 
-        <div id="site5">
+        <div class="sitePage sitePage5 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_clova2.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video5">
+                    <iframe src="https://player.vimeo.com/video/498236486?background=1" width="640" height="327" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1143,15 +1038,15 @@
         </div>
         <!-- site5 -->
 
-        <div id="site6">
+        <div class="sitePage sitePage6 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_clova3.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video6">
+                    <iframe src="https://player.vimeo.com/video/498242481?background=1" width="640" height="329" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
-                        <h2>NAVER CLOVA 03</h2>
+                        <h2>MEGABOX SITE</h2>
                         <ul>
                             <li>User Experience</li>
                             <li>Art Direction</li>
@@ -1159,19 +1054,19 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <a href="../coding/coding_3/index.html" target="_blank"><h2>VIEW</h2></a>
-                        <a href="https://github.com/heemwon/dothome1/tree/master/coding/coding_3" target="_blank"><h2>SOURCE</h2></a>
+                        <a href="../megabox/index.html" target="_blank"><h2>VIEW</h2></a>
+                        <a href="https://github.com/heemwon/dothome1/tree/master/megabox" target="_blank"><h2>SOURCE</h2></a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- site6 -->
 
-        <div id="site7">
+        <div class="sitePage sitePage7 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_clova4.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video7">
+                    <iframe src="https://player.vimeo.com/video/498236552?background=1" width="640" height="327" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1191,11 +1086,11 @@
         </div>
         <!-- site7 -->
 
-        <div id="site8">
+        <div class="sitePage sitePage8 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_clova5.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video8">
+                    <iframe src="https://player.vimeo.com/video/498236657?background=1" width="640" height="327" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1215,11 +1110,11 @@
         </div>
         <!-- site8 -->
 
-        <div id="site9">
+        <div class="sitePage sitePage9 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_dothome.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video9">
+                    <iframe src="https://player.vimeo.com/video/498237091?background=1" width="640" height="328" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1239,11 +1134,11 @@
         </div>
         <!-- site9 -->
 
-        <div id="site react">
+        <div class="sitePage sitePage10 fixed">
             <div class="siteWave"></div>
             <div class="siteInfo">
-                <div class="videoWrap">
-                    <video src="assets/img/video_react.mp4" autoplay muted loop class="siteVideo"></video>
+                <div class="videoWrap video10">
+                    <iframe src="https://player.vimeo.com/video/498237113?background=1" width="640" height="330" frameborder="0"></iframe>
                 </div>
                 <div class="siteText">
                     <div class="left">
@@ -1260,8 +1155,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- //siteSection -->
+        <!-- site10 -->
+
+    </div>
+    <!-- //sitePageWrap -->
 
 
     <!-- script -->
@@ -1312,8 +1209,8 @@
             clearTimeout($.data(this,"scrollCheck"));
 
             $.data(this, "scrollCheck", setTimeout(function(){
-                $(".cha").removeClass("walk");
-                $(".cha").removeClass("leftWalk");
+                $(".walkCha").removeClass("walk");
+                $(".walkCha").removeClass("leftWalk");
                 $(".skillsCha").removeClass("walk");
                 $(".skillsCha").removeClass("leftWalk");
                 $(".siteLastCha").removeClass("walk");
@@ -1321,21 +1218,90 @@
             },100))
 
             if(scrollTop > lastScrollTop){
-                $(".cha").removeClass("left");
-                $(".cha").addClass("walk");
+                $(".walkCha").removeClass("left");
+                $(".walkCha").addClass("walk");
                 $(".skillsCha").removeClass("left");
                 $(".skillsCha").addClass("walk");
                 $(".siteLastCha").removeClass("left");
                 $(".siteLastCha").addClass("walk");
             } else {
-                $(".cha").addClass("left");
-                $(".cha").addClass("leftWalk");
+                $(".walkCha").addClass("left");
+                $(".walkCha").addClass("leftWalk");
                 $(".skillsCha").addClass("left");
                 $(".skillsCha").addClass("leftWalk");
                 $(".siteLastCha").addClass("left");
                 $(".siteLastCha").addClass("leftWalk");
             }
             lastScrollTop = scrollTop;
+        });
+
+        // 사이트 클릭하면 페이지 나오기
+        for(let i = 0; i <= 9; i++){
+            $(".sitePopup"+i+" .siteBtn").click(function(){
+                $(".sitePage"+i).css("top","0%");
+                $(".pageClose").show();
+            });
+        }
+
+        // 페이지 버튼 오버시 커서 안보이게하기
+        $(".sitePage a").hover(function(){
+            $(".pageClose").hide();
+        }, function(){
+            $(".pageClose").show();
+        });
+
+        // 커서 움직임
+        $(document).mousemove(function(e){
+            gsap.to(".reactCursor", {duration: 0.4, left: e.pageX, top: e.pageY})
+            gsap.to(".pageClose", {duration: 0.6, left: e.pageX-10, top: e.pageY-10})
+        });
+
+        // 커서 누르면 페이지 사라지기
+        for(let j = 0; j <= 10; j++){
+            $(".pageClose").click(function(){
+                $(".sitePage"+j).css("top","-100%");
+                $(".pageClose").hide();
+            });
+        }
+
+        // 신발에 마우스 오버하면 커서 변경
+        $(".shoes").hover(function(){
+            $(".reactCursor").addClass("active");
+            $(".shoes").css("cursor","pointer");
+        }, function(){
+            $(".reactCursor").removeClass("active");
+        })
+
+        // 신발 누르면 페이지 나오기
+        $(".shoes").click(function(){
+            $(".sitePage10").css("top","0%");
+            $(".pageClose").show();
+        });
+
+        // 애니메이션 클릭 효과(1~3 원 애니메이션, 4~5 전체)
+        for(let k = 0; k <= 3; k++){
+            $(".aniBall"+ k +" .aniBtn").click(function(){
+                $(".ani"+k).css("transform","scale(1)");
+                setTimeout(function(){
+                    $(".ani"+k).css("transform","scale(0)");
+                },2500);
+            });
+        }
+        $(".aniBall4 .aniBtn").click(function(){
+            $(".ani4").show();
+            $(".ani4").addClass("move");
+            setTimeout(function(){
+                $(".ani4").removeClass("move");
+                $(".ani4").hide();
+            },4000)
+        });
+        $(".aniBall5 .aniBtn").click(function(){
+            $(".ani5").show();
+            $(".ani5").addClass("move");
+            setTimeout(function(){
+                $(".ani5").removeClass("move");
+                $(".ani5").hide();
+            },10000)
         });
 
         // 텍스트 타이핑(사이트)
@@ -1522,185 +1488,7 @@
                     }, 1000);
                 }
             } 
-        }    
-
-
-        // 리액트 신발 마우스오버
-        $(document).mousemove(function(e){
-            gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY})
-            gsap.to(".close", {duration: 0.6, left: e.pageX-10, top: e.pageY-10})
-        });
-
-        $(".shoes").hover(function(){
-            $(".cursor").addClass("active");
-            $(".shoes").css("cursor","pointer");
-        }, function(){
-            $(".cursor").removeClass("active");
-        })
-
-        // 사이트 클릭 섹션
-        $(".sitePopup1 .siteBtn").click(function(){
-            $("#site1").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup2 .siteBtn").click(function(){
-            $("#site2").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup3 .siteBtn").click(function(){
-            $("#site3").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup4 .siteBtn").click(function(){
-            $("#site4").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup5 .siteBtn").click(function(){
-            $("#site5").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup6 .siteBtn").click(function(){
-            $("#site6").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup7 .siteBtn").click(function(){
-            $("#site7").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup8 .siteBtn").click(function(){
-            $("#site8").css("top","0%");
-            $(".close").show();
-        });
-        $(".sitePopup9 .siteBtn").click(function(){
-            $("#site9").css("top","0%");
-            $(".close").show();
-        });
-
-        $(".close").click(function(){
-            $("#site1").css("top","-100%");
-            $("#site2").css("top","-100%");
-            $("#site3").css("top","-100%");
-            $("#site4").css("top","-100%");
-            $("#site5").css("top","-100%");
-            $("#site6").css("top","-100%");
-            $("#site7").css("top","-100%");
-            $("#site8").css("top","-100%");
-            $("#site9").css("top","-100%");
-            $("#react").css("top","-100%");
-            $(".close").hide();
-        });
-        $(".close").hover(function(){
-            $(".close").css("background-color","#E7625E");
-            $(".close").css("cursor","none");
-        },function(){
-            $(".close").css("background-color","#283542");
-        });
-        $("#site1 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site2 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site3 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site4 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site5 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site6 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site7 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site8 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-        $("#site9 a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-
-
-        $(".shoes").click(function(){
-            $("#react").css("top","0%");
-            $(".close").show();
-        });
-        $("#react a").hover(function(){
-            $(".close").hide();
-        }, function(){
-            $(".close").show();
-        });
-
-        // 애니메이션 클릭 효과
-        $(".aniBall1 .aniBtn").click(function(){
-            // $(".ani1").show();
-            $(".ani1").addClass("move");
-            setTimeout(function(){
-                $(".ani1").removeClass("move");
-                // $(".ani1").hide();
-            },8000)
-        });
-        $(".aniBall2 .aniBtn").click(function(){
-            $(".ani2").show();
-            $(".ani2").addClass("move");
-            setTimeout(function(){
-                $(".ani2").removeClass("move");
-                $(".ani2").hide();
-            },8000)
-        });
-        $(".aniBall3 .aniBtn").click(function(){
-            $(".ani3").show();
-            $(".ani3").addClass("move");
-            setTimeout(function(){
-                $(".ani3").removeClass("move");
-                $(".ani3").hide();
-            },4000)
-        });
-        $(".aniBall4 .aniBtn").click(function(){
-            $(".ani4").show();
-            $(".ani4").addClass("move");
-            setTimeout(function(){
-                $(".ani4").removeClass("move");
-                $(".ani4").hide();
-            },4000)
-        });
-        $(".aniBall5 .aniBtn").click(function(){
-            $(".ani5").show();
-            $(".ani5").addClass("move");
-            setTimeout(function(){
-                $(".ani5").removeClass("move");
-                $(".ani5").hide();
-            },6000)
-        });
-        $(".aniBall6 .aniBtn").click(function(){
-            $(".ani6").show();
-            $(".ani6").addClass("move");
-            setTimeout(function(){
-                $(".ani6").removeClass("move");
-                $(".ani6").hide();
-            },10000)
-        });
+        }   
     </script>
 </body>
 </html>
