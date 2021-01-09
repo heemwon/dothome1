@@ -1168,50 +1168,221 @@
     left: 45%; bottom: 8%;
 }
 
-/* script - script1 */
-.lime img {
-    width: 35vw;
+/* script - script1,2 */
+.lime {
     position: absolute;
     left: 18%; top: 0;
 }
 .lime .effectTxt {
-    width: 30vw; height: 35vh;
     position: absolute;
-    left: 18%; top: 0;
-    margin: 0 auto;
+    left: 8%; top: 8%;
 }
-.lime .button h3 {color: #DED545;}
+.lime .scriptBtn h3 {color: #DED545;}
+.mint {
+    position: absolute;
+    left: 18%; top: 50%;
+}
+.mint .effectTxt {
+    position: absolute;
+    left: 8%; top: 8%;
+}
+.mint .scriptBtn h3 {color: #3BB6A7;}
 
-.effect .effectTxt h2 {
-    font-family: var(--font-eng);
-    font-size: 3vw;
-    padding-bottom: 4%;
+.effect img {position: relative; width: 35vw; height: 20vw;} 
+.effect .effectTxt {
+    width: 29vw; height: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.effect .effectTxt .scriptTitle {
+    flex: 0 0 10%;
+    padding-bottom: 6%;
     border-bottom: 1px solid #fff;
 }
-.effect .effectTxt p {
+.effect .effectTxt .scriptTitle h2 {
+    font-size: 3vw;
+    font-family: var(--font-eng);
+}
+.effect .effectTxt .scriptEx {flex: 0 0 10%;}
+.effect .effectTxt .scriptEx p {
     font-size: 1vw;
     font-family: var(--font-kor);
     color: #fff;
-    padding: 5% 0;
+    word-break: keep-all;
 }
-.effect .effectTxt .button h3 {
-    display: inline-block;
-    font-family: var(--font-eng);
+.effect .effectTxt .scriptBtn {flex: 0 0 10%;}
+.effect .effectTxt .scriptBtn h3 {
     font-size: 1vw;
-    padding: 15px 20px;
+    font-family: var(--font-eng);
+    display: inline-block;
+    padding: 0.8vw 1vw;
     background: rgba(254, 253, 234, 0.8);
-    border-radius: 20px;
+    border-radius: 2vw;
 }
-.effect .effectTxt .button h3:hover {
+.effect .effectTxt .scriptBtn h3:hover {
     cursor: pointer;
     background-color:#ffffff33;
     color: rgba(255,255,255,0.8);
     transition: background-color 1000ms ease, background 500ms ease ;
 }
 
+/* script - scriptLast */
+.scriptLast .scriptLastTitle {
+    position: absolute;
+    left: 24%; top: 50%;
+    font-family: var(--font-kor);
+    width: 26vw;
+    font-size: 2vw;
+    line-height: 1.2;
+    animation: shakeY 1.5s 1s ease-in-out infinite;
+}
+.scriptLast .wave {
+    position: absolute;
+    left: 0; top: 0;
+} 
+.scriptLast .scriptLastCha {
+    width: 12vw;
+    position: fixed;
+    left: 65%; bottom: 30%;
+}
 
-.mint {left: 18%; top: 50%;}
-.mint .button h3 {color: #3BB6A7;}
+/* script - scriptPopup */
+.scriptPopup {
+    width: 100vw; height: 100vh;
+}
+.effectIframe {
+    width: 70vw; height: 40vw;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+.effectPopupWrap {
+    display: none;
+    transform: scale(0);
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    position: fixed; 
+    left: 15%; top: 10%; 
+}
+.effectPopupWrap .effectClose {
+    font-family: var(--font-eng);
+    font-size: 1.5vw;
+    color: #fff;
+    background: #f0aa53;
+    padding: 0.5% 1%;
+    border-radius: 10vw;
+    position: absolute;
+    right: -4%; top: 0;
+    transition: all 0.2s;
+}
+.effectPopupWrap .effectClose:hover {
+    cursor: pointer;
+    background-color:#ffffff33;
+    color: rgba(255,255,255,0.8);
+    border-radius: 10vw;
+}
+
+/* contact */
+.contact {
+    width: 100vw; height: 100vh;
+    background: #3DB8A9;
+    font-family: var(--font-eng);
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactInfo {flex: 0 0 40%;}
+.contactInfo h2 {font-size: 3vw; margin-bottom: 5%;}
+.contactInfo .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputBox .left {
+    flex: 0 0 35%;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+.inputBox .right {flex: 0 0 65%;}
+.input-text {
+    width: 100%;
+    border: none;
+    border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-kor);
+    font-size: 1vw;
+    padding: 2% 3%;
+    margin-bottom: 2%;
+    color: #00977C;
+}
+.inputBox .bottom {
+    flex: 0 0 100%;
+    font-size: 2vw;
+}
+.inputBox .bottom li:nth-child(1) {margin-bottom: 1%;}
+.sendMessage {
+    font-family: var(--font-eng);
+    width: 100%;
+    font-size: 2vw;
+    border-radius: 1vw;
+    background: #00977C;
+    color: #fff;
+    border: 0;
+    padding: 2% 0;
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+.sendMessage:hover {
+    background-color:#ffffff33;
+    color: #00977b81;
+    cursor: pointer;
+}
+.myProfile {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.myProfile .myPhoto {
+    flex: 0 0 50%;
+    width: 100%;
+    height: 20vw;
+    background: url(../img/img01.jpg) no-repeat;
+    background-size: cover;
+}
+.myProfile .info {
+    flex: 0 0 47%;
+    font-size: 1.9vw;
+    display: flex;
+    flex-direction: column;
+}
+.myProfile .info h2 {flex: 0 1 10%;}
+.myProfile .info ul {
+    flex: 0 1 80%;
+    padding-top: 5%;
+}
+.myProfile .info .sns a {
+    flex: 0 1 10%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 1vw;
+    padding: 3% 0;
+    background: #00977C;
+    transition: background-color 1000ms ease, background 500ms ease ;
+}
+.myProfile .info .sns a:hover {
+    background-color:#ffffff33;
+    color: #00977b81;
+}
+.myProfile .photo {
+    flex: 0 0 100%;
+    position: relative;
+}
+.myProfile .photo .heart {
+   position: absolute;
+   width: 4vw;
+   right: 47%; top: 25%;
+   animation: shakeY 2s infinite;
+}
 
 
 /* sitePage - 사이트, 리액트 클릭하면 나오는 페이지 */
