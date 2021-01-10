@@ -52,6 +52,9 @@ textarea::placeholder {
 /* fieldset 테두리 초기화 */
 fieldset {border: 0;}
 
+/* button 테두리 추기화 */
+button {outline: 0; border: 0;}
+
 /* 배경 fixed */
 .fixed {
     position: fixed;

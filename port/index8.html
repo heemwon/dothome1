@@ -1,8 +1,15 @@
+<?php
+    include './php/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="heemwon">
+    <meta name="description" content="힘원 포트폴리오 사이트입니다.">
+    <meta name="keywords" content="웹표준, 웹접근성, 사이트만들기, 포트폴리오, 힘원">
     <title>HEEMWON | PORTFOLIO</title>
 
     <!-- css -->
@@ -1008,19 +1015,19 @@
                 <div class="contact">
                     <div class="contactInfo">
                         <h2>CONTACT ME!</h2>
-                        <form action="saveMsg.php" name="contact" method="post">
+                        <form action="./php/saveMsg.php" name="contact" method="post">
                             <fieldset class="inputBox">
                                 <ul class="left">
                                     <li><label for="yourEmail">YOUR EMAIL</label></li>
-                                    <li><label for="subject">SUBJECT</label></li>
+                                    <li><label for="yourSubject">SUBJECT</label></li>
                                 </ul>
                                 <ul class="right">
                                     <li><input type="email" name="yourEmail" id="yourEmail" class="input-text" placeholder="이메일을 입력해주세요." required autofocus/></li>
-                                    <li><input type="text" name="subject" id="subject" class="input-text" placeholder="제목을 입력해주세요." required autofocus/></li>
+                                    <li><input type="text" name="yourSubject" id="yourSubject" class="input-text" placeholder="제목을 입력해주세요." required autofocus/></li>
                                 </ul>
                                 <ul class="bottom">
-                                    <li><label for="message">MESSAGE</label></li>
-                                    <li><textarea name="message" id="message" class="input-text" rows="13" required placeholder="내용을 입력해주세요."></textarea></li>
+                                    <li><label for="yourMsg">MESSAGE</label></li>
+                                    <li><textarea name="yourMsg" id="yourMsg" class="input-text" rows="13" required placeholder="내용을 입력해주세요."></textarea></li>
                                 </ul>
                             </fieldset>
                             <button class="sendMessage" type="submit" value="메세지 전송하기">SEND MESSAGE</button>
@@ -1181,7 +1188,7 @@
                 </div>
                 <div class="siteText">
                     <div class="left">
-                        <h2>NAVER CLOVA 03</h2>
+                        <h2>MEGABOX SITE</h2>
                         <ul>
                             <li>User Experience</li>
                             <li>Art Direction</li>
@@ -1189,8 +1196,8 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <a href="../coding/coding_3/index.html" target="_blank"><h2>VIEW</h2></a>
-                        <a href="https://github.com/heemwon/dothome1/tree/master/coding/coding_3" target="_blank"><h2>SOURCE</h2></a>
+                        <a href="../megabox/index.html" target="_blank"><h2>VIEW</h2></a>
+                        <a href="https://github.com/heemwon/dothome1/tree/master/megabox" target="_blank"><h2>SOURCE</h2></a>
                     </div>
                 </div>
             </div>
@@ -1284,8 +1291,8 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <a href="#" target="_blank"><h2>VIEW</h2></a>
-                        <a href="https://github.com/heemwon/dothome1/tree/master/webstandard" target="_blank"><h2>SOURCE</h2></a>
+                        <a href="https://react-000.web.app" target="_blank"><h2>VIEW</h2></a>
+                        <a href="https://github.com/heemwon/react01" target="_blank"><h2>SOURCE</h2></a>
                     </div>
                 </div>
             </div>
@@ -1409,7 +1416,7 @@
 
         // 신발 누르면 페이지 나오기
         $(".shoes").click(function(){
-            $(".sitePage10").css("top","0%");
+            $(".sitePage10").css("top","0%").show();
             $(".pageClose").show();
         });
 
@@ -1442,7 +1449,8 @@
         // 스크립트 버튼 누르면 팝업 나오기
         for(let l = 0; l <= 4; l++){
             $(".effectBtn"+l).click(function(){
-                $(".effectPopup"+l).css("transform","scale(1)").show();
+                $(".effectPopup"+l).css("opacity","1");
+                $(".effectPopup"+l).css("transform","scale(1)");
                 $(".scriptCha").hide();
             });
             $(".effectCloseBtn"+l).click(function(){
