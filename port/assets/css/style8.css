@@ -1414,7 +1414,7 @@
     transform: translate(-50%, -50%);
 }
 .sitePage .videoWrap {
-    border-radius: 2vw;
+    border-radius: 3vw;
     overflow: hidden;
 }
 .sitePage .siteText {
