@@ -85,21 +85,17 @@
 /* pageClose cursor */
 .pageClose {
     display: none;
-    width: 1.5vw; height: 3vh;
-    line-height: 3vh;
+    width: 30px; height: 30px;
     text-align: center;
-    line-height: 3vh;
+    line-height: 30px;
     position: absolute;
     left: 0; top: 0;
     z-index: 999999;
     font-family: var(--font-eng);
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: bold;
-    color: #fff;
     border-radius: 10vw;
     background-color: #283542;
-    position: absolute;
-    right: 3%; top: 3%;
     cursor: pointer;
     transition: transform 200ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
 }
@@ -360,6 +356,11 @@
 }
 
 /* skills - skills2 */
+.skills2 .star {
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -3;
+}
 .skills2 .tree1 {
     width: 18vw;
     position: absolute;
@@ -379,6 +380,7 @@
     position: absolute;
     left: 0; top: 0;
     opacity: 0.5;
+    z-index: -2;
 }
 .skills2 .door {
     width: 37vw; height: 100vh;
@@ -399,22 +401,23 @@
 }
 .skills2 .door::before{
     content: '';
-    width: 4.7vw; height: 100vh;
-    background: #447BA0;
+    width: 12vw; height: 100vh;
+    background-image: linear-gradient(to left, #2D5D84 60% , #447BA0 40%);
+    /* background: #447BA0; */
     position: absolute;
-    right: 13%; bottom: 0%;
+    right: 0; bottom: 0;
     z-index: 99999;
 }
 .skills2 .door::after{
     content: '';
-    width: 4.9vw; height: 100vh;
-    background: #2D5D84;
+    width: 10vw; height: 100vh;
+    background-image: linear-gradient(to left, #2D5D84 50% , #447BA0 50%);
     position: absolute;
-    right: 0%; bottom: 0%;
-    z-index: 99999;
+    left:0; bottom: 0;
+    z-index: -1;
 }
 
-/* skills - skillsWrap(아이템) */
+/* skills - skillsWrap - 아이템 */
 .skillsWrap {
     position: fixed;
     width: 100vw; height: 100vh;
@@ -506,37 +509,40 @@
     right: 10%; bottom: 8%;
 }
 .site .siteStore {
-    width: 51vw;
+    width: 53vw;
     position: absolute;
-    left: 10%; bottom: 13%;
+    left: 5%; bottom: 13%;
 }
 .site .siteStore .siteTitle {
+    position: absolute;
+    top: 9%;
+    margin-left: 25%;
     font-family: var(--font-eng);
     width: 18vw;
     font-size: 2.5vw;
     line-height: 1;
     position: absolute;
-    left: 25%; top: 8%;
+    left: 0; bottom: 0%;
 }
 .site .light {
-    width: 7vw;
+    width: 7vw; height: 40vw;
     animation: flash 2s linear infinite;
 }
 .site .light.siteLight1 {
     position: absolute;
-    left: 17.7%; top: 11%;
+    left: 15.3%; top: 5%;
 }
 .site .light.siteLight2 {
     position: absolute;
-    left: 27.2%; top: 11%;
+    left: 34%; top: 5%;
 }
 .site .light.siteLight3 {
     position: absolute;
-    left: 36.8%; top: 11%;
+    left: 52.53%; top: 5%;
 }
 .site .light.siteLight4 {
     position: absolute;
-    left: 46.4%; top: 11%;
+    left: 71.5%; top: 5%;
 }
 .site .subCha {
     width: 10vw;
@@ -795,7 +801,7 @@
 
 /* site - figmaPopup */
 .figmaPopup {
-    width: 75vw; height: 46vw;
+    width: 75vw; height: 92vh;
     position: fixed;
     left: 0; top: 5%; right: 0; bottom: 0; 
     margin: 0 auto;
@@ -864,6 +870,11 @@
 }
 
 /* site - siteLast */
+.siteLast .star {
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -3;
+}
 .siteLast .cloud {width: 11vw;}
 .siteLast .cloud1 {
     position: absolute;
@@ -877,6 +888,7 @@
     width: 23vw;
     position: absolute;
     right: 33%; bottom: 8%;
+    z-index: -3;
 }
 .siteLast .door {
     width: 37vw; height: 100vh;
@@ -896,16 +908,17 @@
 }
 .siteLast .door::before{
     content: '';
-    width: 4.7vw; height: 100vh;
-    background: #F1A6A7;
+    width: 10vw; height: 100vh;
+    background-image: linear-gradient(to left, #E48289 50% , #F1A6A7 50%);
     position: absolute;
-    right: 13%; bottom: 0;
-    z-index: 99999;
+    left:0; bottom: 0;
+    z-index: -1;
 }
 .siteLast .door::after{
     content: '';
-    width: 4.9vw; height: 100vh;
-    background: #E48289;
+    width: 12vw; height: 100vh;
+    background-image: linear-gradient(to left, #E48289 60% , #F1A6A7 40%);
+    /* background: #447BA0; */
     position: absolute;
     right: 0; bottom: 0;
     z-index: 99999;
@@ -954,7 +967,7 @@
 .balloon3 .aniBall1 {
     width: 18vw;
     position: absolute;
-    left: 28%; top: 13%;
+    left: 0; top: 13%;
 }
 .balloon3 .aniBall1 .aniBtn {
     position: absolute; 
@@ -964,11 +977,11 @@
 .balloon3 .aniBall2 {
     width: 18vw;
     position: absolute;
-    left: 40%; top: 2%;
+    left: 25%; top: -5%;
 }
 .balloon3 .aniBall2 .aniBtn {
     position: absolute; 
-    left: 50%; top: 50%; 
+    right: 0; top: 50%; 
     transform: translate(-50%, -50%);
 }
 .balloon3 .aniBall3 {
@@ -983,11 +996,11 @@
 }
 .balloon3 .aniBall4 .aniBtn {
     position: absolute;
-    left: 34%; top: 49%;
+    left: 10%; top: 48%;
 }
 .balloon3 .aniBall5 .aniBtn {
     position: absolute;
-    left: 50%; top: 49%;
+    right: 7%; top: 48%;
 }
 .balloon3 .aniFrame .ani {
     width: 18vw; height: 18vw;
@@ -997,13 +1010,13 @@
 }
 .balloon3 .aniFrame .ani1 {
     position: absolute;
-    left: 28%; top: 13%;
+    left: 0; top: 13%;
     transform: scale(0);
     opacity: 0.8;
 }
 .balloon3 .aniFrame .ani2 {
     position: absolute;
-    left: 40%; top: 2%;
+    left: 25%; top: -5%;
     transform: scale(0);
     opacity: 0.8;
 }
@@ -1103,6 +1116,11 @@
 }
 
 /* animation - aniLast */
+.aniLast .star {
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -3;
+}
 .aniLast .door {
     width: 37vw; height: 100vh;
     position: absolute;
@@ -1121,18 +1139,19 @@
 }
 .aniLast .door::before{
     content: '';
-    width: 4.7vw; height: 100vh;
-    background: #44525F;
+    width: 10vw; height: 100vh;
+    background-image: linear-gradient(to left, #2C3641 50% , #44525F 50%);
     position: absolute;
-    right: 13%; bottom: 0%;
-    z-index: 99999;
+    left:0; bottom: 0;
+    z-index: -1;
 }
 .aniLast .door::after{
     content: '';
-    width: 4.9vw; height: 100vh;
-    background: #2C3641;
+    width: 12vw; height: 100vh;
+    background-image: linear-gradient(to left, #2C3641 60% , #44525F 40%);
+    /* background: #447BA0; */
     position: absolute;
-    right: 0%; bottom: 0%;
+    right: 0; bottom: 0;
     z-index: 99999;
 }
 .aniLast .balloon1 {
@@ -1414,7 +1433,7 @@
     transform: translate(-50%, -50%);
 }
 .sitePage .videoWrap {
-    border-radius: 3vw;
+    border-radius: 30px;
     overflow: hidden;
 }
 .sitePage .siteText {
@@ -1467,16 +1486,16 @@
 .sitePage2 .siteText .right a:nth-child(2){
     margin-bottom: 4%;
 }
-.video1 {width: 44vw; height: 48vh;}
-.video2 {width: 44vw; height: 44.5vh;}
-.video3 {width: 44vw; height: 45vh;}
-.video4 {width: 44vw; height: 45.2vh;}
-.video5 {width: 44vw; height: 45.5vh;}
-.video6 {width: 44vw; height: 45.5vh;}
-.video7 {width: 44vw; height: 45.3vh;}
-.video8 {width: 44vw; height: 45.3vh;}
-.video9 {width: 44vw; height: 45.5vh;}
-.video10 {width: 44vw; height: 45.8vh;}
+.video1 {width: 768px; height: 423px;}
+.video2 {width: 768px; height: 390px;}
+.video3 {width: 768px; height: 391.2px;}
+.video4 {width: 768px; height: 398px;}
+.video5 {width: 768px; height: 400px;}
+.video6 {width: 768px; height: 396px;}
+.video7 {width: 768px; height: 395px;}
+.video8 {width: 768px; height: 395px;}
+.video9 {width: 768px; height: 395px;}
+.video10 {width: 768px; height: 397px;}
 
 .sitePage10 .siteWave {
     background: url(../img/waveYellow.svg) repeat-x;
