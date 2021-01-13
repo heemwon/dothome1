@@ -21,6 +21,14 @@
 <body>
     <div class="scroll">0</div><!-- //scroll-->
 
+    <div class="scriptCha"
+    data-16299="right:8%; bottom:16%; opacity:0;"
+    data-16300="right:8%; bottom:16%; opacity:1;"
+    data-16800="right:8%; bottom:30%;"
+    data-18499="opacity:1;"
+    data-18500="opacity:0;"
+    ><img src="assets/img/cha_ball.png" alt="캐릭터"></div><!-- //scriptCha -->
+    
     <div id="sectionWrap">
         <section id="main">
             <div class="main fixed"
@@ -58,6 +66,7 @@
             data-2500="top:-100%; display:block;"
             data-2501="top:-100%; display:none;"
             >
+                <div class="star flash mobileStar"></div>
                 <div class="aboutText">
                     <h2>만나서 반가워요<span class="textEffect1">👋</span></h2>
                     <h2><span class="textEffect2">이희원</span>이라고 합니다.</h2>
@@ -433,6 +442,8 @@
                         <li class="book3"><a href="https://www.figma.com/proto/wRxyza3YaQNiz8cUrLFMP3/Javascript?node-id=5%3A5&viewport=92%2C163%2C0.1195518970489502&scaling=contain" target="_blank">Javascript</a></li>
                         <li class="book4"><a href="https://www.figma.com/proto/gkPhxSAjAGd0cOYlnTz5B4/%EC%88%98%EC%97%85-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC?node-id=1%3A2&scaling=contain" target="_blank">JQuery</a></li>
                         <li class="book5"><a href="https://www.figma.com/proto/DLnZkKjjieLMhr0zNIzAnE/REACT?node-id=1%3A2&scaling=contain" target="_blank">React</a></li>
+                    </ul>
+                    <ul>
                         <li class="book6"><a href="https://www.figma.com/proto/WflbbQIeNT5Rwna6GjfAJW/Vue?node-id=1%3A2&scaling=contain" target="_blank">Vue</a></li>
                         <li class="book7"><a href="https://www.figma.com/proto/NKKlaTQwJm8aIUYrVnwYab/SCRIPT?node-id=1%3A2&scaling=contain" target="_blank">Script</a></li>
                         <li class="book8"><a href="https://www.figma.com/proto/uZ4tVHVWvoXh1ctMWHCXMA/PHP?node-id=1%3A2&scaling=contain" target="_blank">PHP</a></li>
@@ -453,12 +464,12 @@
                 <div class="star flash mobileStar"></div>
                 <div class="cloud cloud1"><img src="assets/img/cloud.png" alt="구름"></div>
                 <div class="cloud cloud2"
-                data-10500="transform:translateX(0%);"
-                data-11200="transform:translateX(-50%);"
+                data-11500="transform:translateX(0%);"
+                data-12200="transform:translateX(-50%);"
                 ><img src="assets/img/cloud.png" alt="구름"></div>
                 <div class="tree1"
-                data-10500="transform:translateX(0%);"
-                data-11200="transform:translateX(-50%);"
+                data-11500="transform:translateX(0%);"
+                data-12200="transform:translateX(-50%);"
                 ><img src="assets/img/tree_left02.png" alt="나무"></div>
                 <div class="door">
                     <img src="assets/img/door_pink.png" alt="문">
@@ -478,7 +489,12 @@
             data-13500="top:-100%; left:0%; display:block;"
             data-13501="top:-100%; left:0%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star mobileStar"></div>
+                <div class="cloud cloud1"
+                data-11900="transform:translateX(0%);"
+                data-12400="transform:translateX(-30%);"
+                ><img src="assets/img/cloud.png" alt="구름"></div>
+                <div class="cloud cloud2"><img src="assets/img/cloud.png" alt="구름"></div>
             </div>
             <!-- //balloon1 -->
 
@@ -489,11 +505,273 @@
             data-14500="top:-100%; left:0%; display:block;"
             data-14501="top:-100%; left:0%; display:none;"
             >
-                <div class="star"><img src="assets/img/star.png" alt="별"></div>
+                <div class="star mobileStar"></div>
+                <div class="ballBackTxt">
+                    <h2>Animation</h2>
+                </div>
             </div>
             <!-- //balloon2 -->
 
+            <div class="balloon3 fixed"
+            data-13499="top:100%; left:0%; display:none;"
+            data-13500="top:100%; left:0%; display:block;"
+            data-14500="top:0%; left:0%;"
+            data-15500="top:-100%; left:0%; display:block;"
+            data-15501="top:-100%; left:0%; display:none;"
+            >
+                <div class="star mobileStar"></div>
+                <div class="aniCha">
+                    <img src="assets/img/cha_big.png" alt="캐릭터">
+                    <div class="aniTitle"><h2>Ball Click!</h2></div>
+                    <div class="aniBall aniBall1"
+                    data-14100="transform:translateY(-200%); opacity:0;"
+                    data-14300="transform:translateY(0%); opacity:1;"
+                    ><img src="assets/img/ball05.png" alt="공"><div class="aniBtn">Wave</div></div>
+                    <div class="aniBall aniBall2"
+                    data-14150="transform:translateY(-100%); opacity:0;"
+                    data-14200="transform:translateY(0%); opacity:1;"
+                    ><img src="assets/img/ball01.png" alt="공"><div class="aniBtn">Cube</div></div>
+                    <div class="aniBall aniBall3"
+                    data-13800="transform:translateY(-200%); opacity:0;"
+                    data-14150="transform:translateY(0%); opacity:1;"
+                    ><img src="assets/img/ball02.png" alt="공"><div class="aniBtn">Text</div></div>
+                    <div class="aniBall aniBall4"><div class="aniBtn">Rocket</div></div>
+                    <div class="aniBall aniBall5"><div class="aniBtn">Octopus</div></div>
+                    
+                    <div class="aniFrame">
+                        <div class="ani ani1">
+                            <iframe src="https://heemwon.github.io/dothome1/animation/port/animation02.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="ani ani2">
+                            <iframe src="https://heemwon.github.io/dothome1/animation/port/animation04.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="ani ani3">
+                            <iframe src="https://heemwon.github.io/dothome1/animation/port/animation16.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="ani ani4">
+                            <iframe src="https://heemwon.github.io/dothome1/animation/port/ani3.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="ani ani5">
+                            <iframe src="https://heemwon.github.io/dothome1/animation/port/ani6.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //balloon3 -->
+
+            <div class="ball"
+            data-11499="top:0%; left:100%; display:none;"
+            data-11500="top:0%; left:100%; display:block;"
+            data-12500="top:0%; left:0%;;"
+            data-14500="top:-300%; left:0%;"
+            data-14400="display:none;"
+            >
+                <div class="ball1"
+                data-12699="display:none;"
+                data-12700="display:block;"
+                ><img src="assets/img/ball01.png" alt="공1"></div>
+                <div class="ball2"
+                data-12499="display:none;"
+                data-12500="display:block;"
+                ><img src="assets/img/ball02.png" alt="공2"></div>
+                <div class="ball3"
+                data-12699="display:none;"
+                data-12700="display:block;"
+                ><img src="assets/img/ball03.png" alt="공3"></div>
+                <div class="ball4"
+                data-12599="display:none;"
+                data-12600="display:block;"
+                ><img src="assets/img/ball05.png" alt="공4"></div>
+                <div class="ball5"
+                data-12699="display:none;"
+                data-12700="display:block;"
+                ><img src="assets/img/ball04.png" alt="공5"></div>
+                <div class="ball6"
+                data-12499="display:none;"
+                data-12500="display:block;"
+                ><img src="assets/img/ball01.png" alt="공6"></div>
+                <div class="ball7"
+                data-12599="display:none;"
+                data-12600="display:block;"
+                ><img src="assets/img/ball02.png" alt="공7"></div>
+                <div class="ball8"
+                data-12699="display:none;"
+                data-12700="display:block;"
+                ><img src="assets/img/ball03.png" alt="공8"></div>
+                <div class="ball9"
+                data-12699="display:none;"
+                data-12700="display:block;"
+                ><img src="assets/img/ball05.png" alt="공9"></div>
+                <div class="ball10"
+                data-12499="display:none;"
+                data-12500="display:block;"
+                ><img src="assets/img/ball04.png" alt="공10"></div>
+            </div>
+            <!-- ball -->
+
+            <div class="aniLast fixed"
+            data-14499="top:100%; left:0%; display:none;"
+            data-14500="top:100%; left:0%; display:block;"
+            data-15500="top:0%; left:0%;"
+            data-16500="top:0%; left:-100%; display:block;"
+            data-16501="top:0%; left:-100%; display:none;"
+            >
+                <div class="star flash mobileStar"></div>
+                <div class="door">
+                    <img src="assets/img/door_dark.png" alt="문">
+                    <h2><span>스크립트</span>로<br />만든 여러가지<br />효과들</h2>
+                </div>
+                <div class="balloon1"><img src="assets/img/balloon01.png" alt="풍선"></div>
+                <div class="balloon2"><img src="assets/img/balloon02.png" alt="풍선"></div>
+                <div class="balloon3"><img src="assets/img/balloon03.png" alt="풍선"></div>
+                <div class="balloon4"><img src="assets/img/balloon04.png" alt="풍선"></div>
+                <div class="road roadFix"><img src="assets/img/road_green.png" alt="잔디"><div class="mobileRoad"></div></div>
+                <div class="ballCha"
+                data-14899="opacity:0;"
+                data-14900="opacity:1;"
+                data-16500="opacity:1;"
+                data-16501="opacity:0;"
+                ><img src="assets/img/cha_ball.png" alt="캐릭터"></div>
+            </div>
+            <!-- //aniLast -->
+
         </section>
+        <!-- //animation -->
+
+        <section id="script">
+            <div class="scriptIntro fixed"
+            data-15499="top:0%; left:100%; display:none;"
+            data-15500="top:0%; left:100%; display:block;"
+            data-16500="top:0%; left:0%;"
+            data-17500="top:100%; left:0%; display:block;"
+            data-17501="top:100%; left:0%; display:none;"
+            >
+                <div class="star flash mobileStar"></div>
+                <div class="road roadFix"><img src="assets/img/road_green.png" alt="잔디"><div class="mobileRoad"></div></div>
+            </div>
+            <!-- //scriptIntro -->
+
+            <div class="script1 fixed"
+            data-16499="top:-100%; left:0%; display:none;"
+            data-16500="top:-100%; left:0%; display:block;"
+            data-17500="top:0%; left:0%;"
+            data-18500="top:100%; left:0%; display:block;"
+            data-18501="top:100%; left:0%; display:none;"
+            >
+                <div class="star flash mobileStar"></div>
+                <div class="effect effect1 lime">
+                    <img src="assets/img/script_green.png" alt="스크립트배경">
+                    <div class="effectTxt">
+                        <div class="scriptTitle"><h2>PARALLAX EFFECT</h2></div>
+                        <div class="scriptEx">
+                            <p>스크롤값에 따라 이질감을 주는 효과를 스크립트를 활용하여 구현했습니다.</p>
+                        </div>
+                        <div class="scriptBtn">
+                            <a href="#" class="effectBtn1"><h3>SCRIPT VIEW ▶</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="effect effect2 mint">
+                    <img src="assets/img/script_mint.png" alt="스크립트배경">
+                    <div class="effectTxt">
+                        <div class="scriptTitle"><h2>MOUSE EFFECT</h2></div>
+                        <div class="scriptEx">
+                        <p>마우스 커서의 움직임에 따라 글자 및 이미지에 다양한 효과를 스크립트를 활용하여 구현했습니다.</p>
+                        </div>
+                        <div class="scriptBtn">
+                            <div class="effectBtn2"><h3>SCRIPT VIEW ▶</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //script1 -->
+
+            <div class="script2 fixed"
+            data-17499="top:-100%; left:0%; display:none;"
+            data-17500="top:-100%; left:0%; display:block;"
+            data-18500="top:0%; left:0%;"
+            data-19500="top:100%; left:0%; display:block;"
+            data-19501="top:100%; left:0%; display:none;"
+            >
+                <div class="star flash mobileStar"></div>
+                <div class="effect effect3 lime">
+                    <img src="assets/img/script_green.png" alt="스크립트배경">
+                    <div class="effectTxt">
+                        <div class="scriptTitle"><h2>SLIDER EFFECT</h2></div>
+                        <div class="scriptEx">
+                        <p>스크립트를 활용하여, 다양한 슬라이드 효과를 구현했습니다. 가로 슬라이드, 연속적 슬라이드</p>
+                        </div>
+                        <div class="scriptBtn">
+                            <div class="effectBtn3"><h3>SCRIPT VIEW ▶</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="effect effect4 mint">
+                    <img src="assets/img/script_mint.png" alt="스크립트배경">
+                    <div class="effectTxt">
+                        <div class="scriptTitle"><h2>QUIZ EFFECT</h2></div>
+                        <div class="scriptEx">
+                            <p>객관식, 주관식의 문제를 정답을 누르면 해설을 볼 수 있게끔 스크립트를 활용하여 구현했습니다.</p>
+                        </div>
+                        <div class="scriptBtn">
+                            <div class="effectBtn4"><h3>SCRIPT VIEW ▶</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //script2 -->
+
+            <div class="scriptLast fixed"
+            data-18499="top:-100%; left:0%; display:none;"
+            data-18500="top:-100%; left:0%; display:block;"
+            data-19500="top:0%; left:0%;"
+            data-20500="top:100%; left:0%; display:block;"
+            data-20501="top:100%; left:0%; display:none;"
+            >
+                <div class="star flash mobileStar"></div>
+                <div class="scriptLastTitle">
+                    <h2>이제 정말 마지막 거의 다 왔어요!</h2>
+                </div>
+                <div class="scriptLastCha"
+                data-18499="opacity:0;"
+                data-18500="opacity:1;"
+                ><img src="assets/img/cha_ball.png" alt="캐릭터"></div>
+                <div class="wave"><img src="assets/img/wave_last.png" alt="웨이브"></div>
+            </div>
+            <!-- //scriptLast -->
+
+            <div class="scriptPopup">
+                <div class="effectPopup">
+                    <div class="effectPopupWrap effectPopup1">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/parallaxEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <a href="#" class="effectClose effectCloseBtn1">X</div>
+                    </div>
+                    <div class="effectPopupWrap effectPopup2">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/mouseEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="effectClose effectCloseBtn2">X</div>
+                    </div>
+                    <div class="effectPopupWrap effectPopup3">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/sliderEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="effectClose effectCloseBtn3">X</div>
+                    </div>
+                    <div class="effectPopupWrap effectPopup4">
+                        <div class="effectIframe">
+                        <iframe src="https://heemwon.github.io/dothome1/effect/port2/quizEffect1.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="effectClose effectCloseBtn4">X</div>
+                    </div>
+                </div>
+            </div>
+            <!-- //scriptPopup -->
+
+        </section>
+        <!-- //script -->
 
         <div id="sitePageWrap">
             <div class="sitePage sitePage1 fixed">
@@ -771,8 +1049,40 @@
             });   
         }
         $(".shoes").bind("touchstart",function(){
+            $(".sitePage9").css("opacity","1");
             $(".sitePage9").css("top","0%");
         });
+
+        for(let k = 0; k <= 3; k++){
+            $(".aniBall"+ k +" .aniBtn").bind("touchstart",function(){
+                $(".ani"+k).css("transform","scale(1)");
+                setTimeout(function(){
+                    $(".ani"+k).css("transform","scale(0)");
+                },2500);
+            });
+        }
+        $(".aniBall4 .aniBtn").bind("touchstart",function(){
+            $(".ani4").show();
+            $(".ani4").addClass("move");
+            setTimeout(function(){
+                $(".ani4").removeClass("move");
+                $(".ani4").hide();
+            },4000)
+        });
+        $(".aniBall5 .aniBtn").bind("touchstart",function(){
+            $(".ani5").show();
+            $(".ani5").addClass("move");
+            setTimeout(function(){
+                $(".ani5").removeClass("move");
+                $(".ani5").hide();
+            },10000)
+        });
+
+        $(".effect1 .effectBtn1").bind("touchstart", function(){
+            $(".effectPopup1").css("opacity","1");
+            $(".effectPopup1").css("transform","scale(1)");
+            $(".scriptCha").hide();
+        })
     </script>
 </body>
 </html>
