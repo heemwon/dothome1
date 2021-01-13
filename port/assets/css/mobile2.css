@@ -1,0 +1,198 @@
+/* container */
+.container {
+    width: 100%; height: 100vh; 
+    position: relative; 
+    overflow: hidden;
+}
+
+/* main */
+.main {background: #2C3641;}
+.main .waveBack {
+    z-index: 500;
+    position: absolute;
+    left: 0; bottom: 0;
+    animation: waveBack 7s infinite linear;
+}
+.main .waveBack > div {
+    width: 100%; height: 20vh;
+    background: #b3b15c;
+}
+.main .waveFront {
+    position: absolute;
+    left: 0; bottom: 0;
+    z-index: 600;
+    animation: waveFront 6s infinite linear;
+}
+.main .waveFront > div {
+    width: 100%; height: 20vh;
+    background: #d4d77d;
+}
+.main .tree1 {
+    width: 50vw;
+    position: absolute;
+    left: 4%; bottom: 22%;
+    z-index: 500;
+    animation: treeMove 4s infinite ease;
+}
+.main .cloud {
+    width: 15vw;
+}
+.main .cloud1 {
+    position: absolute;
+    left: 6%; top: 19%;
+    transform: scale(1.3);
+}
+.main .cloud2 {
+    position: absolute;
+    left: 35%; top: 5%;
+    transform: scale(1.3);
+}
+.main .cloud3 {
+    position: absolute;
+    right: 6%; top: 40%;
+    transform: scale(1.3);
+}
+.main .mainCha {
+    width: 50vw;
+    position: absolute;
+    right: 6%; bottom: 20%;
+    z-index: 600;
+    animation: chaMove 6s linear infinite;
+}
+.main .introTitle {
+    width: 18vw;
+    position: absolute;
+    left: 8%; bottom: 20%;
+    z-index: 600;
+}
+.main .introTitle h2 {
+    font-size: 5vw;
+    font-family: var(--font-eng);
+    color: #fff;
+    letter-spacing: 0.1vw;
+    line-height: 1.1;
+}
+.main .scrollStart {
+    position: absolute;
+    left: 33%; top: 35%;
+    text-align: center;
+    z-index: 600;
+    animation: flash 2.5s infinite linear;
+}
+.main .scrollStart h2 {
+    font-size: 4vw;
+    font-family: var(--font-eng);
+    color: #fff;
+    letter-spacing: 0.1vw;
+    line-height: 1.1;
+    margin-bottom: 5%;
+}
+
+/* main keyframes */
+@keyframes waveBack {
+    0% {transform: translateY(2px) scaleY(1);}
+    20% {transform: translateY(0px) scaleY(1);}
+    40% {transform: translateY(3px) scaleY(1.1);}
+    60% {transform: translateY(2px) scaleY(1);}
+    80% {transform: translateY(3px) scaleY(1.1);}
+    100% {transform: translateY(2px) scaleY(1);}
+}
+@keyframes waveFront {
+    0% {transform: translateY(3px) scaleY(1.1);}
+    20% {transform: translateY(2px) scaleY(1);}
+    40% {transform: translateY(3px) scaleY(1);}
+    60% {transform: translateY(3px) scaleY(1.1);}
+    80% {transform: translateY(2px) scaleY(1);}
+    100% {transform: translateY(3px) scaleY(1.1);}
+}
+@keyframes treeMove {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(5px);}
+    50% {transform: translateY(-3px);}
+    100% {transform: translateY(0);}
+}
+@keyframes chaMove {
+    0% {transform: translateY(0);}
+    20% {transform: translateY(0px);}
+    40% {transform: translateY(0px);}
+    60% {transform: translateY(-5px);}
+    80% {transform: translateY(-7px);}
+    100% {transform: translateY(0);}
+}
+
+/* about */
+.about1 {background: #d4d77d;}
+.about1 .aboutText {
+    position: absolute; 
+    left: 50%; bottom: 35%; 
+    transform: translate(-50%, -50%);
+    font-family: var(--font-kor);
+    text-align: center;
+    font-size: 3.5vw;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+.about1 .aboutText .textEffect1 {
+    display: inline-block;
+    animation: swing 1s infinite alternate;
+}
+.about1 .aboutText .textEffect2 {
+    display: inline-block;
+    animation: swing 2s infinite linear;
+}
+
+/* skills */
+.skills {background: #2C3641;}
+.skills .waveFront {
+    position: absolute;
+    left: 0; top: 0;
+    transform: rotate(180deg);
+}
+.skills .waveFront > div {
+    width: 100%; height: 10vh;
+    background: #d4d77d;
+}
+.skillsTitle h2 {
+    font-family: var(--font-eng);
+    font-size: 6vw;
+    position: absolute;
+    left: 37%; top: 20%;
+}
+.skillsItem {
+    position: absolute;
+    left: 0; bottom: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item {
+    flex: 0 0 30%; 
+    margin-bottom: 10%;
+    font-family: var(--font-eng);
+    text-align: center;
+}
+.item .itemName h3 {
+    font-size: 4vw;
+    text-decoration: underline;
+}
+.item .itemPer h3 {
+    font-size: 8vw;
+}
+.item .itemPer span {
+    font-size: 4vw; margin-left: 1%;
+}
+.skillsCha {
+    width: 40vw;
+    position: absolute;
+    left: 0%; bottom: 0%;
+    transform: rotate(50deg);
+    animation: skillsCha 1.2s linear infinite;
+}
+@keyframes skillsCha {
+    0% {transform:translate(-20%,20%) rotate(50deg);}
+    25% {transform:translate(40%,-40%) rotate(50deg);}
+    50% {transform:translate(100%,-100%) rotate(50deg);}
+    75% {transform:translate(160%, -160%) rotate(50deg);}
+    100% {transform:translate(220%, -220%) rotate(50deg);}
+}
