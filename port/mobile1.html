@@ -24,7 +24,7 @@
     <div class="scriptCha"
     data-16299="right:8%; bottom:16%; opacity:0;"
     data-16300="right:8%; bottom:16%; opacity:1;"
-    data-16800="right:8%; bottom:30%;"
+    data-16800="right:8%; bottom:16%;"
     data-18499="opacity:1;"
     data-18500="opacity:0;"
     ><img src="assets/img/cha_ball.png" alt="캐릭터"></div><!-- //scriptCha -->
@@ -564,7 +564,7 @@
             data-11500="top:0%; left:100%; display:block;"
             data-12500="top:0%; left:0%;;"
             data-14500="top:-300%; left:0%;"
-            data-14400="display:none;"
+            data-14300="display:none;"
             >
                 <div class="ball1"
                 data-12699="display:none;"
@@ -667,7 +667,7 @@
                             <p>스크롤값에 따라 이질감을 주는 효과를 스크립트를 활용하여 구현했습니다.</p>
                         </div>
                         <div class="scriptBtn">
-                            <a href="#" class="effectBtn1"><h3>SCRIPT VIEW ▶</h3></a>
+                            <div class="effectBtn1"><h3>SCRIPT VIEW ▶</h3></div>
                         </div>
                     </div>
                 </div>
@@ -746,7 +746,7 @@
                         <div class="effectIframe">
                         <iframe src="https://heemwon.github.io/dothome1/effect/port2/parallaxEffect1.html" frameborder="0"></iframe>
                         </div>
-                        <a href="#" class="effectClose effectCloseBtn1">X</div>
+                        <div class="effectClose effectCloseBtn1">X</div>
                     </div>
                     <div class="effectPopupWrap effectPopup2">
                         <div class="effectIframe">
@@ -772,6 +772,30 @@
 
         </section>
         <!-- //script -->
+
+        <section id="contact">
+            <div class="contactWrap fixed"
+            data-19499="top:-100%; left:0%; display:none;"
+            data-19500="top:-100%; left:0%; display:block;"
+            data-20500="top:0%; left:0%;"
+            >
+                <div class="contact">
+                    <img src="./assets/img/contact_heart.png" alt="하트말풍선" class="heart">
+                    <div class="contactBox">
+                        <div class="myPhoto"><img src="../port/assets/img/img02.jpg" alt="이미지"></div>
+                        <div class="info">
+                            <h2>LEE HEEWON</h2>
+                            <ul>
+                                <li>+82 10 9918 6603</li>
+                                <li>ehw603@naver.com</li>
+                                <li>insta. @heemwon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //contact -->
 
         <div id="sitePageWrap">
             <div class="sitePage sitePage1 fixed">
@@ -1078,11 +1102,17 @@
             },10000)
         });
 
-        $(".effect1 .effectBtn1").bind("touchstart", function(){
-            $(".effectPopup1").css("opacity","1");
-            $(".effectPopup1").css("transform","scale(1)");
-            $(".scriptCha").hide();
-        })
+        for(let j=1; j<=4; j++){
+            $(".effect"+j+" .effectBtn"+j).bind("touchstart", function(){
+                $(".effectPopup"+j).css("transform","scale(1)");
+                $(".scriptCha").hide();
+            });
+            $(".effectCloseBtn"+j).bind("touchstart", function(){
+                $(".effectPopup"+j).css("transform","scale(0)");
+                $(".scriptCha").show();
+            });
+        }
+        
     </script>
 </body>
 </html>
