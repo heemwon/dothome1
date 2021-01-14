@@ -96,7 +96,7 @@
 
         /* slider */
         .slider-wrap {
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             overflow: hidden;
             position: absolute;
             left: 50%; top: 50%;
@@ -109,7 +109,7 @@
         }
         .slider-img .slider {
             float: left;
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             position: relative;
         }
         .slider-img .slider span {
@@ -151,13 +151,14 @@
             margin: 5px;
             transition: background 0.3s, transform 0.2s;
             /* 닷이미지 */
-            width: 150px; height: 70px; line-height: 70px;
+            width: 8vw; height: 4vw; line-height: 4vw;
             text-align: center;
             background-size: cover;
             border-radius: 3px;
             white-space: nowrap;
             text-indent: initial;
             color: #fff;
+            font-size: 1vw;
         }
         .slider-dot a.active {
             background-color: rgba(255, 255, 255, 0.9);
@@ -166,6 +167,9 @@
             background-color: rgba(46, 19, 19, 0.9);
             background-blend-mode: difference;
             transform: scale(1.1);
+        }
+        @media (max-width: 960px){
+            .slider-img .slider span {display: none;}
         }
     </style>
 </head>
@@ -242,7 +246,7 @@
             // dotIndex += "<a href='#'></a>";
             let sliderName = $(this).find("img").attr("alt");
             let sliderSrc = $(this).find("img").attr("src");
-            dotIndex += "<a href='#' style='background-image:url("+sliderSrc+")'>"+sliderName+"</a>";
+            dotIndex += "<a href='#' style='background-image:url("+sliderSrc+")'></a>";
         });
         sliderDot.html(dotIndex);
         sliderDot.find("a").eq(0).addClass("active");

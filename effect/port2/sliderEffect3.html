@@ -96,7 +96,7 @@
 
         /* slider */
         .slider-wrap {
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             overflow: hidden;
             position: absolute;
             left: 50%; top: 50%;
@@ -109,7 +109,7 @@
         }
         .slider-img .slider {
             float: left;
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             position: relative;
         }
         .slider-img .slider span {
@@ -133,6 +133,9 @@
         }
         .slider-btn a.next {
             right: 0;
+        }
+        @media (max-width: 960px){
+            .slider-img .slider span {display: none;}
         }
     </style>
 </head>

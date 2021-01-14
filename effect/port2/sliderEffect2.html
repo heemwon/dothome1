@@ -96,7 +96,7 @@
 
         /* slider */
         .slider-wrap {
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             overflow: hidden;
             position: absolute;
             left: 50%; top: 50%;
@@ -105,16 +105,19 @@
         }
         .slider-img {
             overflow: hidden;
-            width: 800px; height: 2400px;
+            width: 600px; height: 1800px;
             position: relative;
         }
         .slider-img .slider {
-            width: 800px; height: 480px;
+            width: 600px; height: 360px;
             position: relative;
         }
         .slider-img .slider span {
             position: absolute;
             left: 5px; top: 5px;
+        }
+        @media (max-width: 960px){
+            .slider-img .slider span {display: none;}
         }
     </style>
 </head>

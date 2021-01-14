@@ -1,14 +1,4 @@
 @media(max-width: 1220px){
-    .progress-ani {
-        width: 175px; height: 135px;
-        background-size: 1400px;
-    }
-    @keyframes progressWalk {
-        0% {background-position: 0px 0px;}
-        100% {background-position: -1400px 0px;}
-    }
-
-    /* walk cha */
     .walkCha {
         width: 233.33px; height: 180px;
         background-size: 1866.67px;
@@ -24,8 +14,6 @@
         0% {background-position: 0px -180px;}
         100% {background-position: -1866.67px -180px;}
     }
-
-    /* skills cha */
     .skillsCha {
         width: 233.33px; height: 180px;
         background-size: 1866.67px;
@@ -33,8 +21,6 @@
     .skillsCha.left {
         background-position: 0px -180px;
     }
-
-    /* siteLast cha */
     .siteLastCha {
         width: 233.33px; height: 180px;
         background-size: 1866.67px;
@@ -42,106 +28,8 @@
     .siteLastCha.left {
         background-position: 0px -180px;
     }
-
-    /* main */
-    .main .tree1 {bottom: 8%;}
-    .main .tree2 {bottom: 7%;}
-    .main .tree3 {bottom: 5%;}
-    .main .tree4 {bottom: 10%;}
-    .main .tree5 {bottom: 5%;}
-    .main .tree6 {bottom: 8%;}
-    .main .mainCha {bottom: 7%;}
-
-    /* skills - skills1 */
-    .skills1 .tree1 {bottom: 10%;}
-    .skills1 .tree2 {bottom: 7%;}
-    .skills1 .tree3 {bottom: 11%;}
-    .skills1 .tree4 {bottom: 8%;}
-
-    /* skills - skills2 */
-    .skills2 .tree1 {bottom: 5%;}
-    .skills2 .tree2 {bottom: 10%;}
-    .skills2 .tree3 {bottom: 7%;}
-    .skills2 .door h2 {top: 8%;}
-
-    /* site - site */
-    .site .siteStore {bottom: 10%;}
-    .site .subCha {bottom: 9%;}
-    .site .siteTalk {top: 50%;}
-    .sitePopup li .siteBtn span {padding: 4% 2%;}
-
-    /* site - mart */
-    .mart .heemMart {bottom: 9%;}
-
-    /* site - react */
-    .react .reactCha {bottom: 9%;}
-    .react .reactTalk {bottom: 35%;}
-
-    /* site - figma */
-    .figma .figmaStore {bottom: 9%;}
-    .figma .figmaCha {bottom: 9%;}
-    .figma .figmaTalk {bottom: 35%;}
-
-    /* site - figmaPopup */
-    .figmaPopup img {margin-top: 8%;}
-
-    /* site - siteLast */
-    .siteLast .door h2 {top: 8%;}
-
-    /* animation - aniLast */
-    .aniLast .door h2 {top: 8%;}
-
-    /* script - scriptPopup */
-    .effectPopupWrap {top: 18%;}
-}
-@media(max-width: 1024px){
-    /* main */
-    .main .tree2 {bottom: 6%;}
-    .main .tree6 {bottom: 6%;}
-
-    /* skills - skills1 */
-    .skills1 .tree4 {bottom: 7%;}
-
-    /* site - intro */
-    .intro .tree1 {bottom: 8%;}
-    .intro .tree2 {bottom: 8%;}
-    .intro .tree3 {bottom: 8%;}
-    .intro .car {bottom: 8%;}
-
-    /* site - site */
-    .site .siteStore {bottom: 9%;}
-
-    /* site - mart */
-    .mart .tree1 {bottom: 9%;}
-
-    /* site - react */
-    .react .tree1 {bottom: 9%;}
-    .react .tree2 {bottom: 9%;}
-    .react .shoes {bottom: 9%;}
-
-    /* site - figma */
-    .figma .tree1 {bottom: 9%;}
-
-    /* site - figmaPopup */
-    .figmaPopup img {margin-top: 15%;}
-
-    /* script - scriptPopup */
-    .effectPopupWrap {top: 23%;}
 }
 @media(max-width: 960px){
-    .progress-ani {
-        width: 142px; height: 108px;
-        background-size: 1120px;
-    }
-    @keyframes progressWalk {
-        0% {background-position: 0px 0px;}
-        100% {background-position: -1120px 0px;}
-    }
-
-    /* site - figmaPopup */
-    .figmaPopup img {margin-top: 8%;}
-
-    /* walk cha */
     .walkCha {
         width: 175px; height: 135px;
         background-size: 1400px;
@@ -157,8 +45,6 @@
         0% {background-position: 0px -135px;}
         100% {background-position: -1400px -135px;}
     }
-
-    /* skills cha */
     .skillsCha {
         width: 175px; height: 135px;
         background-size: 1400px;
@@ -166,8 +52,6 @@
     .skillsCha.left {
         background-position: 0px -135px;
     }
-
-    /* siteLast cha */
     .siteLastCha {
         width: 175px; height: 135px;
         background-size: 1400px;
