@@ -1,7 +1,16 @@
 @media(max-width: 1220px){
+    .progress-ani {
+        width: 175px; height: 135px;
+        background-size: 1400px;
+    }
+    @keyframes progressWalk {
+        0% {background-position: 0px 0px;}
+        100% {background-position: -1400px 0px;}
+    }
+
     /* walk cha */
     .walkCha {
-        width: 175px; height: 180px;
+        width: 233.33px; height: 180px;
         background-size: 1866.67px;
     }
     .walkCha.left {
@@ -18,7 +27,7 @@
 
     /* skills cha */
     .skillsCha {
-        width: 175px; height: 180px;
+        width: 233.33px; height: 180px;
         background-size: 1866.67px;
     }
     .skillsCha.left {
@@ -27,7 +36,7 @@
 
     /* siteLast cha */
     .siteLastCha {
-        width: 175px; height: 180px;
+        width: 233.33px; height: 180px;
         background-size: 1866.67px;
     }
     .siteLastCha.left {
@@ -120,6 +129,15 @@
     .effectPopupWrap {top: 23%;}
 }
 @media(max-width: 960px){
+    .progress-ani {
+        width: 142px; height: 108px;
+        background-size: 1120px;
+    }
+    @keyframes progressWalk {
+        0% {background-position: 0px 0px;}
+        100% {background-position: -1120px 0px;}
+    }
+
     /* site - figmaPopup */
     .figmaPopup img {margin-top: 8%;}
 

@@ -12,7 +12,16 @@
     <meta name="keywords" content="웹표준, 웹접근성, 사이트만들기, 포트폴리오, 힘원">
     <title>HEEMWON | PORTFOLIO</title>
 
-    <!-- css -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon_152.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_152.png">
+    <link rel="icon" sizes="16x16" href="assets/icons/favicon_16.png">
+    <link rel="icon" sizes="32x32" href="assets/icons/favicon_32.png">
+    <link rel="icon" sizes="48x48" href="assets/icons/favicon_48.png">
+    <link rel="icon" sizes="64x64" href="assets/icons/favicon_64.png">
+    <link rel="icon" sizes="128x128" href="assets/icons/favicon_128.png">
+
+    <!-- style -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style8.css">
     <link rel="stylesheet" href="assets/css/media.css">
@@ -24,6 +33,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="progress">
+        <div class="progressWrap"> 
+            <div class="progress-ani"></div>
+            <div class="bar-wrap">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="progress-text">0</span>
+        </div>
+    </div>
+
     <div class="scroll">0</div><!-- //scroll-->
 
     <div class="walkCha"
@@ -1309,7 +1328,74 @@
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/skrollr.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script>
+        //loading
+        function loading(){
+        let progress = $(".progress"),
+            progressText = $(".progress-text"),
+            progressBar = $(".progress-bar"),
+            imgLoad = imagesLoaded("body"),
+            imgTotal = imgLoad.images.length,
+            imgLoaded = 0,
+            imgCurrent = 0,
+            progressTimer = setInterval(updateProgress, 1000 / 60);
+
+            imgLoad.on("progress", function(){
+                imgLoaded++;
+            });
+
+            function updateProgress(){
+                let target = (imgLoaded / imgTotal)* 100;
+
+                imgCurrent += (target - imgCurrent)* 0.1
+                progressText.text(Math.floor(imgCurrent) + "%" );
+
+                progressBar.css({
+                    width: imgCurrent + '%'
+                });
+                
+                //loading
+                if(imgCurrent >= 100){
+                    clearInterval(progressTimer);
+                    $("body").addClass("active");
+                    // gsap.to(progress, {
+                    //     duration: 1,
+                    //     top:"-110%",
+                    //     ease:"easeInExpo"
+                    // });
+                    progress.delay(1000).fadeOut();
+
+                    // 메인 효과
+                    setTimeout(function(){
+                        gsap.to(".main .waveBack", {duration: 1.2, opacity: 1, y:0, ease: "elastic.out(1, 0.3)"})
+                        gsap.to(".main .waveFront", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: .5})
+                        gsap.to(".main .tree1", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
+                        gsap.to(".main .tree2", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
+                        gsap.to(".main .tree3", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
+                        gsap.to(".main .tree4", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
+                        gsap.to(".main .tree5", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
+                        gsap.to(".main .tree6", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
+                        gsap.to(".main .cloud1", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 2})
+                        gsap.to(".main .cloud2", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 2.5})
+                        gsap.to(".main .cloud3", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 3})
+                        $(".main .star").delay(3500).animate({opacity:1},300).animate({opacity:0},200).animate({opacity:1},200).animate({opacity:0},100).animate({opacity:1},200);
+                        gsap.to(".main .mainCha", {duration: 1.5, opacity: 1, y:0, ease: "elastic.out(1, 0.4)", delay: 4})
+                        gsap.to(".main .introTitle", {duration: 1, opacity: 1, scale:1, rotate:0, ease: "bounce.out", delay: 4})
+                    },500);
+
+                    setTimeout(function(){
+                        $(".main > div").addClass("loading");
+                        $(".main .scrollStart").show();
+                    },5000);
+                }
+                if(imgCurrent > 99){
+                    imgCurrent = 100;
+                }
+            }
+        }
+        loading();
+
         //skrollr 
         var s = skrollr.init({
             edgeStrategy: 'set',
@@ -1320,29 +1406,6 @@
             let scroll = $(window).scrollTop();
             $(".scroll").text(scroll);
         });
-
-        // 메인 효과
-        setTimeout(function(){
-            gsap.to(".main .waveBack", {duration: 1.2, opacity: 1, y:0, ease: "elastic.out(1, 0.3)"})
-            gsap.to(".main .waveFront", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: .5})
-            gsap.to(".main .tree1", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
-            gsap.to(".main .tree2", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
-            gsap.to(".main .tree3", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1})
-            gsap.to(".main .tree4", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
-            gsap.to(".main .tree5", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
-            gsap.to(".main .tree6", {duration: 1.3, opacity: 1, y:0, ease: "elastic.out(1, 0.3)", delay: 1.5})
-            gsap.to(".main .cloud1", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 2})
-            gsap.to(".main .cloud2", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 2.5})
-            gsap.to(".main .cloud3", {duration: 1.3, opacity: 1, scale:1, ease: "elastic.out(1, 0.2)", delay: 3})
-            $(".main .star").delay(3500).animate({opacity:1},300).animate({opacity:0},200).animate({opacity:1},200).animate({opacity:0},100).animate({opacity:1},200);
-            gsap.to(".main .mainCha", {duration: 1.5, opacity: 1, y:0, ease: "elastic.out(1, 0.4)", delay: 4})
-            gsap.to(".main .introTitle", {duration: 1, opacity: 1, scale:1, rotate:0, ease: "bounce.out", delay: 4})
-        },500);
-
-        setTimeout(function(){
-            $(".main > div").addClass("loading");
-            $(".main .scrollStart").show();
-        },5000);
 
         // 캐릭터 움직임
         let lastScrollTop = 0;
