@@ -353,8 +353,8 @@ body.active {
     0% {transform: translateY(0);}
     20% {transform: translateY(0px);}
     40% {transform: translateY(0px);}
-    60% {transform: translateY(-10px);}
-    80% {transform: translateY(-20px);}
+    60% {transform: translateY(-0.5vw);}
+    80% {transform: translateY(-1vw);}
     100% {transform: translateY(0);}
 }
 
@@ -495,6 +495,7 @@ body.active {
 .skillsWrap .skillsItem .itemSub h3 {
     color: #2C3641;
     line-height: 1;
+    font-size: 1vw;
 }
 .skillsWrap .skillsItem .itemName h3 {
     font-size: 2vw;
@@ -556,12 +557,12 @@ body.active {
 .site .cloud1 {
     width: 11vw;
     position: absolute;
-    right: 30%; top: 10%;
+    right: 30vw; top: 5vw;
 }
 .site .tree1 {
     width: 23vw;
     position: absolute;
-    right: 10%; bottom: 8%;
+    right: 10vw; bottom: 7vw;
 }
 .site .siteStore {
     width: 53vw;
@@ -1303,7 +1304,7 @@ body.active {
 /* script - scriptLast */
 .scriptLast .scriptLastTitle {
     position: absolute;
-    left: 24vw; top: 25vw;
+    left: 24vw; top: 28vw;
     font-family: var(--font-kor);
     width: 26vw;
     font-size: 2vw;
@@ -1448,6 +1449,7 @@ body.active {
 .myProfile .photo {
     flex: 0 0 100%;
     position: relative;
+    margin-top: 3vw;
 }
 .myProfile .photo .heart {
    position: absolute;
@@ -1492,6 +1494,7 @@ body.active {
 .sitePage .siteText {
     display: flex;
     align-items: flex-end;
+    justify-content: space-around;
     font-family: var(--font-eng);
     color: #fff;
     margin-top: 4%;
