@@ -92,6 +92,7 @@
     .sitePage .siteText .right {flex: 0 0 25%;}
 }
 @media screen and (max-width: 600px){
+    .scroll {display: none;}
     .progress-ani {
         width: 100px; height: 77.14px;
         background-size: 800px;
@@ -404,7 +405,6 @@
 }
 @media screen and (max-width: 320px){
     .progress .bar-wrap {width: 28vw;}
-    .scroll {display: none;}
     .walkCha {width: 87.5px; height: 67.5px; background-size: 700px;}
     .walkCha.left {background-position: 0px -67.5px;}
     @keyframes walk {
