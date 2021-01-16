@@ -127,7 +127,7 @@
                         </li>
                         <li class="sitePopup4">
                             <h2 class="num">04</h2>
-                            <span class="sub">CLOVA - 01</span>
+                            <span class="sub">NAVER CLOVA</span>
                         </li>
                     </ul>
                 </div>
@@ -135,5 +135,147 @@
         </div>
     </section>
 
+    <section id="react">
+        <div class="react">
+            <div class="container">
+                <div class="tree1"><img src="assets/img/tree_left03.png" alt="나무"></div>
+                <div class="tree2"><img src="assets/img/tree_right02.png" alt="나무"></div>
+                <div class="cloud cloud1"><img src="assets/img/cloud.png" alt="구름"></div>
+                <div class="cloud cloud2"><img src="assets/img/cloud.png" alt="구름"></div>
+                <div class="reactTitle">
+                    <div>R</div>
+                    <div>E</div>
+                    <div>A</div>
+                    <div>C</div>
+                    <div>T</div>
+                </div>
+                <div class="shoes">
+                    <img src="assets/img/nike_shoes.png" alt="신발">
+                    <h2>click</h2>
+                </div>
+                <div class="reactCha"><img src="assets/img/sub_cha_cow.png" alt="캐릭터"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="sitePageWrap">
+        <div class="sitePage sitePage1">
+            <div class="siteWave"></div>
+            <div class="siteInfo">
+                <div class="videoWrap video1">
+                    <iframe src="https://player.vimeo.com/video/498233203?background=1" width="640" height="352" frameborder="0"></iframe>
+                </div>
+                <div class="siteText">
+                    <div class="left">
+                        <h2>WEBSTANDARD SITE</h2>
+                        <ul>
+                            <li>User Experience</li>
+                            <li>Art Direction</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="https://github.com/heemwon/dothome1/tree/master/webstandard" target="_blank"><h2>SOURCE</h2></a>
+                        <a href="../webstandard/index.html" target="_blank"><h2>VIEW</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="siteClose">></div>
+        </div>
+        <!-- site1 -->
+
+        <div class="sitePage sitePage2 fixed">
+            <div class="siteWave"></div>
+            <div class="siteInfo">
+                <div class="videoWrap video2">
+                    <iframe src="https://player.vimeo.com/video/498235642?background=1" width="640" height="323" frameborder="0"></iframe>
+                </div>
+                <div class="siteText">
+                    <div class="left">
+                        <h2>RESPONSIVE SITE</h2>
+                        <ul>
+                            <li>User Experience</li>
+                            <li>Art Direction</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="https://github.com/heemwon/dothome1/tree/master/responsive" target="_blank"><h2>SOURCE</h2></a>
+                        <a href="../responsive/index.html" target="_blank"><h2>VIEW</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="siteClose">></div>
+        </div>
+        <!-- site2 -->
+
+        <div class="sitePage sitePage3 fixed">
+            <div class="siteWave"></div>
+            <div class="siteInfo">
+                <div class="videoWrap video3">
+                    <iframe src="https://player.vimeo.com/video/498236199?background=1" width="640" height="326" frameborder="0"></iframe>
+                </div>
+                <div class="siteText">
+                    <div class="left">
+                        <h2>MEGABOX SITE</h2>
+                        <ul>
+                            <li>User Experience</li>
+                            <li>Art Direction</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="../megabox/index.html" target="_blank"><h2>VIEW</h2></a>
+                        <a href="https://github.com/heemwon/dothome1/tree/master/megabox" target="_blank"><h2>SOURCE</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="siteClose">></div>
+        </div>
+        <!-- site3 -->
+
+        <div class="sitePage sitePage4 fixed">
+            <div class="siteWave"></div>
+            <div class="siteInfo">
+                <div class="videoWrap video4">
+                    <iframe src="https://player.vimeo.com/video/498236388?background=1" width="640" height="326" frameborder="0"></iframe>
+                </div>
+                <div class="siteText">
+                    <div class="left">
+                        <h2>NAVER CLOVA 01</h2>
+                        <ul>
+                            <li>User Experience</li>
+                            <li>Art Direction</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="../coding/coding_1/index.html" target="_blank"><h2>VIEW</h2></a>
+                        <a href="https://github.com/heemwon/dothome1/tree/master/coding/coding_1" target="_blank"><h2>SOURCE</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="siteClose">></div>
+        </div>
+        <!-- site4 -->
+    </div>
+
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script>
+        for(let i=1; i<=4; i++){
+            $(".sitePopup"+i).bind("touchstart",function(){
+                $(".sitePage"+i).css("opacity","1");
+                $(".sitePage"+i).css("top","0%");
+            });
+            $(".sitePage"+i+" .siteClose").bind("touchstart",function(){
+                $(".sitePage"+i).css("top","-100%");
+                $(".sitePage"+i).css("opacity","0");
+            });   
+        }
+    </script>
 </body>
 </html>

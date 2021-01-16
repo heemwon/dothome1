@@ -153,9 +153,10 @@
 }
 .skillsTitle h2 {
     font-family: var(--font-eng);
-    font-size: 6vw;
+    font-size: 7vw;
+    text-decoration: underline;
     position: absolute;
-    left: 37%; top: 20%;
+    left: 35%; top: 20%;
 }
 .skillsItem {
     position: absolute;
@@ -173,7 +174,6 @@
 }
 .item .itemName h3 {
     font-size: 4vw;
-    text-decoration: underline;
 }
 .item .itemPer h3 {
     font-size: 8vw;
@@ -271,6 +271,76 @@
 .sitePopup li .sub {
     font-family: var(--font-eng);
     font-size: 5vw;
-    text-decoration: underline;
     transition: all 0.2s;
+}
+
+/* react */
+.react {background: #B5B5B5;}
+
+
+
+/* sitepage */
+.sitePage {
+    width: 100%; height: 100vh;
+    overflow: hidden;
+    transition:  all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+    z-index: 99999;
+    top: -100%;
+    opacity: 0;
+}
+.sitePage .siteWave {
+    width: 100%; height: 400px;
+    background: url(../img/waveBlue.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+}
+.sitePage .siteInfo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sitePage .videoWrap {
+    width: 80vw; height: 32vh;
+    overflow: hidden;
+}
+.sitePage .siteText {
+    font-family: var(--font-eng);
+    color: #fff;
+    display: inline-block;
+    margin-top: 7%;
+}
+.sitePage .siteText .left h2 {
+    font-size: 7vw;
+}
+.sitePage .siteText .left ul {
+    margin-top: 4vw;
+}
+.sitePage .siteText .left li {
+    font-size: 4vw;
+    line-height: 1.3;
+}
+.sitePage .siteText .right {
+    display: flex;
+    margin-top: 5%;
+}
+.sitePage .siteText .right a {
+    font-size: 10px;
+    padding: 5% 8%;
+    border-radius: 15px;
+    display: block;
+    background: #2D5E85;
+    margin-right: 2%;
+}
+.video1 {width: 768px; height: 423px;}
+.video2 {width: 768px; height: 390px;}
+.video3 {width: 768px; height: 391.2px;}
+.video4 {width: 768px; height: 398px;}
+.siteClose {
+    font-family: var(--font-eng);
+    font-size: 6vw;
+    color: #fff;
+    position: absolute;
+    left: 7%; top: 3%;
+    transform: rotate(270deg);
 }

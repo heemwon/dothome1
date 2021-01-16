@@ -379,9 +379,7 @@ body.active {
     display: inline-block;
     animation: swing 2s infinite linear;
 }
-.about2 {
-    background-image: linear-gradient(to bottom, #D4D77D , #757B7C);
-}
+.about2 {background-image: linear-gradient(to bottom, #D4D77D , #757B7C);}
 
 /* skills - skills1 */
 .skills1 .tree1 {
@@ -1036,7 +1034,7 @@ body.active {
 }
 .balloon3 .aniBall2 .aniBtn {
     position: absolute; 
-    right: 0; top: 50%; 
+    left: 50%; top: 50%; 
     transform: translate(-50%, -50%);
 }
 .balloon3 .aniBall3 {
@@ -1542,14 +1540,14 @@ body.active {
 .sitePage2 .siteText .right a:nth-child(2){
     margin-bottom: 4%;
 }
-.video1 {width: 768px; height: 423px;}
-.video2 {width: 768px; height: 390px;}
-.video3 {width: 768px; height: 391.2px;}
-.video4 {width: 768px; height: 398px;}
-.video5 {width: 768px; height: 400px;}
+.video1 {width: 768px; height: 424px;}
+.video2 {width: 768px; height: 389px;}
+.video3 {width: 768px; height: 393px;}
+.video4 {width: 768px; height: 393px;}
+.video5 {width: 768px; height: 394px;}
 .video6 {width: 768px; height: 396px;}
-.video7 {width: 768px; height: 395px;}
-.video8 {width: 768px; height: 395px;}
+.video7 {width: 768px; height: 394px;}
+.video8 {width: 768px; height: 394px;}
 .video9 {width: 768px; height: 395px;}
 .video10 {width: 768px; height: 397px;}
 

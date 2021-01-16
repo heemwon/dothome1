@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="author" content="heemwon">
     <meta name="description" content="힘원 포트폴리오 사이트입니다.">
     <meta name="keywords" content="웹표준, 웹접근성, 사이트만들기, 포트폴리오, 힘원">
@@ -185,7 +188,7 @@
                 <div class="waveTop"><img src="assets/img/waveGray2.png" alt="웨이브상단"></div>
                 <div class="door">
                     <img src="assets/img/door_blue.png" alt="문">
-                    <h2><span>사이트, 리액트, 피그마, 뷰</span> 보러 가봅시다!</h2>
+                    <h2><span>사이트, 리액트, 피그마</span> 보러 가봅시다!</h2>
                 </div>
                 <div class="waveFront roadFix"><img src="assets/img/waveFront2.png" alt="웨이브앞"></div>
                 
@@ -1102,6 +1105,7 @@
                     </div>
                 </div>
             </div>
+            <div class="siteClose"><h2>X</h2></div>
         </div>
         <!-- site1 -->
 
@@ -1395,7 +1399,7 @@
                 }
             }
         }
-        loading();
+        // loading();
 
         //skrollr 
         var s = skrollr.init({
@@ -1442,6 +1446,7 @@
             }
             lastScrollTop = scrollTop;
         });
+        
 
         // 사이트 클릭하면 페이지 나오기
         for(let i = 0; i <= 9; i++){
@@ -1469,6 +1474,11 @@
             $(".pageClose").click(function(){
                 $(".sitePage"+j).css("top","-100%");
                 $(".pageClose").hide();
+            });
+
+            // 모바일
+            $(".siteClose").click(function(){
+                $(".sitePage"+j).css("top","-100%");
             });
         }
 
