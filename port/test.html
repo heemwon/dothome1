@@ -32,21 +32,21 @@
         }
 
         * {margin: 0; padding: 0;}
-        .item1 {width: 100%; height: 100vh; background: #aaa;}
-        .item2 {width: 100%; height: 100vh; background: #bbb;}
-        .item3 {width: 100%; height: 100vh; background: #ccc;}
-        .item4 {width: 100%; height: 100vh; background: #ddd;}
-        .item5 {width: 100%; height: 100vh; background: #eee;}
+        .item1 {width: 100%; height: 100vh; background: #aaa; font-size: 100vw;}
+        .item2 {width: 100%; height: 100vh; background: #bbb;  font-size: 100vw;}
+        .item3 {width: 100%; height: 100vh; background: #ccc;  font-size: 100vw;}
+        .item4 {width: 100%; height: 100vh; background: #ddd;  font-size: 100vw;}
+        .item5 {width: 100%; height: 100vh; background: #eee;  font-size: 100vw;}
     </style>
 </head>
 <body>
     <div class="cha"></div>
 
-    <div class="item1"></div>
-    <div class="item2"></div>
-    <div class="item3"></div>
-    <div class="item4"></div>
-    <div class="item5"></div>
+    <div class="item1"><h2>1</h2></div>
+    <div class="item2"><h2>2</h2></div>
+    <div class="item3"><h2>3</h2></div>
+    <div class="item4"><h2>4</h2></div>
+    <div class="item5"><h2>5</h2></div>
 
 
 
@@ -54,25 +54,50 @@
     <script>
         let lastScrollTop = 0;
 
-        $(document).scroll(function(){
-            let scrollTop = $(document).scrollTop();
+        // $(document).scroll(function(){
+        //     let scrollTop = $(document).scrollTop();
+        //     console.log("lastScrollTop : "+lastScrollTop);
 
-            clearTimeout($.data(this,"scrollCheck"));
+        //     clearTimeout($.data(this,"scrollCheck"));
 
-            $.data(this, "scrollCheck", setTimeout(function(){
+        //     $.data(this, "scrollCheck", setTimeout(function(){
+        //         $(".cha").removeClass("walk");
+        //         $(".cha").removeClass("leftWalk");
+        //     },100))
+
+        //     if(scrollTop > lastScrollTop){
+        //         $(".cha").removeClass("left");
+        //         $(".cha").addClass("walk");
+        //     } else {
+        //         $(".cha").addClass("left");
+        //         $(".cha").addClass("leftWalk");
+        //     }
+        //     lastScrollTop = scrollTop;
+        // });
+
+        let lastTouch = 0;
+
+        $(document).on("touchstart touchmove", function(e){
+            let screenY = e.originalEvent.touches[0].screenY;
+            let pageY = e.originalEvent.touches[0].pageY;
+            let division = (pageY/screenY)+1000;
+            
+            clearTimeout($.data(this,"touchstart"));
+
+            $.data(this, "touchend", setTimeout(function(){
                 $(".cha").removeClass("walk");
                 $(".cha").removeClass("leftWalk");
             },100))
 
-            if(scrollTop > lastScrollTop){
+            if(division >= lastTouch){
                 $(".cha").removeClass("left");
                 $(".cha").addClass("walk");
             } else {
                 $(".cha").addClass("left");
                 $(".cha").addClass("leftWalk");
             }
-            lastScrollTop = scrollTop;
-        });
+            lastTouch = division;
+        })
     </script>
 </body>
 </html>

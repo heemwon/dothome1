@@ -24,7 +24,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Heewon's Portfolio Site"/>
     <meta property="og:description" content="Portfolio web site of Lee Heewon (이희원)" />
-    <meta property="og:image" content="http://naminsik.com/logos/naminsik_share_logo.png" />
+    <meta property="og:image" content="https://heemwon.github.io/dothome1/port/assets/img/logo.png" />
     <meta property="og:url" content="https://heemwon.github.io/dothome1/port/index8.html"/>
 
     <!-- style -->
@@ -1422,38 +1422,59 @@
         // 캐릭터 움직임
         let lastScrollTop = 0;
 
-        $(window).scroll(function(){
-            let scrollTop = $(window).scrollTop();
+        // $(window).scroll(function(){
+        //     let scrollTop = $(window).scrollTop();
 
-            clearTimeout($.data(this,"scrollCheck"));
+        //     clearTimeout($.data(this,"scrollCheck"));
 
-            $.data(this, "scrollCheck", setTimeout(function(){
+        //     $.data(this, "scrollCheck", setTimeout(function(){
+        //         $(".walkCha").removeClass("walk");
+        //         $(".walkCha").removeClass("leftWalk");
+        //         $(".skillsCha").removeClass("walk");
+        //         $(".skillsCha").removeClass("leftWalk");
+        //         $(".siteLastCha").removeClass("walk");
+        //         $(".siteLastCha").removeClass("leftWalk");
+        //     },100))
+
+        //     if(scrollTop > lastScrollTop){
+        //         $(".walkCha").removeClass("left");
+        //         $(".walkCha").addClass("walk");
+        //         $(".skillsCha").removeClass("left");
+        //         $(".skillsCha").addClass("walk");
+        //         $(".siteLastCha").removeClass("left");
+        //         $(".siteLastCha").addClass("walk");
+        //     } else {
+        //         $(".walkCha").addClass("left");
+        //         $(".walkCha").addClass("leftWalk");
+        //         $(".skillsCha").addClass("left");
+        //         $(".skillsCha").addClass("leftWalk");
+        //         $(".siteLastCha").addClass("left");
+        //         $(".siteLastCha").addClass("leftWalk");
+        //     }
+        //     lastScrollTop = scrollTop;
+        // });
+
+        // 모바일
+        let lastTouch = 0;
+
+        $(document).on("touchstart touchmove", function(e){
+            let screenY = e.originalEvent.touches[0].screenY;
+            let pageY = e.originalEvent.touches[0].pageY;
+            let division = pageY/screenY;
+
+            $.data(this, "touchend", setTimeout(function(){
                 $(".walkCha").removeClass("walk");
-                $(".walkCha").removeClass("leftWalk");
                 $(".skillsCha").removeClass("walk");
-                $(".skillsCha").removeClass("leftWalk");
                 $(".siteLastCha").removeClass("walk");
-                $(".siteLastCha").removeClass("leftWalk");
             },100))
 
-            if(scrollTop > lastScrollTop){
-                $(".walkCha").removeClass("left");
+            if(pageY > lastTouch){
                 $(".walkCha").addClass("walk");
-                $(".skillsCha").removeClass("left");
                 $(".skillsCha").addClass("walk");
-                $(".siteLastCha").removeClass("left");
                 $(".siteLastCha").addClass("walk");
-            } else {
-                $(".walkCha").addClass("left");
-                $(".walkCha").addClass("leftWalk");
-                $(".skillsCha").addClass("left");
-                $(".skillsCha").addClass("leftWalk");
-                $(".siteLastCha").addClass("left");
-                $(".siteLastCha").addClass("leftWalk");
-            }
-            lastScrollTop = scrollTop;
-        });
-        
+            } 
+            lastTouch = pageY;
+        })
 
         // 사이트 클릭하면 페이지 나오기
         for(let i = 0; i <= 9; i++){
