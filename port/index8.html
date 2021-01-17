@@ -1422,37 +1422,37 @@
         // 캐릭터 움직임
         let lastScrollTop = 0;
 
-        // $(window).scroll(function(){
-        //     let scrollTop = $(window).scrollTop();
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
 
-        //     clearTimeout($.data(this,"scrollCheck"));
+            clearTimeout($.data(this,"scrollCheck"));
 
-        //     $.data(this, "scrollCheck", setTimeout(function(){
-        //         $(".walkCha").removeClass("walk");
-        //         $(".walkCha").removeClass("leftWalk");
-        //         $(".skillsCha").removeClass("walk");
-        //         $(".skillsCha").removeClass("leftWalk");
-        //         $(".siteLastCha").removeClass("walk");
-        //         $(".siteLastCha").removeClass("leftWalk");
-        //     },100))
+            $.data(this, "scrollCheck", setTimeout(function(){
+                $(".walkCha").removeClass("walk");
+                $(".walkCha").removeClass("leftWalk");
+                $(".skillsCha").removeClass("walk");
+                $(".skillsCha").removeClass("leftWalk");
+                $(".siteLastCha").removeClass("walk");
+                $(".siteLastCha").removeClass("leftWalk");
+            },100))
 
-        //     if(scrollTop > lastScrollTop){
-        //         $(".walkCha").removeClass("left");
-        //         $(".walkCha").addClass("walk");
-        //         $(".skillsCha").removeClass("left");
-        //         $(".skillsCha").addClass("walk");
-        //         $(".siteLastCha").removeClass("left");
-        //         $(".siteLastCha").addClass("walk");
-        //     } else {
-        //         $(".walkCha").addClass("left");
-        //         $(".walkCha").addClass("leftWalk");
-        //         $(".skillsCha").addClass("left");
-        //         $(".skillsCha").addClass("leftWalk");
-        //         $(".siteLastCha").addClass("left");
-        //         $(".siteLastCha").addClass("leftWalk");
-        //     }
-        //     lastScrollTop = scrollTop;
-        // });
+            if(scrollTop > lastScrollTop){
+                $(".walkCha").removeClass("left");
+                $(".walkCha").addClass("walk");
+                $(".skillsCha").removeClass("left");
+                $(".skillsCha").addClass("walk");
+                $(".siteLastCha").removeClass("left");
+                $(".siteLastCha").addClass("walk");
+            } else {
+                $(".walkCha").addClass("left");
+                $(".walkCha").addClass("leftWalk");
+                $(".skillsCha").addClass("left");
+                $(".skillsCha").addClass("leftWalk");
+                $(".siteLastCha").addClass("left");
+                $(".siteLastCha").addClass("leftWalk");
+            }
+            lastScrollTop = scrollTop;
+        });
 
         // 모바일
         let lastTouch = 0;
