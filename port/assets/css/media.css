@@ -90,6 +90,8 @@
     .sitePage .videoWrap {border-radius: 0; width: 70vw; height: 38vw;}
     .sitePage .siteText .left {flex: 0 0 70%;}
     .sitePage .siteText .right {flex: 0 0 30%;}
+
+    .sitePopup {width: 80vw;}
 }
 @media screen and (max-width: 600px){
     .scroll {display: none;}
@@ -259,6 +261,7 @@
     .site .subCha {width: 13vw; right: 14vw;}
 
     /* site - sitePopup */
+    .sitePopup ul {margin-left: 10%;}
     .sitePopup li {flex: 0 0 50%;}
     .sitePopup li:nth-child(9){display: none;}
     .sitePopup li .num {font-size: 4vw;}
