@@ -1083,6 +1083,7 @@ body.active {
     display: none;
     overflow: visible;
     position: absolute;
+    border-radius: 0;
     left: 50%; top: 30%;
     transform: translate(-200%,180%);
 }
@@ -1306,6 +1307,7 @@ body.active {
     font-family: var(--font-kor);
     width: 26vw;
     font-size: 2vw;
+    word-break: keep-all;
     line-height: 1.2;
     animation: shakeY 1.5s 1s ease-in-out infinite;
 }
