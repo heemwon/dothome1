@@ -1464,15 +1464,21 @@
 
             $.data(this, "touchend", setTimeout(function(){
                 $(".walkCha").removeClass("walk");
+                $(".walkCha").removeClass("leftWalk");
                 $(".skillsCha").removeClass("walk");
+                $(".skillsCha").removeClass("leftWalk");
                 $(".siteLastCha").removeClass("walk");
+                $(".siteLastCha").removeClass("leftWalk");
             },100))
 
             if(pageY > lastTouch){
+                $(".walkCha").removeClass("left");
                 $(".walkCha").addClass("walk");
+                $(".skillsCha").removeClass("left");
                 $(".skillsCha").addClass("walk");
+                $(".siteLastCha").removeClass("left");
                 $(".siteLastCha").addClass("walk");
-            } 
+            }
             lastTouch = pageY;
         })
 
